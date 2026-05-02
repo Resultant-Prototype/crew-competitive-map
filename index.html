@@ -90,9 +90,90 @@
       flex-shrink: 0;
     }
     #legend .note { font-size: 10px; color: #9CA3AF; margin-top: 4px; }
+
+    #overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(3px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    #overlay-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 36px 40px;
+      max-width: 520px;
+      width: calc(100% - 48px);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.3);
+    }
+    #overlay-eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #9CA3AF;
+      margin-bottom: 12px;
+    }
+    #overlay-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #111;
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+    #overlay-body {
+      font-size: 14px;
+      color: #374151;
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+    #overlay-body strong { color: #111; }
+    #overlay-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    #overlay-btn {
+      background: #005FA3;
+      color: #fff;
+      border: none;
+      border-radius: 7px;
+      padding: 10px 24px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s;
+      white-space: nowrap;
+    }
+    #overlay-btn:hover { background: #004d87; }
+    #overlay-attribution {
+      font-size: 11px;
+      color: #9CA3AF;
+      text-align: right;
+      line-height: 1.5;
+    }
   </style>
 </head>
 <body>
+
+<div id="overlay">
+  <div id="overlay-card">
+    <div id="overlay-eyebrow">Competitive Intelligence · Built by Resultant</div>
+    <div id="overlay-title">Crew Carwash —<br>Competitive Landscape</div>
+    <div id="overlay-body">
+      This map is an external view of Crew's competitive positioning, built from public data and shared as a thinking artifact by <strong>Resultant</strong>.<br><br>
+      Each dot is a Crew Carwash location, color-coded by proximity to <strong>Mister Car Wash</strong> — the largest express wash chain in the country. Click any location to see nearby competitors by radius.
+    </div>
+    <div id="overlay-footer">
+      <button id="overlay-btn" onclick="document.getElementById('overlay').style.display='none'">Explore the map</button>
+      <div id="overlay-attribution">Data sourced from public<br>store locators · May 2025</div>
+    </div>
+  </div>
+</div>
 
 <div id="map"></div>
 
