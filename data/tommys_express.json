@@ -1,0 +1,282 @@
+[
+  {
+    "name": "Crystal Lake",
+    "street": "5995 Northwest Hwy.",
+    "city": "Crystal Lake",
+    "state": "IL",
+    "zip": "60014",
+    "lat": 42.226132,
+    "lng": -88.3150659,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Huntley",
+    "street": "12440 IL-47",
+    "city": "Huntley",
+    "state": "IL",
+    "zip": "60142",
+    "lat": 42.197379,
+    "lng": -88.450815,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Lombard",
+    "street": "607 North Ave.",
+    "city": "Lombard",
+    "state": "IL",
+    "zip": "60148",
+    "lat": 41.869829,
+    "lng": -88.003864,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Loves Park",
+    "street": "6803 Forest Hills Rd.",
+    "city": "Loves Park",
+    "state": "IL",
+    "zip": "61111",
+    "lat": 42.340098,
+    "lng": -89.003713,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Naperville",
+    "street": "2928 N. Beebe Dr.",
+    "city": "Naperville",
+    "state": "IL",
+    "zip": "60564",
+    "lat": 41.785916,
+    "lng": -88.147285,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Orland Park",
+    "street": "15819 Wolf Rd.",
+    "city": "Orland Park",
+    "state": "IL",
+    "zip": "60467",
+    "lat": 41.612061,
+    "lng": -87.862844,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Peoria",
+    "street": "2145 Knoxville Ave.",
+    "city": "Peoria",
+    "state": "IL",
+    "zip": "61603",
+    "lat": 40.695325,
+    "lng": -89.595716,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Wheaton",
+    "street": "2101 N. Gary Ave.",
+    "city": "Wheaton",
+    "state": "IL",
+    "zip": "60187",
+    "lat": 41.858811,
+    "lng": -88.105834,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Blaine",
+    "street": "4252 122nd Ave. NE.",
+    "city": "Blaine",
+    "state": "MN",
+    "zip": "55449",
+    "lat": 45.166011810302734,
+    "lng": -93.20873260498047,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Bloomington",
+    "street": "200 W. Old Shakopee Rd.",
+    "city": "Bloomington",
+    "state": "MN",
+    "zip": "55420",
+    "lat": 44.821109771728516,
+    "lng": -93.30555725097656,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Duluth",
+    "street": "321 E. Central Ent.",
+    "city": "Duluth",
+    "state": "MN",
+    "zip": "55811",
+    "lat": 46.779367,
+    "lng": -92.107919,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Minneapolis",
+    "street": "7201 Bass Lake Rd.",
+    "city": "Minneapolis",
+    "state": "MN",
+    "zip": "55428",
+    "lat": 45.03636932373047,
+    "lng": -93.38501739501953,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Moorhead",
+    "street": "3102 US-10",
+    "city": "Moorhead",
+    "state": "MN",
+    "zip": "56560",
+    "lat": 46.869789,
+    "lng": -96.747673,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Moorhead",
+    "street": "3115 Eighth St. S.",
+    "city": "Moorhead",
+    "state": "MN",
+    "zip": "56560",
+    "lat": 46.869789,
+    "lng": -96.747673,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Mounds View",
+    "street": "2525 Mounds View Blvd.",
+    "city": "Mounds View",
+    "state": "MN",
+    "zip": "55112",
+    "lat": 45.1035805,
+    "lng": -93.2061691,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Rochester",
+    "street": "265 Penny Ln. NE",
+    "city": "Rochester",
+    "state": "MN",
+    "zip": "55906",
+    "lat": 44.02157,
+    "lng": -92.465953,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Waite Park",
+    "street": "17 Second Ave. N.",
+    "city": "Waite Park",
+    "state": "MN",
+    "zip": "56387",
+    "lat": 45.540238,
+    "lng": -94.229392,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "White Bear Lake",
+    "street": "4061 US-61 N.",
+    "city": "White Bear Lake",
+    "state": "MN",
+    "zip": "55110",
+    "lat": 45.08269119262695,
+    "lng": -93.0123062133789,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Beaver Dam",
+    "street": "1700 N. Spring St.",
+    "city": "Beaver Dam",
+    "state": "WI",
+    "zip": "53916",
+    "lat": 43.477278,
+    "lng": -88.82294,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Eau Claire",
+    "street": "1000 W. Clairemont Ave.",
+    "city": "Eau Claire",
+    "state": "WI",
+    "zip": "54701",
+    "lat": 44.810932,
+    "lng": -91.499488,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Oshkosh",
+    "street": "2100 Omro Rd.",
+    "city": "Oshkosh",
+    "state": "WI",
+    "zip": "54904",
+    "lat": 44.022448,
+    "lng": -88.546142,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Plover",
+    "street": "1840 Plover Rd.",
+    "city": "Plover",
+    "state": "WI",
+    "zip": "54467",
+    "lat": 44.413942,
+    "lng": -89.565507,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Portage",
+    "street": "2725 New Pinery Rd.",
+    "city": "Portage",
+    "state": "WI",
+    "zip": "53901",
+    "lat": 43.50666,
+    "lng": -89.399335,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Sheboygan",
+    "street": "3705 Washington Ave. S. Frontage Rd.",
+    "city": "Sheboygan",
+    "state": "WI",
+    "zip": "53081",
+    "lat": 43.742603,
+    "lng": -87.730872,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Stevens Point",
+    "street": "117 Division St. N.",
+    "city": "Stevens Point",
+    "state": "WI",
+    "zip": "54481",
+    "lat": 44.523411,
+    "lng": -89.555621,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Wausau",
+    "street": "102 W. Bridge St.",
+    "city": "Wausau",
+    "state": "WI",
+    "zip": "54401",
+    "lat": 44.962601,
+    "lng": -89.646811,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "West Bend",
+    "street": "2110 W. Washington St.",
+    "city": "West Bend",
+    "state": "WI",
+    "zip": "53095",
+    "lat": 43.419534,
+    "lng": -88.187452,
+    "chain": "Tommy's Express"
+  },
+  {
+    "name": "Weston",
+    "street": "1611 Schofield Ave.",
+    "city": "Weston",
+    "state": "WI",
+    "zip": "54476",
+    "lat": 44.866501,
+    "lng": -89.576968,
+    "chain": "Tommy's Express"
+  }
+]
