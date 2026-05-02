@@ -31,7 +31,7 @@
       padding: 10px 13px;
       font-size: 13px;
       line-height: 1.5;
-      min-width: 180px;
+      min-width: 220px;
       border-radius: 6px;
     }
     .popup-name {
@@ -52,6 +52,20 @@
     .badge-soon   { background: #FEF3C7; color: #92400E; }
     .badge-closed { background: #F3F4F6; color: #6B7280; }
 
+    .popup-divider { border: none; border-top: 1px solid #E5E7EB; margin: 8px 0 6px; }
+    .competitor-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+    .competitor-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #9CA3AF; }
+    .pressure-badge { font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.04em; }
+    .pressure-high   { background: #FEE2E2; color: #991B1B; }
+    .pressure-medium { background: #FFEDD5; color: #9A3412; }
+    .pressure-low    { background: #FEF9C3; color: #854D0E; }
+    .pressure-none   { background: #DCFCE7; color: #166534; }
+    .radii-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4px; margin-bottom: 7px; text-align: center; }
+    .radii-cell { background: #F9FAFB; border-radius: 4px; padding: 3px 0; }
+    .radii-cell .mi { font-size: 10px; color: #9CA3AF; }
+    .radii-cell .count { font-size: 15px; font-weight: 600; color: #111; line-height: 1.3; }
+    .nearby-list { font-size: 11px; color: #6B7280; line-height: 1.8; }
+
     #legend {
       position: absolute;
       bottom: 32px;
@@ -64,6 +78,9 @@
       pointer-events: none;
       line-height: 1.8;
     }
+    #legend .section-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #9CA3AF; margin-bottom: 1px; margin-top: 6px; }
+    #legend .section-label:first-child { margin-top: 0; }
+    #legend .sep { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
     #legend .row { display: flex; align-items: center; gap: 8px; }
     #legend .dot {
       width: 12px; height: 12px;
@@ -72,6 +89,7 @@
       box-shadow: 0 1px 3px rgba(0,0,0,0.3);
       flex-shrink: 0;
     }
+    #legend .note { font-size: 10px; color: #9CA3AF; margin-top: 4px; }
   </style>
 </head>
 <body>
@@ -79,9 +97,15 @@
 <div id="map"></div>
 
 <div id="legend">
-  <div class="row"><span class="dot" style="background:#005FA3"></span> Active</div>
+  <div class="section-label">Competitive Pressure</div>
+  <div class="row"><span class="dot" style="background:#DC2626"></span> High</div>
+  <div class="row"><span class="dot" style="background:#EA580C"></span> Medium</div>
+  <div class="row"><span class="dot" style="background:#D97706"></span> Low</div>
+  <div class="row"><span class="dot" style="background:#16A34A"></span> None</div>
+  <hr class="sep">
   <div class="row"><span class="dot" style="background:#E07A00"></span> Coming Soon</div>
   <div class="row"><span class="dot" style="background:#9CA3AF;opacity:0.7"></span> Closed</div>
+  <div class="note">vs. Mister Car Wash</div>
 </div>
 
 <script>
@@ -148,6 +172,82 @@ const LOCATIONS = [
   {"id":5283,"name":"Champaign","street":"2029 N Prospect Ave","city":"Champaign","state":"IL","zip":"61822","phone":"(217) 303-5779","hours":"Every Day 7am to 9pm","lat":40.13989257845443,"lng":-88.2585349230213,"coming_soon":false,"closed":true}
 ];
 
+const PRESSURE_COLOR = { high: '#DC2626', medium: '#EA580C', low: '#D97706', none: '#16A34A' };
+
+function distanceMi(lat1, lng1, lat2, lng2) {
+  const R = 3958.8;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLng = (lng2 - lng1) * Math.PI / 180;
+  const a = Math.sin(dLat/2)**2
+    + Math.cos(lat1 * Math.PI/180) * Math.cos(lat2 * Math.PI/180) * Math.sin(dLng/2)**2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+function computePressure(loc, misterLocs) {
+  const dists = misterLocs
+    .map(m => ({ name: m.name, city: m.city, state: m.state, d: distanceMi(loc.lat, loc.lng, m.lat, m.lng) }))
+    .sort((a, b) => a.d - b.d);
+  const within1 = dists.filter(d => d.d <= 1).length;
+  const within3 = dists.filter(d => d.d <= 3).length;
+  const within5 = dists.filter(d => d.d <= 5).length;
+  const nearest = dists.slice(0, 3).filter(d => d.d <= 10);
+  let level;
+  if (within1 >= 1 || within3 >= 3) level = 'high';
+  else if (within3 >= 1)             level = 'medium';
+  else if (within5 >= 1)             level = 'low';
+  else                               level = 'none';
+  return { within1, within3, within5, nearest, level };
+}
+
+function pressureHTML(p) {
+  const label = { high: 'High', medium: 'Medium', low: 'Low', none: 'None' }[p.level];
+  const nearbyRows = p.nearest.length
+    ? p.nearest.map(n => `<div>${n.name}, ${n.city} &middot; ${n.d.toFixed(1)} mi</div>`).join('')
+    : '<div>None within 10 mi</div>';
+  return `
+    <hr class="popup-divider">
+    <div class="competitor-header">
+      <span class="competitor-label">Mister Car Wash</span>
+      <span class="pressure-badge pressure-${p.level}">${label}</span>
+    </div>
+    <div class="radii-row">
+      <div class="radii-cell"><div class="mi">1 mi</div><div class="count">${p.within1}</div></div>
+      <div class="radii-cell"><div class="mi">3 mi</div><div class="count">${p.within3}</div></div>
+      <div class="radii-cell"><div class="mi">5 mi</div><div class="count">${p.within5}</div></div>
+    </div>
+    <div class="nearby-list">${nearbyRows}</div>`;
+}
+
+function addMarkers(misterLocs) {
+  LOCATIONS.forEach(loc => {
+    const pressure = (!loc.closed && !loc.coming_soon && misterLocs.length)
+      ? computePressure(loc, misterLocs) : null;
+
+    const el = document.createElement('div');
+    if (loc.closed) {
+      el.className = 'marker closed';
+    } else if (loc.coming_soon) {
+      el.className = 'marker soon';
+    } else {
+      el.className = 'marker active';
+      if (pressure) el.style.background = PRESSURE_COLOR[pressure.level];
+    }
+
+    const addr = `${loc.street}, ${loc.city}, ${loc.state} ${loc.zip}`;
+    let badge = '';
+    if (loc.coming_soon) badge = '<span class="popup-badge badge-soon">Coming Soon</span>';
+    if (loc.closed)      badge = '<span class="popup-badge badge-closed">Closed</span>';
+
+    const popup = new maplibregl.Popup({ offset: 10, closeButton: false })
+      .setHTML(`<div class="popup-name">${loc.name}</div><div class="popup-addr">${addr}</div>${badge}${pressure ? pressureHTML(pressure) : ''}`);
+
+    new maplibregl.Marker({ element: el })
+      .setLngLat([loc.lng, loc.lat])
+      .setPopup(popup)
+      .addTo(map);
+  });
+}
+
 const map = new maplibregl.Map({
   container: 'map',
   style: 'https://tiles.openfreemap.org/styles/liberty',
@@ -158,29 +258,10 @@ const map = new maplibregl.Map({
 map.addControl(new maplibregl.NavigationControl(), 'top-right');
 
 map.on('load', () => {
-  LOCATIONS.forEach(loc => {
-    const el = document.createElement('div');
-    if (loc.closed) {
-      el.className = 'marker closed';
-    } else if (loc.coming_soon) {
-      el.className = 'marker soon';
-    } else {
-      el.className = 'marker active';
-    }
-
-    const addr = `${loc.street}, ${loc.city}, ${loc.state} ${loc.zip}`;
-    let badge = '';
-    if (loc.coming_soon) badge = '<span class="popup-badge badge-soon">Coming Soon</span>';
-    if (loc.closed)      badge = '<span class="popup-badge badge-closed">Closed</span>';
-
-    const popup = new maplibregl.Popup({ offset: 10, closeButton: false })
-      .setHTML(`<div class="popup-name">${loc.name}</div><div class="popup-addr">${addr}</div>${badge}`);
-
-    new maplibregl.Marker({ element: el })
-      .setLngLat([loc.lng, loc.lat])
-      .setPopup(popup)
-      .addTo(map);
-  });
+  fetch('data/mister_carwash_all.json')
+    .then(r => r.json())
+    .then(data => addMarkers(data))
+    .catch(() => addMarkers([]));
 });
 </script>
 </body>
