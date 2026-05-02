@@ -1075,7 +1075,7 @@
     "lat": 40.13989257845443,
     "lng": -88.2585349230213,
     "coming_soon": false,
-    "closed": true,
+    "closed": false,
     "has_interior": false,
     "has_self_service": false
   }

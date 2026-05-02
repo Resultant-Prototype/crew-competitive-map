@@ -134,6 +134,19 @@
     .wisc-bar-fill { background: #DC2626; border-radius: 3px; height: 4px; transition: width 0.4s; }
     .wisc-nearest { font-size: 10px; color: #9CA3AF; }
     .wisc-cta { font-size: 10px; color: #005FA3; font-weight: 600; margin-top: 6px; }
+    .comp-badge {
+      display: inline-block; font-size: 9px; font-weight: 700;
+      padding: 1px 5px; border-radius: 3px; letter-spacing: 0.04em;
+      text-transform: uppercase; margin-bottom: 5px;
+    }
+    .comp-high     { background: #FEE2E2; color: #991B1B; }
+    .comp-moderate { background: #FFEDD5; color: #9A3412; }
+    .comp-low      { background: #FEF9C3; color: #854D0E; }
+    .comp-open     { background: #DCFCE7; color: #166534; }
+    .bar-high     { background: #DC2626; }
+    .bar-moderate { background: #EA580C; }
+    .bar-low      { background: #D97706; }
+    .bar-open     { background: #16A34A; }
     #mister-toggle-row { margin-top: 10px; padding-top: 8px; border-top: 1px solid #E5E7EB; }
     #mister-toggle {
       width: 100%; background: none; border: 1.5px solid #D1D5DB; border-radius: 5px;
@@ -236,19 +249,39 @@
   </div>
   <div class="wisc-cards">
     <div class="wisc-card" onclick="flyTo(43.038, -88.003, 10)">
-      <div class="wisc-market">Milwaukee Suburbs</div>
+      <div class="comp-badge comp-high">High</div>
+      <div class="wisc-market">Milwaukee Metro</div>
       <div class="wisc-count">10</div>
-      <div class="wisc-count-label">Mister Car Wash<br>within 25 mi</div>
-      <div class="wisc-bar-track"><div class="wisc-bar-fill" style="width:100%"></div></div>
+      <div class="wisc-count-label">Mister within 25 mi</div>
+      <div class="wisc-bar-track"><div class="wisc-bar-fill bar-high" style="width:100%"></div></div>
       <div class="wisc-nearest">Nearest: 3.0 mi</div>
       <div class="wisc-cta">View on map →</div>
     </div>
+    <div class="wisc-card" onclick="flyTo(43.073, -89.401, 11)">
+      <div class="comp-badge comp-moderate">Moderate</div>
+      <div class="wisc-market">Madison</div>
+      <div class="wisc-count">3</div>
+      <div class="wisc-count-label">Mister within 25 mi</div>
+      <div class="wisc-bar-track"><div class="wisc-bar-fill bar-moderate" style="width:30%"></div></div>
+      <div class="wisc-nearest">Nearest: 1.0 mi</div>
+      <div class="wisc-cta">View on map →</div>
+    </div>
     <div class="wisc-card" onclick="flyTo(44.262, -88.416, 10)">
-      <div class="wisc-market">Fox Valley / Appleton</div>
+      <div class="comp-badge comp-low">Low</div>
+      <div class="wisc-market">Appleton / Fox Valley</div>
       <div class="wisc-count">1</div>
-      <div class="wisc-count-label">Mister Car Wash<br>within 25 mi</div>
-      <div class="wisc-bar-track"><div class="wisc-bar-fill" style="width:10%"></div></div>
+      <div class="wisc-count-label">Mister within 25 mi</div>
+      <div class="wisc-bar-track"><div class="wisc-bar-fill bar-low" style="width:10%"></div></div>
       <div class="wisc-nearest">Nearest: 19.9 mi</div>
+      <div class="wisc-cta">View on map →</div>
+    </div>
+    <div class="wisc-card" onclick="flyTo(44.519, -88.020, 11)">
+      <div class="comp-badge comp-open">Open</div>
+      <div class="wisc-market">Green Bay</div>
+      <div class="wisc-count">0</div>
+      <div class="wisc-count-label">Mister within 25 mi</div>
+      <div class="wisc-bar-track"><div class="wisc-bar-fill bar-open" style="width:100%"></div></div>
+      <div class="wisc-nearest">Nearest: 45 mi</div>
       <div class="wisc-cta">View on map →</div>
     </div>
   </div>
@@ -330,7 +363,7 @@ const LOCATIONS = [
   {"id":2095,"name":"St. Cloud","street":"4118 Division St.","city":"St. Cloud","state":"MN","zip":"56301","phone":"763-398-0874","hours":"Every Day 7am to 9pm","lat":45.552775,"lng":-94.2094117,"coming_soon":false,"closed":false},
   {"id":3422,"name":"Wayzata","street":"1405 Wayzata Blvd","city":"Wayzata","state":"MN","zip":"55391","phone":"(952) 960-8980","hours":"Every Day 7am to 9pm","lat":44.9716905,"lng":-93.495433,"coming_soon":false,"closed":false},
   {"id":2627,"name":"West St. Paul","street":"1949 South Robert St","city":"West St Paul","state":"MN","zip":"55118","phone":"(651) 400-8944","hours":"Every Day 7am to 9pm","lat":44.8874382,"lng":-93.0809851,"coming_soon":false,"closed":false},
-  {"id":5283,"name":"Champaign","street":"2029 N Prospect Ave","city":"Champaign","state":"IL","zip":"61822","phone":"(217) 303-5779","hours":"Every Day 7am to 9pm","lat":40.13989257845443,"lng":-88.2585349230213,"coming_soon":false,"closed":true}
+  {"id":5283,"name":"Champaign","street":"2029 N Prospect Ave","city":"Champaign","state":"IL","zip":"61822","phone":"(217) 303-5779","hours":"Every Day 7am to 9pm","lat":40.13989257845443,"lng":-88.2585349230213,"coming_soon":false,"closed":false}
 ];
 
 let misterVisible = false;
