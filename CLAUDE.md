@@ -23,7 +23,10 @@ No dependencies to install — stdlib only. Requires `curl` on PATH.
 
 ## Data schemas
 
-**Crew locations** (`data/crew_locations.json`) — 60 locations across IN/IL/MN:
+**Crew locations** (`data/crew_locations.json`) — 60 locations across IN/IL/MN @:
+
+@data/crew_locations.json
+
 ```json
 {
   "id": 150, "name": "Carmel – 106th and Michigan", "slug": "carmel-106th-and-michigan",
