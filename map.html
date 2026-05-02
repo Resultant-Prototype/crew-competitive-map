@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crew Carwash Locations</title>
+  <link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body { width: 100vw; height: 100vh; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+
+    #map { width: 100%; height: 100%; }
+
+    .marker {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+      cursor: pointer;
+      transition: transform 0.1s;
+    }
+    .marker:hover { transform: scale(1.4); }
+    .marker.active   { background: #005FA3; }
+    .marker.soon     { background: #E07A00; }
+    .marker.closed   { background: #9CA3AF; opacity: 0.7; }
+
+    .maplibregl-popup-content {
+      padding: 10px 13px;
+      font-size: 13px;
+      line-height: 1.5;
+      min-width: 180px;
+      border-radius: 6px;
+    }
+    .popup-name {
+      font-weight: 600;
+      color: #111;
+      margin-bottom: 3px;
+    }
+    .popup-addr { color: #555; }
+    .popup-badge {
+      display: inline-block;
+      margin-top: 5px;
+      padding: 1px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+    .badge-soon   { background: #FEF3C7; color: #92400E; }
+    .badge-closed { background: #F3F4F6; color: #6B7280; }
+
+    #legend {
+      position: absolute;
+      bottom: 32px;
+      left: 12px;
+      background: rgba(255,255,255,0.93);
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      pointer-events: none;
+      line-height: 1.8;
+    }
+    #legend .row { display: flex; align-items: center; gap: 8px; }
+    #legend .dot {
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<div id="legend">
+  <div class="row"><span class="dot" style="background:#005FA3"></span> Active</div>
+  <div class="row"><span class="dot" style="background:#E07A00"></span> Coming Soon</div>
+  <div class="row"><span class="dot" style="background:#9CA3AF;opacity:0.7"></span> Closed</div>
+</div>
+
+<script>
+const LOCATIONS = [
+  {"id":6029,"name":"Indy – Thompson & Emerson","street":"5045 S. Emerson Avenue","city":"Indianapolis","state":"IN","zip":"46237","phone":"","hours":"","lat":39.69358823123011,"lng":-86.08256143523512,"coming_soon":true,"closed":false},
+  {"id":6026,"name":"Fishers – 116th & Allisonville","street":"11578 Allisonville Road","city":"Fishers","state":"IN","zip":"46038","phone":"(317) 787-9820","hours":"Every Day 7am to 9pm","lat":39.9546,"lng":-86.0232,"coming_soon":false,"closed":false},
+  {"id":150,"name":"Carmel – 106th and Michigan","street":"10580 N. Michigan Rd.","city":"Carmel","state":"IN","zip":"46032","phone":"(317) 824-0035","hours":"Every Day 7am to 9pm","lat":39.9396722,"lng":-86.2369832,"coming_soon":false,"closed":false},
+  {"id":160,"name":"Carmel – Rangeline & Carmel Dr","street":"1250 Rangeline Rd.","city":"Carmel","state":"IN","zip":"46032","phone":"(317) 571-1929","hours":"Every Day 7am to 9pm","lat":39.960577,"lng":-86.1281363,"coming_soon":false,"closed":false},
+  {"id":127,"name":"Castleton – Allisonville and I-465","street":"8252 Kelly Lane","city":"Indianapolis","state":"IN","zip":"46250","phone":"(317) 845-8868","hours":"Every Day 7am to 9pm","lat":39.906666,"lng":-86.0788409,"coming_soon":false,"closed":false},
+  {"id":149,"name":"Downtown Indy – 12th and Meridian","street":"1219 N. Meridian St.","city":"Indianapolis","state":"IN","zip":"46204","phone":"(317) 423-2470","hours":"Every Day 7am to 9pm","lat":39.784065,"lng":-86.1569338,"coming_soon":false,"closed":false},
+  {"id":2123,"name":"Fishers","street":"11650 Exit 5 Pkwy","city":"Fishers","state":"IN","zip":"46037","phone":"(463) 215-2311","hours":"Every Day 7am to 9pm","lat":39.9584342,"lng":-86.003028,"coming_soon":false,"closed":false},
+  {"id":2006,"name":"Indy – 38th & Illinois","street":"111 W. 38th St.","city":"Indianapolis","state":"IN","zip":"46208","phone":"(463) 213-3280","hours":"Every Day 7am to 9pm","lat":39.8244109,"lng":-86.1597947,"coming_soon":false,"closed":false},
+  {"id":135,"name":"Indy – I-69 and 96th St","street":"9550 Corporation Dr.","city":"Indianapolis","state":"IN","zip":"46256","phone":"(317) 849-4244","hours":"Every Day 7am to 9pm","lat":39.9264887,"lng":-86.0336586,"coming_soon":false,"closed":false},
+  {"id":158,"name":"Keystone – Glendale – 62nd and Keystone","street":"6221 N. Keystone Ave.","city":"Indianapolis","state":"IN","zip":"46220","phone":"(317) 254-1949","hours":"Every Day 7am to 9pm","lat":39.8697575,"lng":-86.1214757,"coming_soon":false,"closed":false},
+  {"id":4096,"name":"Noblesville – 146th & River Road","street":"14650 Umber Avenue","city":"Noblesville","state":"IN","zip":"46062","phone":"(463) 777-6776","hours":"Every Day 7am to 9pm","lat":40.0025543,"lng":-86.0355241,"coming_soon":false,"closed":false},
+  {"id":4099,"name":"Noblesville – 32 & Hazel Dell","street":"5830 Trace Pointe Ave","city":"Noblesville","state":"IN","zip":"46062","phone":"463-777-6608","hours":"Exterior Wash: Every Day 7am to 9pm","lat":40.0420897,"lng":-86.069899,"coming_soon":false,"closed":false},
+  {"id":161,"name":"Noblesville – Exit 210 at I-69","street":"13425 Tegler Dr.","city":"Noblesville","state":"IN","zip":"46060","phone":"(317) 776-0936","hours":"Exterior Wash: Every Day 7am to 9pm","lat":39.9937682,"lng":-85.9263763,"coming_soon":false,"closed":false},
+  {"id":137,"name":"Noblesville – S.R. 37 and Mercantile Blvd","street":"17115 Mercantile Blvd.","city":"Noblesville","state":"IN","zip":"46060","phone":"(317) 776-9331","hours":"Every Day 7am to 9pm","lat":40.0370784,"lng":-85.9944952,"coming_soon":false,"closed":false},
+  {"id":2607,"name":"Nora","street":"1501 E 86th St","city":"Indianapolis","state":"IN","zip":"46240","phone":"(317) 983-7707","hours":"Every Day 7am to 9pm","lat":39.9120715,"lng":-86.134589,"coming_soon":false,"closed":false},
+  {"id":140,"name":"Westfield/Carmel – Greyhound Pass & 146th","street":"14837 Thatcher Lane","city":"Carmel","state":"IN","zip":"46032","phone":"(317) 815-5804","hours":"Every Day 7am to 9pm","lat":40.004276,"lng":-86.1263763,"coming_soon":false,"closed":false},
+  {"id":1449,"name":"Westfield – S.R. 32 and Grand Park","street":"777 E. SR 32","city":"Westfield","state":"IN","zip":"46074","phone":"(317) 399-3041","hours":"Every Day 7am to 9pm","lat":40.0422214,"lng":-86.1445334,"coming_soon":false,"closed":false},
+  {"id":4098,"name":"Whitestown","street":"6480 Center Drive","city":"Zionsville","state":"IN","zip":"46077","phone":"317-359-1865","hours":"Exterior Wash: Every Day 7am to 9pm","lat":39.9482727,"lng":-86.3470005,"coming_soon":false,"closed":false},
+  {"id":147,"name":"Avon – Rockville Rd","street":"10764 E. US Hwy. 36","city":"Avon","state":"IN","zip":"46123","phone":"(317) 209-1700","hours":"Exterior Wash: Every Day 7am to 9pm","lat":39.7642913,"lng":-86.3307536,"coming_soon":false,"closed":false},
+  {"id":827,"name":"Avon – West/US-36","street":"7127 E. US Hwy. 36","city":"Avon","state":"IN","zip":"46123","phone":"(317) 204-0208","hours":"Every Day 7am to 9pm","lat":39.76239,"lng":-86.397563,"coming_soon":false,"closed":false},
+  {"id":366,"name":"Brownsburg – I-74 & Green St","street":"1275 N. Green St.","city":"Brownsburg","state":"IN","zip":"46112","phone":"(317) 456-1741","hours":"Every Day 7am to 9pm","lat":39.8611383,"lng":-86.3919513,"coming_soon":false,"closed":false},
+  {"id":132,"name":"Indy – Michigan & W 86th St","street":"3345 West 86th St.","city":"Indianapolis","state":"IN","zip":"46268","phone":"(317) 876-1160","hours":"Every Day 7am to 9pm","lat":39.9112285,"lng":-86.2186686,"coming_soon":false,"closed":false},
+  {"id":143,"name":"Indy – Lafayette Rd and Georgetown","street":"4280 Lafayette Rd.","city":"Indianapolis","state":"IN","zip":"46254","phone":"(317) 291-9727","hours":"Every Day 7am to 9pm","lat":39.8329509,"lng":-86.2445481,"coming_soon":false,"closed":false},
+  {"id":141,"name":"Plainfield – US 40","street":"2674 E. Main St.","city":"Plainfield","state":"IN","zip":"46168","phone":"(317) 839-0220","hours":"Every Day 7am to 9pm","lat":39.7193792,"lng":-86.3548438,"coming_soon":false,"closed":false},
+  {"id":2122,"name":"Speedway","street":"2505 Founders Square Dr.","city":"Speedway","state":"IN","zip":"46224","phone":"(317) 743-0639","hours":"Every Day 7am to 9pm","lat":39.8017711,"lng":-86.2714455,"coming_soon":false,"closed":false},
+  {"id":5286,"name":"Camby","street":"8380 Windfall Lane","city":"Camby","state":"IN","zip":"46113","phone":"317-845-0948","hours":"Every Day 7am to 9pm","lat":39.64141421674915,"lng":-86.3346408834864,"coming_soon":false,"closed":false},
+  {"id":5447,"name":"Center Grove – South SR 135","street":"2840 S SR 135","city":"Greenwood","state":"IN","zip":"46143","phone":"(317) 423-0084","hours":"Every Day 7am to 9pm","lat":39.57607618055865,"lng":-86.15860991334434,"coming_soon":false,"closed":false},
+  {"id":1935,"name":"Greenwood – Main St.","street":"1151 South Park Dr.","city":"Greenwood","state":"IN","zip":"46143","phone":"(317) 743-0660","hours":"Every Day 7am to 9pm","lat":39.6148529,"lng":-86.0801777,"coming_soon":false,"closed":false},
+  {"id":155,"name":"Greenwood – SR 135","street":"530 N State Rd 135","city":"Greenwood","state":"IN","zip":"46142","phone":"(317) 885-9956","hours":"Every Day 7am to 9pm","lat":39.6041479,"lng":-86.1591157,"coming_soon":false,"closed":false},
+  {"id":153,"name":"Greenwood – US 31","street":"8230 US 31 South","city":"Greenwood","state":"IN","zip":"46227","phone":"(317) 881-6299","hours":"Every Day 7am to 9pm","lat":39.6452715,"lng":-86.134557,"coming_soon":false,"closed":false},
+  {"id":136,"name":"Indy – South East St","street":"3501 South East St.","city":"Indianapolis","state":"IN","zip":"46227","phone":"(317) 787-9821","hours":"Every Day 7am to 9pm","lat":39.714811,"lng":-86.1484414,"coming_soon":false,"closed":false},
+  {"id":145,"name":"Indy – Southport & Emerson","street":"7060 Emblem Dr.","city":"Indianapolis","state":"IN","zip":"46237","phone":"(317) 885-1470","hours":"Every Day 7am to 9pm","lat":39.6652804,"lng":-86.0820936,"coming_soon":false,"closed":false},
+  {"id":2141,"name":"Greenfield","street":"1726 N. State St.","city":"Greenfield","state":"IN","zip":"46140","phone":"(317) 436-1637","hours":"Every Day 7am to 9pm","lat":39.8088104,"lng":-85.7705493,"coming_soon":false,"closed":false},
+  {"id":142,"name":"Indy – Pendleton Pike and 56th St","street":"10305 Pendleton Pike","city":"Indianapolis","state":"IN","zip":"46236","phone":"(317) 823-9030","hours":"Every Day 7am to 9pm","lat":39.8560539,"lng":-85.9846545,"coming_soon":false,"closed":false},
+  {"id":3684,"name":"Indy – Pendleton Pike and Franklin Rd","street":"4405 N Franklin Road","city":"Indianapolis","state":"IN","zip":"46226","phone":"(463) 205-0434","hours":"Every Day 7am to 9pm","lat":39.8372766,"lng":-86.0267847,"coming_soon":false,"closed":false},
+  {"id":139,"name":"Indy – Washington Square","street":"10229 E. Washington St.","city":"Indianapolis","state":"IN","zip":"46229","phone":"(317) 890-8360","hours":"Every Day 7am to 9pm","lat":39.7745541,"lng":-85.9847645,"coming_soon":false,"closed":false},
+  {"id":138,"name":"Indy – Washington St","street":"7424 E. Washington","city":"Indianapolis","state":"IN","zip":"46219","phone":"(317) 359-1818","hours":"Every Day 7am to 9pm","lat":39.7729332,"lng":-86.0363022,"coming_soon":false,"closed":false},
+  {"id":2606,"name":"McCordsville","street":"6963 W Broadway","city":"McCordsville","state":"IN","zip":"46055","phone":"(463) 345-3995","hours":"Every Day 7am to 9pm","lat":39.8878505,"lng":-85.9357677,"coming_soon":false,"closed":false},
+  {"id":5285,"name":"Terre Haute – IN-46","street":"2102 South State Rd 46","city":"Terre Haute","state":"IN","zip":"47803","phone":"(812) 558-0942","hours":"Every Day 7am to 9pm","lat":39.44084896268376,"lng":-87.33226471616402,"coming_soon":false,"closed":true},
+  {"id":168,"name":"Anderson","street":"5010 S. Scatterfield Rd.","city":"Anderson","state":"IN","zip":"46016","phone":"(765) 622-5339","hours":"Every Day 7am to 9pm","lat":40.0637211,"lng":-85.652358,"coming_soon":false,"closed":false},
+  {"id":4969,"name":"Bloomington – East","street":"235 S Pete Ellis Dr.","city":"Bloomington","state":"IN","zip":"47408","phone":"(930) 260-0192","hours":"Every Day 7am to 9pm","lat":39.164561019482804,"lng":-86.49458252965292,"coming_soon":false,"closed":false},
+  {"id":826,"name":"Bloomington – West","street":"3430 W. 3rd Street","city":"Bloomington","state":"IN","zip":"47404","phone":"(812) 558-7204","hours":"Every Day 7am to 9pm","lat":39.1651251,"lng":-86.5779578,"coming_soon":false,"closed":false},
+  {"id":163,"name":"Columbus","street":"1525 National Rd.","city":"Columbus","state":"IN","zip":"47201","phone":"(812) 418-8791","hours":"Every Day 7am to 9pm","lat":39.2154829,"lng":-85.8816831,"coming_soon":false,"closed":false},
+  {"id":164,"name":"Kokomo","street":"1824 E. Hoffer St.","city":"Kokomo","state":"IN","zip":"46902","phone":"(765) 459-9254","hours":"Every Day 7am to 9pm","lat":40.4667415,"lng":-86.1086522,"coming_soon":false,"closed":false},
+  {"id":169,"name":"Lafayette","street":"4023 State Road 26 E","city":"Lafayette","state":"IN","zip":"47905","phone":"(765) 446-2622","hours":"Every Day 7am to 9pm","lat":40.4170778,"lng":-86.8297135,"coming_soon":false,"closed":false},
+  {"id":825,"name":"Merrillville","street":"501 W 81st Ave","city":"Merrillville","state":"IN","zip":"46410","phone":"(219) 525-6694","hours":"Every Day 7am to 9pm","lat":41.470438,"lng":-87.3430815,"coming_soon":false,"closed":false},
+  {"id":1129,"name":"Muncie","street":"601 W. McGalliard Road","city":"Muncie","state":"IN","zip":"47303","phone":"(765) 288-3252","hours":"Every Day 7am to 9pm","lat":40.2185689,"lng":-85.392624,"coming_soon":false,"closed":false},
+  {"id":3581,"name":"Munster","street":"111 Ridge Road","city":"Munster","state":"IN","zip":"46321","phone":"219-985-3890","hours":"Every Day 7am to 9pm","lat":41.56361428423305,"lng":-87.52348949770125,"coming_soon":false,"closed":false},
+  {"id":4587,"name":"Schererville","street":"605 U.S. 41","city":"Schererville","state":"IN","zip":"46375","phone":"(219) 247-8897","hours":"Every Day 7am to 9pm","lat":41.514841294732456,"lng":-87.47077164219449,"coming_soon":false,"closed":false},
+  {"id":2005,"name":"South Lafayette","street":"1805 Troxel Dr.","city":"Lafayette","state":"IN","zip":"47909","phone":"(765) 385-9039","hours":"Every Day 7am to 9pm","lat":40.3675785,"lng":-86.8752054,"coming_soon":false,"closed":false},
+  {"id":1936,"name":"St. John","street":"9705 Wicker Ave.","city":"St John","state":"IN","zip":"46373","phone":"(219) 351-3090","hours":"Every Day 7am to 9pm","lat":41.4428894,"lng":-87.469355,"coming_soon":false,"closed":false},
+  {"id":167,"name":"Terre Haute – US-41","street":"5010 S. US Hwy. 41","city":"Terre Haute","state":"IN","zip":"47802","phone":"(812) 298-1330","hours":"Every Day 7am to 9pm","lat":39.4066674,"lng":-87.4075209,"coming_soon":false,"closed":true},
+  {"id":1825,"name":"Valparaiso","street":"2615 LaPorte Ave.","city":"Valparaiso","state":"IN","zip":"46383","phone":"(219) 224-3395","hours":"Every Day 7am to 9pm","lat":41.4694408,"lng":-87.0280817,"coming_soon":false,"closed":false},
+  {"id":162,"name":"West Lafayette","street":"277 Sagamore Pkwy West","city":"West Lafayette","state":"IN","zip":"47906","phone":"(765) 463-1138","hours":"Every Day 7am to 9pm","lat":40.4525683,"lng":-86.9106773,"coming_soon":false,"closed":false},
+  {"id":4318,"name":"Eden Prairie","street":"16345 Terrey Pine Drive","city":"Eden Prairie","state":"MN","zip":"55344","phone":"612-682-8177","hours":"Exterior Wash: Every Day 7am to 9pm","lat":44.8615824,"lng":-93.484951,"coming_soon":false,"closed":false},
+  {"id":2094,"name":"Maple Grove","street":"13370 Grove Dr.","city":"Maple Grove","state":"MN","zip":"55369","phone":"(763) 520-8667","hours":"Every Day 7am to 9pm","lat":45.1043738,"lng":-93.4509665,"coming_soon":false,"closed":false},
+  {"id":2095,"name":"St. Cloud","street":"4118 Division St.","city":"St. Cloud","state":"MN","zip":"56301","phone":"763-398-0874","hours":"Every Day 7am to 9pm","lat":45.552775,"lng":-94.2094117,"coming_soon":false,"closed":false},
+  {"id":3422,"name":"Wayzata","street":"1405 Wayzata Blvd","city":"Wayzata","state":"MN","zip":"55391","phone":"(952) 960-8980","hours":"Every Day 7am to 9pm","lat":44.9716905,"lng":-93.495433,"coming_soon":false,"closed":false},
+  {"id":2627,"name":"West St. Paul","street":"1949 South Robert St","city":"West St Paul","state":"MN","zip":"55118","phone":"(651) 400-8944","hours":"Every Day 7am to 9pm","lat":44.8874382,"lng":-93.0809851,"coming_soon":false,"closed":false},
+  {"id":5283,"name":"Champaign","street":"2029 N Prospect Ave","city":"Champaign","state":"IL","zip":"61822","phone":"(217) 303-5779","hours":"Every Day 7am to 9pm","lat":40.13989257845443,"lng":-88.2585349230213,"coming_soon":false,"closed":true}
+];
+
+const map = new maplibregl.Map({
+  container: 'map',
+  style: 'https://tiles.openfreemap.org/styles/liberty',
+  center: [-86.15, 39.9],
+  zoom: 7
+});
+
+map.addControl(new maplibregl.NavigationControl(), 'top-right');
+
+map.on('load', () => {
+  LOCATIONS.forEach(loc => {
+    const el = document.createElement('div');
+    if (loc.closed) {
+      el.className = 'marker closed';
+    } else if (loc.coming_soon) {
+      el.className = 'marker soon';
+    } else {
+      el.className = 'marker active';
+    }
+
+    const addr = `${loc.street}, ${loc.city}, ${loc.state} ${loc.zip}`;
+    let badge = '';
+    if (loc.coming_soon) badge = '<span class="popup-badge badge-soon">Coming Soon</span>';
+    if (loc.closed)      badge = '<span class="popup-badge badge-closed">Closed</span>';
+
+    const popup = new maplibregl.Popup({ offset: 10, closeButton: false })
+      .setHTML(`<div class="popup-name">${loc.name}</div><div class="popup-addr">${addr}</div>${badge}`);
+
+    new maplibregl.Marker({ element: el })
+      .setLngLat([loc.lng, loc.lat])
+      .setPopup(popup)
+      .addTo(map);
+  });
+});
+</script>
+</body>
+</html>

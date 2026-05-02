@@ -1,0 +1,5582 @@
+[
+  {
+    "name": "Grace",
+    "street": "403 Us Highway 72 W",
+    "city": "Athens",
+    "state": "AL",
+    "zip": "35611-4207",
+    "lat": 34.7896805,
+    "lng": -86.9762497,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Limestone",
+    "street": "1321 Us Highway 72 E",
+    "city": "Athens",
+    "state": "AL",
+    "zip": "35611-4405",
+    "lat": 34.7849998,
+    "lng": -86.9438248,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Highway 280 CW",
+    "street": "4621 Hwy 280 South",
+    "city": "Birmingham",
+    "state": "AL",
+    "zip": "35242",
+    "lat": 33.4295616,
+    "lng": -86.7078171,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "9th Street",
+    "street": "2240 Beltline Rd Sw",
+    "city": "Decatur",
+    "state": "AL",
+    "zip": "35601-7001",
+    "lat": 34.5868988,
+    "lng": -87.025795,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Bassette Ave",
+    "street": "721 14th St Se",
+    "city": "Decatur",
+    "state": "AL",
+    "zip": "35601-5911",
+    "lat": 34.5777206,
+    "lng": -86.9779358,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Setter",
+    "street": "627 Beltline Rd Sw",
+    "city": "Decatur",
+    "state": "AL",
+    "zip": "35601",
+    "lat": 34.559021,
+    "lng": -86.9940186,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Azalea",
+    "street": "271 Azalea Dr",
+    "city": "Florence",
+    "state": "AL",
+    "zip": "35630-1733",
+    "lat": 34.8354111,
+    "lng": -87.6319809,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Cloverdale",
+    "street": "2914 Cloverdale Rd",
+    "city": "Florence",
+    "state": "AL",
+    "zip": "35633",
+    "lat": 34.8460388,
+    "lng": -87.68853,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Hartselle",
+    "street": "1206 Highway 31 Nw",
+    "city": "Hartselle",
+    "state": "AL",
+    "zip": "35640-4421",
+    "lat": 34.4538879,
+    "lng": -86.9462738,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "E. Madison",
+    "street": "5509 Promenade Point Pkwy",
+    "city": "Madison",
+    "state": "AL",
+    "zip": "35758-6701",
+    "lat": 34.7486496,
+    "lng": -86.7767258,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Madison",
+    "street": "5509 Promenade Point Pkwy",
+    "city": "Madison",
+    "state": "AL",
+    "zip": "35758-6701",
+    "lat": 34.7486496,
+    "lng": -86.7767258,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Muscle Shoals",
+    "street": "702 Avalon Ave",
+    "city": "Muscle Shoals",
+    "state": "AL",
+    "zip": "35661-2304",
+    "lat": 34.7442551,
+    "lng": -87.6641617,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Oxford",
+    "street": "65 Plaza Lane",
+    "city": "Oxford",
+    "state": "AL",
+    "zip": "36203",
+    "lat": 33.6012917,
+    "lng": -85.833992,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Vestavia Wash",
+    "street": "611 Montgomery Hwy",
+    "city": "Vestavia Hills",
+    "state": "AL",
+    "zip": "35216",
+    "lat": 33.4485779,
+    "lng": -86.7887802,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Sahuarita",
+    "street": "16250 S Rancho Sahuarita Blvd",
+    "city": "Sahuarita",
+    "state": "AZ",
+    "zip": "85629",
+    "lat": 31.9574394,
+    "lng": -110.9837265,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Sierra Vista",
+    "street": "3850 E Mlk Jr Pkwy",
+    "city": "Sierra Vista",
+    "state": "AZ",
+    "zip": "85635",
+    "lat": 31.5577908,
+    "lng": -110.2587585,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Cardinal",
+    "street": "2850 W Valencia Road",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85746",
+    "lat": 32.134449,
+    "lng": -111.027771,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Cortaro",
+    "street": "8215 N Courtney Page Way",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85743",
+    "lat": 32.3563499,
+    "lng": -111.0946426,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Craycroft",
+    "street": "5515 E Grant Rd",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85712",
+    "lat": 32.2510796,
+    "lng": -110.8745804,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "E. 22nd- Temporarily Closed",
+    "street": "6301 E 22nd St",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85710",
+    "lat": 32.2070503,
+    "lng": -110.8573151,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "E. Grant",
+    "street": "3150 E Grant Rd",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85716",
+    "lat": 32.2499886,
+    "lng": -110.9249191,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Euclid",
+    "street": "730 E Broadway Blvd",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85719",
+    "lat": 32.220871,
+    "lng": -110.9601135,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Houghton",
+    "street": "7471 S Houghton Rd",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85747",
+    "lat": 32.1161003,
+    "lng": -110.7720108,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Kino",
+    "street": "2975 S Kino Parkway",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85713",
+    "lat": 32.188221,
+    "lng": -110.9441986,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Midvale",
+    "street": "5075 S Midvale Park Rd",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85746",
+    "lat": 32.1602783,
+    "lng": -111.0005722,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Miracle Mile",
+    "street": "3050 N Oracle Rd",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85705",
+    "lat": 32.2626724,
+    "lng": -110.9775085,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "North Oracle",
+    "street": "4941 N Oracle Rd",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85704",
+    "lat": 32.2962608,
+    "lng": -110.9791641,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Oro Valley",
+    "street": "8175 N Oracle Rd",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85704",
+    "lat": 32.3546982,
+    "lng": -110.9748764,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Pandora Ave",
+    "street": "3820 S Pandora Ave",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85714",
+    "lat": 32.1772194,
+    "lng": -110.9934616,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "South Kolb",
+    "street": "2409 S Kolb Rd",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85710",
+    "lat": 32.1940727,
+    "lng": -110.8404846,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Speedway",
+    "street": "3101 E Speedway Blvd",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85716",
+    "lat": 32.2363319,
+    "lng": -110.9264908,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Swan",
+    "street": "4600 E Broadway Blvd",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85711-3512",
+    "lat": 32.2209473,
+    "lng": -110.8941269,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Tangerine",
+    "street": "11897 N Tangelo Park Place",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85653",
+    "lat": 32.4225693,
+    "lng": -111.1690826,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Tanque Verde",
+    "street": "6345 E Tanque Verde Rd",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85715",
+    "lat": 32.2448425,
+    "lng": -110.8564758,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Thornydale",
+    "street": "3870 W Cortaro Farms Rd",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85742",
+    "lat": 32.3594589,
+    "lng": -111.0484772,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Tucson Mall",
+    "street": "4646 N Oracle",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85705",
+    "lat": 32.2911606,
+    "lng": -110.97789,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Twin Peaks",
+    "street": "6520 W Marana Center Bl",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85742",
+    "lat": 32.3808289,
+    "lng": -111.1040878,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "W. River",
+    "street": "1435 W River Rd",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85704",
+    "lat": 32.296711,
+    "lng": -110.9963455,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Marguerita Ave",
+    "street": "1301 W Valley Blvd",
+    "city": "Alhambra",
+    "state": "CA",
+    "zip": "91803",
+    "lat": 34.0779495,
+    "lng": -118.1375275,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Brookhurst St",
+    "street": "1725 S Brookhurst St",
+    "city": "Anaheim",
+    "state": "CA",
+    "zip": "92804",
+    "lat": 33.8052216,
+    "lng": -117.9593811,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Bear Valley",
+    "street": "19389 Bear Valley Rd",
+    "city": "Apple Valley",
+    "state": "CA",
+    "zip": "92308",
+    "lat": 34.4703484,
+    "lng": -117.2391891,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Happy Trails Hwy",
+    "street": "20440 Outer Hwy 18",
+    "city": "Apple Valley",
+    "state": "CA",
+    "zip": "92307",
+    "lat": 34.5240402,
+    "lng": -117.2162094,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Applegate Ranch",
+    "street": "1001 Commerce Ave",
+    "city": "Atwater",
+    "state": "CA",
+    "zip": "95301",
+    "lat": 37.3429108,
+    "lng": -120.6098633,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Atwater",
+    "street": "307 E Bellevue Road",
+    "city": "Atwater",
+    "state": "CA",
+    "zip": "95301",
+    "lat": 37.360939,
+    "lng": -120.5933685,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "23rd Street",
+    "street": "1400 23rd St",
+    "city": "Bakersfield",
+    "state": "CA",
+    "zip": "93301",
+    "lat": 35.3804016,
+    "lng": -119.0179138,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Buena Vista",
+    "street": "3300 Buena Vista Rd Suite B",
+    "city": "Bakersfield",
+    "state": "CA",
+    "zip": "93311",
+    "lat": 35.3245697,
+    "lng": -119.1266098,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Calloway",
+    "street": "1011 Calloway",
+    "city": "Bakersfield",
+    "state": "CA",
+    "zip": "93312",
+    "lat": 35.3678513,
+    "lng": -119.1115875,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Coffee",
+    "street": "3301 Coffee Rd",
+    "city": "Bakersfield",
+    "state": "CA",
+    "zip": "93308",
+    "lat": 35.3897629,
+    "lng": -119.0928345,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Gosford",
+    "street": "4901 Gosford Rd",
+    "city": "Bakersfield",
+    "state": "CA",
+    "zip": "93313",
+    "lat": 35.3104973,
+    "lng": -119.0925903,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Heath",
+    "street": "16214 Stockdale Hwy",
+    "city": "Bakersfield",
+    "state": "CA",
+    "zip": "93314",
+    "lat": 35.3555603,
+    "lng": -119.1827927,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Hosking",
+    "street": "1601 Hosking Ave",
+    "city": "Bakersfield",
+    "state": "CA",
+    "zip": "93307",
+    "lat": 35.2809906,
+    "lng": -119.0198822,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Ming Ave",
+    "street": "4901 Ming Ave",
+    "city": "Bakersfield",
+    "state": "CA",
+    "zip": "93309",
+    "lat": 35.3390808,
+    "lng": -119.0565033,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Mount Vernon",
+    "street": "2619 Mount Vernon",
+    "city": "Bakersfield",
+    "state": "CA",
+    "zip": "93306",
+    "lat": 35.3924789,
+    "lng": -118.9665833,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Olive",
+    "street": "5375 Olive Dr",
+    "city": "Bakersfield",
+    "state": "CA",
+    "zip": "93308",
+    "lat": 35.4120407,
+    "lng": -119.0618134,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Panama",
+    "street": "3201 Panama Lane",
+    "city": "Bakersfield",
+    "state": "CA",
+    "zip": "93313",
+    "lat": 35.2955017,
+    "lng": -119.037529,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Rosedale Hwy",
+    "street": "11921 Rosedale Highway",
+    "city": "Bakersfield",
+    "state": "CA",
+    "zip": "93312",
+    "lat": 35.3830986,
+    "lng": -119.1348267,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Stockdale",
+    "street": "11417 Stockdale Hwy",
+    "city": "Bakersfield",
+    "state": "CA",
+    "zip": "93311",
+    "lat": 35.3483009,
+    "lng": -119.1293411,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Ceres",
+    "street": "1210 E Whitmore Ave",
+    "city": "Ceres",
+    "state": "CA",
+    "zip": "95307",
+    "lat": 37.5945511,
+    "lng": -120.9769516,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Hatch",
+    "street": "1740 East Hatch Road",
+    "city": "Ceres",
+    "state": "CA",
+    "zip": "95307",
+    "lat": 37.6087685,
+    "lng": -120.964798,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Whitmore",
+    "street": "2954 E Whitmore Avenue",
+    "city": "Ceres",
+    "state": "CA",
+    "zip": "95307",
+    "lat": 37.5941772,
+    "lng": -120.93927,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Delano",
+    "street": "1925 Cecil Ave",
+    "city": "Delano",
+    "state": "CA",
+    "zip": "93215",
+    "lat": 35.776123,
+    "lng": -119.2281265,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Dinuba",
+    "street": "970 W El Monte Way",
+    "city": "Dinuba",
+    "state": "CA",
+    "zip": "93618",
+    "lat": 36.545723,
+    "lng": -119.4059143,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "11th Ave",
+    "street": "469 N 11th Ave",
+    "city": "Hanford",
+    "state": "CA",
+    "zip": "93230",
+    "lat": 36.3292618,
+    "lng": -119.6544876,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Centennial Way",
+    "street": "1981 W Lacey Blvd",
+    "city": "Hanford",
+    "state": "CA",
+    "zip": "93230",
+    "lat": 36.3275337,
+    "lng": -119.6784973,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Escondido Ave",
+    "street": "13311 Main St",
+    "city": "Hesperia",
+    "state": "CA",
+    "zip": "92345",
+    "lat": 34.4254913,
+    "lng": -117.3723984,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Jellico Ave",
+    "street": "17112 Main Street",
+    "city": "Hesperia",
+    "state": "CA",
+    "zip": "92345",
+    "lat": 34.4201508,
+    "lng": -117.2893372,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Inglewood Ave",
+    "street": "4810 W Imperial Hwy",
+    "city": "Inglewood",
+    "state": "CA",
+    "zip": "90304",
+    "lat": 33.9304886,
+    "lng": -118.3616714,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Avenue J",
+    "street": "524 W Ave J",
+    "city": "Lancaster",
+    "state": "CA",
+    "zip": "93534",
+    "lat": 34.6888504,
+    "lng": -118.1365967,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Lodi Wash",
+    "street": "301 W Kettleman Lane",
+    "city": "Lodi",
+    "state": "CA",
+    "zip": "95240",
+    "lat": 38.1159096,
+    "lng": -121.2778397,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Los Banos",
+    "street": "1230 E Pacheco Blvd",
+    "city": "Los Banos",
+    "state": "CA",
+    "zip": "93635",
+    "lat": 37.0574379,
+    "lng": -120.8379364,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Airport",
+    "street": "1050 S Airport Way",
+    "city": "Manteca",
+    "state": "CA",
+    "zip": "95337",
+    "lat": 37.7888374,
+    "lng": -121.2515488,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Manteca",
+    "street": "1115 W Lathrop Road",
+    "city": "Manteca",
+    "state": "CA",
+    "zip": "95336",
+    "lat": 37.8268166,
+    "lng": -121.2337036,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Bear Creek",
+    "street": "2905 G St",
+    "city": "Merced",
+    "state": "CA",
+    "zip": "95340",
+    "lat": 37.3122292,
+    "lng": -120.4702225,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "G St",
+    "street": "3690 G Street",
+    "city": "Merced",
+    "state": "CA",
+    "zip": "95340",
+    "lat": 37.3345604,
+    "lng": -120.4684525,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Merced",
+    "street": "1800 West Olive Ave",
+    "city": "Merced",
+    "state": "CA",
+    "zip": "95348",
+    "lat": 37.3186569,
+    "lng": -120.500267,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Merced 16th",
+    "street": "930 W 16th Street",
+    "city": "Merced",
+    "state": "CA",
+    "zip": "95340",
+    "lat": 37.3025665,
+    "lng": -120.4905701,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Briggsmore",
+    "street": "1800 Prescott Rd Ste A",
+    "city": "Modesto",
+    "state": "CA",
+    "zip": "95350",
+    "lat": 37.6704483,
+    "lng": -121.0307236,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Dale Road",
+    "street": "4120 Dale Road",
+    "city": "Modesto",
+    "state": "CA",
+    "zip": "95356",
+    "lat": 37.6987114,
+    "lng": -121.0494614,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "North McHenry",
+    "street": "3520 Mchenry Avenue",
+    "city": "Modesto",
+    "state": "CA",
+    "zip": "95356",
+    "lat": 37.6899757,
+    "lng": -120.9937973,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Plaza",
+    "street": "1736 Oakdale Rd",
+    "city": "Modesto",
+    "state": "CA",
+    "zip": "95355",
+    "lat": 37.6695557,
+    "lng": -120.9569092,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "South McHenry",
+    "street": "448 Mchenry Avenue",
+    "city": "Modesto",
+    "state": "CA",
+    "zip": "95354",
+    "lat": 37.6505318,
+    "lng": -120.9933243,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Montebello Blvd",
+    "street": "740 Washington Blvd",
+    "city": "Montebello",
+    "state": "CA",
+    "zip": "90640",
+    "lat": 33.9939156,
+    "lng": -118.1157303,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Stoneridge",
+    "street": "27240 Eucalyptus Ave",
+    "city": "Moreno Valley",
+    "state": "CA",
+    "zip": "92555",
+    "lat": 33.9373245,
+    "lng": -117.1840515,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Oakdale",
+    "street": "526 East F Street",
+    "city": "Oakdale",
+    "state": "CA",
+    "zip": "95361",
+    "lat": 37.7680016,
+    "lng": -120.8448715,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Hwy 138",
+    "street": "1822 E Palmdale Blvd",
+    "city": "Palmdale",
+    "state": "CA",
+    "zip": "93550",
+    "lat": 34.5790901,
+    "lng": -118.0957336,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Palmdale",
+    "street": "39315 10th St West",
+    "city": "Palmdale",
+    "state": "CA",
+    "zip": "93551",
+    "lat": 34.5973053,
+    "lng": -118.1484299,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Patterson",
+    "street": "945 Sperry Avenue",
+    "city": "Patterson",
+    "state": "CA",
+    "zip": "95363",
+    "lat": 37.4649162,
+    "lng": -121.1387787,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Henderson Ave",
+    "street": "1085 W Henderson Ave",
+    "city": "Porterville",
+    "state": "CA",
+    "zip": "93257",
+    "lat": 36.0788383,
+    "lng": -119.0418396,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Jaye Street",
+    "street": "600 S Jaye St",
+    "city": "Porterville",
+    "state": "CA",
+    "zip": "93257",
+    "lat": 36.0545692,
+    "lng": -119.025856,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Reedley",
+    "street": "1595 W Manning Ave",
+    "city": "Reedley",
+    "state": "CA",
+    "zip": "93654",
+    "lat": 36.6034279,
+    "lng": -119.4656677,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Rialto",
+    "street": "127 West Valley Blvd",
+    "city": "Rialto",
+    "state": "CA",
+    "zip": "92376",
+    "lat": 34.0701599,
+    "lng": -117.3713684,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Claribel",
+    "street": "2369 Claribel Road",
+    "city": "Riverbank",
+    "state": "CA",
+    "zip": "95367",
+    "lat": 37.7114792,
+    "lng": -120.954689,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Riverbank",
+    "street": "2375 Patterson Road",
+    "city": "Riverbank",
+    "state": "CA",
+    "zip": "95367",
+    "lat": 37.732933,
+    "lng": -120.9547806,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Varsity",
+    "street": "4212 N Varsity Ave",
+    "city": "San Bernardino",
+    "state": "CA",
+    "zip": "92407",
+    "lat": 34.1692886,
+    "lng": -117.3345795,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Maybury St",
+    "street": "1703 17th St",
+    "city": "Santa Ana",
+    "state": "CA",
+    "zip": "92705",
+    "lat": 33.7602882,
+    "lng": -117.8435135,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Carmen",
+    "street": "1925 S Broadway",
+    "city": "Santa Maria",
+    "state": "CA",
+    "zip": "93454",
+    "lat": 34.9261017,
+    "lng": -121.0,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Tracy",
+    "street": "1725 W 11th Street",
+    "city": "Tracy",
+    "state": "CA",
+    "zip": "95376",
+    "lat": 37.7399788,
+    "lng": -121.4480743,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Tulare",
+    "street": "1620 Hillman St",
+    "city": "Tulare",
+    "state": "CA",
+    "zip": "93274",
+    "lat": 36.2289314,
+    "lng": -119.3305054,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Geer",
+    "street": "1400 Geer Road",
+    "city": "Turlock",
+    "state": "CA",
+    "zip": "95380",
+    "lat": 37.5060272,
+    "lng": -120.8479156,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Geer Wash",
+    "street": "1400 Geer Road",
+    "city": "Turlock",
+    "state": "CA",
+    "zip": "95380",
+    "lat": 37.5060272,
+    "lng": -120.8479156,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Monte Vista",
+    "street": "980 W Monte Vista Avenue",
+    "city": "Turlock",
+    "state": "CA",
+    "zip": "95382",
+    "lat": 37.5214043,
+    "lng": -120.8611526,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Tuolumne",
+    "street": "2530 Countryside Dr",
+    "city": "Turlock",
+    "state": "CA",
+    "zip": "95380",
+    "lat": 37.514061,
+    "lng": -120.8771515,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Industrial Blvd",
+    "street": "12147 Industrial Blvd",
+    "city": "Victorville",
+    "state": "CA",
+    "zip": "92395",
+    "lat": 34.4715195,
+    "lng": -117.282341,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "McArt",
+    "street": "15200 Palmdale Road",
+    "city": "Victorville",
+    "state": "CA",
+    "zip": "92392",
+    "lat": 34.5072289,
+    "lng": -117.3318634,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Topaz",
+    "street": "12875 Bear Valley Rd",
+    "city": "Victorville",
+    "state": "CA",
+    "zip": "92392",
+    "lat": 34.4701118,
+    "lng": -117.3824387,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Mooney Blvd",
+    "street": "1920 S Mooney Blvd",
+    "city": "Visalia",
+    "state": "CA",
+    "zip": "93277",
+    "lat": 36.3131104,
+    "lng": -119.3146515,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Prospect Ave",
+    "street": "24273 E Prospect Ave",
+    "city": "Aurora",
+    "state": "CO",
+    "zip": "80016",
+    "lat": 39.5995712,
+    "lng": -104.7053833,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Academy Blvd",
+    "street": "4275 N Academy Blvd",
+    "city": "Colorado Springs",
+    "state": "CO",
+    "zip": "80918",
+    "lat": 38.8933716,
+    "lng": -104.7569885,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Bradley",
+    "street": "1822 Main St",
+    "city": "Colorado Springs",
+    "state": "CO",
+    "zip": "80911-1152",
+    "lat": 38.7685204,
+    "lng": -104.7400818,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Constitution",
+    "street": "6015 Constitution Ave",
+    "city": "Colorado Springs",
+    "state": "CO",
+    "zip": "80915",
+    "lat": 38.870079,
+    "lng": -104.716568,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Old Ranch Rd",
+    "street": "3581 Blue Horizon View",
+    "city": "Colorado Springs",
+    "state": "CO",
+    "zip": "80924",
+    "lat": 38.9834595,
+    "lng": -104.7609177,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Woodmen",
+    "street": "5366 New Car Dr",
+    "city": "Colorado Springs",
+    "state": "CO",
+    "zip": "80923-8854",
+    "lat": 38.9395294,
+    "lng": -104.7271652,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Runway\u00a0North",
+    "street": "8809 E 46th Ave",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80238",
+    "lat": 39.7815514,
+    "lng": -104.8855515,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Fountain",
+    "street": "7980 Fountain Mesa Rd",
+    "city": "Fountain",
+    "state": "CO",
+    "zip": "80817",
+    "lat": 38.7165413,
+    "lng": -104.7019501,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Monument",
+    "street": "980 W Baptist Rd",
+    "city": "Monument",
+    "state": "CO",
+    "zip": "80132",
+    "lat": 39.0578194,
+    "lng": -104.8409195,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Glenroyal",
+    "street": "1711 S Pueblo Blvd",
+    "city": "Pueblo",
+    "state": "CO",
+    "zip": "81005",
+    "lat": 38.2378883,
+    "lng": -104.6641617,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Pueblo",
+    "street": "3215 N Elizabeth St",
+    "city": "Pueblo",
+    "state": "CO",
+    "zip": "81008",
+    "lat": 38.3027573,
+    "lng": -104.6159515,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Altamonte",
+    "street": "401 S State Rd 434",
+    "city": "Altamonte Springs",
+    "state": "FL",
+    "zip": "32714",
+    "lat": 28.6558495,
+    "lng": -81.4185562,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Bonita",
+    "street": "11899 Bonita Beach Rd Se",
+    "city": "Bonita Springs",
+    "state": "FL",
+    "zip": "34135",
+    "lat": 26.3309193,
+    "lng": -81.7572327,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Adamo",
+    "street": "9995 E Adamo Dr",
+    "city": "Brandon",
+    "state": "FL",
+    "zip": "33619",
+    "lat": 27.9445286,
+    "lng": -82.3384171,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Brandon",
+    "street": "328 W Brandon Blvd",
+    "city": "Brandon",
+    "state": "FL",
+    "zip": "33511",
+    "lat": 27.9381065,
+    "lng": -82.2894745,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Cape Coral Pkwy",
+    "street": "1707 Cape Coral Pkwy E",
+    "city": "Cape Coral",
+    "state": "FL",
+    "zip": "33904",
+    "lat": 26.5631294,
+    "lng": -81.9411697,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Del Prado",
+    "street": "1009 Del Prado Blvd S",
+    "city": "Cape Coral",
+    "state": "FL",
+    "zip": "33990",
+    "lat": 26.6335602,
+    "lng": -81.9402161,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Liberty Park",
+    "street": "2474 Liberty Park Dr",
+    "city": "Cape Coral",
+    "state": "FL",
+    "zip": "33909",
+    "lat": 26.6766605,
+    "lng": -81.9238434,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "NE 16th Place",
+    "street": "318 Ne 16th Place",
+    "city": "Cape Coral",
+    "state": "FL",
+    "zip": "33909",
+    "lat": 26.6590443,
+    "lng": -81.9404755,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Pine Island",
+    "street": "1203 Sw Pine Island Rd",
+    "city": "Cape Coral",
+    "state": "FL",
+    "zip": "33991",
+    "lat": 26.641901,
+    "lng": -81.9993286,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Santa Barbara Blvd",
+    "street": "2002 Santa Barbara Blvd",
+    "city": "Cape Coral",
+    "state": "FL",
+    "zip": "33991",
+    "lat": 26.6147919,
+    "lng": -81.9746399,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Skyline Blvd",
+    "street": "2537 Skyline Blvd",
+    "city": "Cape Coral",
+    "state": "FL",
+    "zip": "33914",
+    "lat": 26.6043243,
+    "lng": -81.9903564,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Fern Park",
+    "street": "6501 South Us Hwy 17 92",
+    "city": "Casselberry",
+    "state": "FL",
+    "zip": "32730",
+    "lat": 28.6576748,
+    "lng": -81.3429947,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Clearwater",
+    "street": "1880 Gulf To Bay Blvd",
+    "city": "Clearwater",
+    "state": "FL",
+    "zip": "33765",
+    "lat": 27.9609585,
+    "lng": -82.7594757,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Clermont",
+    "street": "1355 E Highway 50",
+    "city": "Clermont",
+    "state": "FL",
+    "zip": "34711-3225",
+    "lat": 28.5459194,
+    "lng": -81.7330933,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Highway 27",
+    "street": "3195 S Hwy 27",
+    "city": "Clermont",
+    "state": "FL",
+    "zip": "34711",
+    "lat": 28.5213451,
+    "lng": -81.7283401,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Hwy 50",
+    "street": "17017 Fl-50",
+    "city": "Clermont",
+    "state": "FL",
+    "zip": "34711",
+    "lat": 28.5470295,
+    "lng": -81.6712494,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "LPGA",
+    "street": "1881 Lpga Blvd",
+    "city": "Daytona Beach",
+    "state": "FL",
+    "zip": "32117",
+    "lat": 29.2266407,
+    "lng": -81.0842896,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Deltona",
+    "street": "3119 Howland Blvd",
+    "city": "Deltona",
+    "state": "FL",
+    "zip": "32725",
+    "lat": 28.9470119,
+    "lng": -81.2408295,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Estero",
+    "street": "8030 Tyson Eye Way",
+    "city": "Estero",
+    "state": "FL",
+    "zip": "33967",
+    "lat": 26.4526196,
+    "lng": -81.8206177,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Arborwood",
+    "street": "13601 Goldenwood Dr",
+    "city": "Fort Myers",
+    "state": "FL",
+    "zip": "33913",
+    "lat": 26.5480099,
+    "lng": -81.788002,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Cody Lee",
+    "street": "8851 Cody Lee Rd",
+    "city": "Fort Myers",
+    "state": "FL",
+    "zip": "33912",
+    "lat": 26.5466404,
+    "lng": -81.8095474,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Metro Pkwy",
+    "street": "2811 Colonial Blvd",
+    "city": "Fort Myers",
+    "state": "FL",
+    "zip": "33966",
+    "lat": 26.59795,
+    "lng": -81.8547134,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Hudson",
+    "street": "12611 Us Highway 19",
+    "city": "Hudson",
+    "state": "FL",
+    "zip": "34667-1955",
+    "lat": 28.3403702,
+    "lng": -82.7000809,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "State Route 52",
+    "street": "9215 State Route 52",
+    "city": "Hudson",
+    "state": "FL",
+    "zip": "34669",
+    "lat": 28.3318291,
+    "lng": -82.6626282,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Goldenrod",
+    "street": "3775 Nw Federal Hwy",
+    "city": "Jensen Beach",
+    "state": "FL",
+    "zip": "34957",
+    "lat": 27.2509403,
+    "lng": -80.2749023,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Kissimmee",
+    "street": "4573 W Irlo Bronson Memorial Hwy",
+    "city": "Kissimmee",
+    "state": "FL",
+    "zip": "34746",
+    "lat": 28.3110256,
+    "lng": -81.4650574,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Oaks Blvd",
+    "street": "3170 S John Young Pkwy",
+    "city": "Kissimmee",
+    "state": "FL",
+    "zip": "34746",
+    "lat": 28.2621994,
+    "lng": -81.432663,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Lake Mary Wash",
+    "street": "3720 Lake Emma Rd",
+    "city": "Lake Mary",
+    "state": "FL",
+    "zip": "32746",
+    "lat": 28.7538967,
+    "lng": -81.3590622,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Bartow Road",
+    "street": "3115 Us-98",
+    "city": "Lakeland",
+    "state": "FL",
+    "zip": "33803",
+    "lat": 28.0121803,
+    "lng": -81.9126663,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Florida Ave S",
+    "street": "6051 Florida Ave S",
+    "city": "Lakeland",
+    "state": "FL",
+    "zip": "33813",
+    "lat": 27.9563007,
+    "lng": -81.9686432,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Hwy 98 N",
+    "street": "5735 Us-98 N",
+    "city": "Lakeland",
+    "state": "FL",
+    "zip": "33809",
+    "lat": 28.1183701,
+    "lng": -81.9728928,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Miriam",
+    "street": "5031 S Florida Ave",
+    "city": "Lakeland",
+    "state": "FL",
+    "zip": "33813-2511",
+    "lat": 27.973402,
+    "lng": -81.9619598,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Hypoluxo",
+    "street": "1833 Hypoluxo Rd",
+    "city": "Lantana",
+    "state": "FL",
+    "zip": "33462",
+    "lat": 26.5731506,
+    "lng": -80.0717392,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Leesburg",
+    "street": "10041 Us Hwy 441",
+    "city": "Leesburg",
+    "state": "FL",
+    "zip": "34788",
+    "lat": 28.8245602,
+    "lng": -81.7900467,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Land O Lakes",
+    "street": "24124 State Road 54",
+    "city": "Lutz",
+    "state": "FL",
+    "zip": "33559",
+    "lat": 28.1851501,
+    "lng": -82.4190521,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Irwin",
+    "street": "1164 W New Haven Ave",
+    "city": "Melbourne",
+    "state": "FL",
+    "zip": "32904",
+    "lat": 28.0795193,
+    "lng": -80.6407089,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Melbourne Wash",
+    "street": "7940 N Wickham Rd",
+    "city": "Melbourne",
+    "state": "FL",
+    "zip": "32940",
+    "lat": 28.2314911,
+    "lng": -80.7028656,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Cutler Bay",
+    "street": "21550 Sw 112th Ave",
+    "city": "Miami",
+    "state": "FL",
+    "zip": "33189",
+    "lat": 25.5671902,
+    "lng": -80.372467,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Mt. Dora",
+    "street": "18805 Us-441",
+    "city": "Mount Dora",
+    "state": "FL",
+    "zip": "32757",
+    "lat": 28.8247337,
+    "lng": -81.6449051,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Mulberry",
+    "street": "6691 Church Ave N",
+    "city": "Mulberry",
+    "state": "FL",
+    "zip": "33860",
+    "lat": 27.9320297,
+    "lng": -81.9733124,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Airport Pulling Rd",
+    "street": "894 Airport Pulling Rd",
+    "city": "Naples",
+    "state": "FL",
+    "zip": "34104",
+    "lat": 26.1620293,
+    "lng": -81.7671814,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Rattlesnake",
+    "street": "7405 Rattlesnake Hammock Rd",
+    "city": "Naples",
+    "state": "FL",
+    "zip": "34114",
+    "lat": 26.1089802,
+    "lng": -81.688858,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Ocoee",
+    "street": "11301 Colonial Dr",
+    "city": "Ocoee",
+    "state": "FL",
+    "zip": "34761-3302",
+    "lat": 28.5519867,
+    "lng": -81.547348,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Chickasaw",
+    "street": "7958 E Colonial Dr",
+    "city": "Orlando",
+    "state": "FL",
+    "zip": "32807",
+    "lat": 28.5676231,
+    "lng": -81.2790909,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Colonial",
+    "street": "12180 E Colonial Dr",
+    "city": "Orlando",
+    "state": "FL",
+    "zip": "32826",
+    "lat": 28.5655403,
+    "lng": -81.2007904,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Curry Ford",
+    "street": "9900 Curry Ford Rd",
+    "city": "Orlando",
+    "state": "FL",
+    "zip": "32825",
+    "lat": 28.5097294,
+    "lng": -81.2460403,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Lake Nona",
+    "street": "11317 Narcoossee Rd",
+    "city": "Orlando",
+    "state": "FL",
+    "zip": "32832",
+    "lat": 28.4028492,
+    "lng": -81.2436829,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Landstar",
+    "street": "13785 Landstar Blvd",
+    "city": "Orlando",
+    "state": "FL",
+    "zip": "32824",
+    "lat": 28.3670597,
+    "lng": -81.3664932,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Lee Rd",
+    "street": "852 Lee Rd",
+    "city": "Orlando",
+    "state": "FL",
+    "zip": "32810-5519",
+    "lat": 28.6073875,
+    "lng": -81.3925629,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Millenia",
+    "street": "4588 Power Center Ln",
+    "city": "Orlando",
+    "state": "FL",
+    "zip": "32839",
+    "lat": 28.4948101,
+    "lng": -81.4228134,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Old Cheney Hwy",
+    "street": "14540 E Colonial Dr",
+    "city": "Orlando",
+    "state": "FL",
+    "zip": "32826",
+    "lat": 28.5646801,
+    "lng": -81.1672211,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Orange Blossom",
+    "street": "5275 S Orange Blossom Trail",
+    "city": "Orlando",
+    "state": "FL",
+    "zip": "32839",
+    "lat": 28.485033,
+    "lng": -81.3961487,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Semoran",
+    "street": "1405 S Semoran Blvd",
+    "city": "Orlando",
+    "state": "FL",
+    "zip": "32807",
+    "lat": 28.5260296,
+    "lng": -81.3094864,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Silver Star",
+    "street": "4551 Silver Star Rd",
+    "city": "Orlando",
+    "state": "FL",
+    "zip": "32808",
+    "lat": 28.5788593,
+    "lng": -81.4418411,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Ormond Beach",
+    "street": "49 S Yonge St",
+    "city": "Ormond Beach",
+    "state": "FL",
+    "zip": "32174",
+    "lat": 29.2817726,
+    "lng": -81.0607986,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Oviedo",
+    "street": "306 W Mitchell Hammock Rd",
+    "city": "Oviedo",
+    "state": "FL",
+    "zip": "32765",
+    "lat": 28.6543903,
+    "lng": -81.2135162,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Red Bug",
+    "street": "7249 Red Bug Lake Rd",
+    "city": "Oviedo",
+    "state": "FL",
+    "zip": "32765",
+    "lat": 28.6477699,
+    "lng": -81.2462082,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Palm Coast",
+    "street": "110 Cypress Point Pkwy",
+    "city": "Palm Coast",
+    "state": "FL",
+    "zip": "32164",
+    "lat": 29.5492001,
+    "lng": -81.2331619,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Park Ridge",
+    "street": "6801 Park Blvd",
+    "city": "Pinellas Park",
+    "state": "FL",
+    "zip": "33781",
+    "lat": 27.8397102,
+    "lng": -82.7328415,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Poinciana",
+    "street": "530 Cypress Pkwy",
+    "city": "Poinciana",
+    "state": "FL",
+    "zip": "34759",
+    "lat": 28.1452808,
+    "lng": -81.4650192,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "McCall",
+    "street": "12561 S Mccall Rd",
+    "city": "Port Charlotte",
+    "state": "FL",
+    "zip": "33981",
+    "lat": 26.9321308,
+    "lng": -82.2391586,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Clyde Morris Blvd",
+    "street": "3807 Clyde Morris Blvd",
+    "city": "Port Orange",
+    "state": "FL",
+    "zip": "32129",
+    "lat": 29.1417904,
+    "lng": -81.0346985,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Port Orange",
+    "street": "1786 Dunlawton Ave",
+    "city": "Port Orange",
+    "state": "FL",
+    "zip": "32127",
+    "lat": 29.1098156,
+    "lng": -81.0251999,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Port St. Lucie",
+    "street": "229 Sw Port St Lucie Blvd",
+    "city": "Port Saint Lucie",
+    "state": "FL",
+    "zip": "34984",
+    "lat": 27.2747593,
+    "lng": -80.3522797,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "S Federal Hwy",
+    "street": "9200 Us-1",
+    "city": "Port Saint Lucie",
+    "state": "FL",
+    "zip": "34952",
+    "lat": 27.2987995,
+    "lng": -80.3036194,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Viera",
+    "street": "1955 Viera Blvd",
+    "city": "Rockledge",
+    "state": "FL",
+    "zip": "32955",
+    "lat": 28.2650452,
+    "lng": -80.7203979,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Commerce Ctr Dr",
+    "street": "4670 13th St",
+    "city": "Saint Cloud",
+    "state": "FL",
+    "zip": "34769",
+    "lat": 28.2570076,
+    "lng": -81.321228,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Irlo Bronson",
+    "street": "716 E 13th Street",
+    "city": "Saint Cloud",
+    "state": "FL",
+    "zip": "34769",
+    "lat": 28.2463436,
+    "lng": -81.2606812,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Neptune",
+    "street": "4607 Neptune Rd",
+    "city": "Saint Cloud",
+    "state": "FL",
+    "zip": "34769",
+    "lat": 28.2481003,
+    "lng": -81.3173294,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "French Ave",
+    "street": "2418 S French Ave",
+    "city": "Sanford",
+    "state": "FL",
+    "zip": "32771",
+    "lat": 28.7890205,
+    "lng": -81.2736816,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Sanford",
+    "street": "1851 Rinehart Rd",
+    "city": "Sanford",
+    "state": "FL",
+    "zip": "32771",
+    "lat": 28.809454,
+    "lng": -81.3303833,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Sanford Wash",
+    "street": "1851 Rinehart Rd",
+    "city": "Sanford",
+    "state": "FL",
+    "zip": "32771",
+    "lat": 28.809454,
+    "lng": -81.3303833,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Seminole",
+    "street": "10471 Park Blvd",
+    "city": "Seminole",
+    "state": "FL",
+    "zip": "33772",
+    "lat": 27.8399944,
+    "lng": -82.7844696,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Spring Hill",
+    "street": "4330 Commercial Way",
+    "city": "Spring Hill",
+    "state": "FL",
+    "zip": "34606",
+    "lat": 28.4926682,
+    "lng": -82.5966949,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Bruce B Downs",
+    "street": "20306 Trout Creek Dr",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33647",
+    "lat": 28.1629906,
+    "lng": -82.3541183,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Dale Mabry",
+    "street": "2230 N Dale Mabry",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33607",
+    "lat": 27.9613743,
+    "lng": -82.5060043,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Gandy",
+    "street": "3622 Gandy Blvd",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33611",
+    "lat": 27.8931408,
+    "lng": -82.503273,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Hillsborough",
+    "street": "12806 W Hillsborough Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33635",
+    "lat": 28.0287895,
+    "lng": -82.638031,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "North Dale Mabry",
+    "street": "8101 North Dale Mabry",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33614",
+    "lat": 28.0218811,
+    "lng": -82.5042496,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Tavares",
+    "street": "660 E Burleigh Blvd",
+    "city": "Tavares",
+    "state": "FL",
+    "zip": "32778",
+    "lat": 28.8194599,
+    "lng": -81.7218628,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Belvedere",
+    "street": "2505 Parr Dr",
+    "city": "The Villages",
+    "state": "FL",
+    "zip": "32162",
+    "lat": 28.9264679,
+    "lng": -82.0154343,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Titusville",
+    "street": "3353 Columbia Blvd",
+    "city": "Titusville",
+    "state": "FL",
+    "zip": "32780",
+    "lat": 28.5531254,
+    "lng": -80.8456039,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Wesley Chapel",
+    "street": "29891 State Road 54",
+    "city": "Wesley Chapel",
+    "state": "FL",
+    "zip": "33543",
+    "lat": 28.2409306,
+    "lng": -82.3214874,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Long Key",
+    "street": "5949 Seven Mile Dr",
+    "city": "Wildwood",
+    "state": "FL",
+    "zip": "34785",
+    "lat": 28.8659801,
+    "lng": -82.0037842,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Cypress Gardens",
+    "street": "7468 Cypress Gardens Blvd",
+    "city": "Winter Haven",
+    "state": "FL",
+    "zip": "33884",
+    "lat": 27.9779186,
+    "lng": -81.6459808,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Havendale Blvd",
+    "street": "1001 Havendale Blvd Nw & 2001 10th St Nw",
+    "city": "Winter Haven",
+    "state": "FL",
+    "zip": "33881",
+    "lat": 28.0444202,
+    "lng": -81.737709,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Winter Haven",
+    "street": "1491 3rd Street",
+    "city": "Winter Haven",
+    "state": "FL",
+    "zip": "33881",
+    "lat": 28.0083294,
+    "lng": -81.7313919,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Zephyrhills",
+    "street": "6353 Gall Boulevard",
+    "city": "Zephyrhills",
+    "state": "FL",
+    "zip": "33542",
+    "lat": 28.2503204,
+    "lng": -82.1887894,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Acworth",
+    "street": "3530 Cobb Pkwy Nw",
+    "city": "Acworth",
+    "state": "GA",
+    "zip": "30101-4016",
+    "lat": 34.0404091,
+    "lng": -84.6919174,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "State Bridge",
+    "street": "11110 State Bridge Rd",
+    "city": "Alpharetta",
+    "state": "GA",
+    "zip": "30022",
+    "lat": 34.0557404,
+    "lng": -84.2304764,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Athens",
+    "street": "1035 Parkway Blvd",
+    "city": "Athens",
+    "state": "GA",
+    "zip": "30606-6171",
+    "lat": 33.9215088,
+    "lng": -83.4417572,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Piedmont",
+    "street": "2980 Piedmont Rd",
+    "city": "Atlanta",
+    "state": "GA",
+    "zip": "30305",
+    "lat": 33.8362694,
+    "lng": -84.3687286,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Ponce De Leon",
+    "street": "575 Ponce De Leon",
+    "city": "Atlanta",
+    "state": "GA",
+    "zip": "30308",
+    "lat": 33.7731094,
+    "lng": -84.3682098,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Buford",
+    "street": "2825 Buford Dr",
+    "city": "Buford",
+    "state": "GA",
+    "zip": "30519",
+    "lat": 34.0487137,
+    "lng": -83.9925537,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Riverstone",
+    "street": "651 Riverstone Pkwy",
+    "city": "Canton",
+    "state": "GA",
+    "zip": "30114",
+    "lat": 34.2462883,
+    "lng": -84.4822083,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Old National",
+    "street": "6165 Old National Hwy",
+    "city": "College Park",
+    "state": "GA",
+    "zip": "30349",
+    "lat": 33.5862961,
+    "lng": -84.4696808,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Conyers",
+    "street": "2281 Hwy 20 Ne",
+    "city": "Conyers",
+    "state": "GA",
+    "zip": "30013",
+    "lat": 33.6293297,
+    "lng": -84.0147171,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Covington",
+    "street": "3261 Hwy 278 Ne",
+    "city": "Covington",
+    "state": "GA",
+    "zip": "30014",
+    "lat": 33.60355,
+    "lng": -83.8550186,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Cumming",
+    "street": "1780 Buford Hwy",
+    "city": "Cumming",
+    "state": "GA",
+    "zip": "30041-8200",
+    "lat": 34.1607895,
+    "lng": -84.1149979,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Peachtree",
+    "street": "930 Peachtree Pkwy",
+    "city": "Cumming",
+    "state": "GA",
+    "zip": "30041-6823",
+    "lat": 34.1397705,
+    "lng": -84.1733551,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Aspen Drive",
+    "street": "44 Aspen Dr",
+    "city": "Dallas",
+    "state": "GA",
+    "zip": "30157",
+    "lat": 33.9329071,
+    "lng": -84.7319031,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Douglasville",
+    "street": "6984 Douglas Blvd",
+    "city": "Douglasville",
+    "state": "GA",
+    "zip": "30135-7128",
+    "lat": 33.7241478,
+    "lng": -84.7592621,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Pleasant Hill Rd",
+    "street": "2350 Pleasant Hill Rd",
+    "city": "Duluth",
+    "state": "GA",
+    "zip": "30096",
+    "lat": 33.9646492,
+    "lng": -84.1399002,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Dawsonville Hwy",
+    "street": "550 Dawsonville Hwy",
+    "city": "Gainesville",
+    "state": "GA",
+    "zip": "30501",
+    "lat": 34.2960892,
+    "lng": -83.8521271,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Griffin",
+    "street": "557 N Expressway",
+    "city": "Griffin",
+    "state": "GA",
+    "zip": "30223",
+    "lat": 33.2570992,
+    "lng": -84.2888565,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Lovejoy",
+    "street": "11303 Tara Blvd",
+    "city": "Hampton",
+    "state": "GA",
+    "zip": "30228",
+    "lat": 33.4464531,
+    "lng": -84.3250351,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Hiram",
+    "street": "5651 Wendy Bagwell Pkwy",
+    "city": "Hiram",
+    "state": "GA",
+    "zip": "30141-7806",
+    "lat": 33.8856468,
+    "lng": -84.7349472,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Stone Mountain",
+    "street": "4850 Stone Mountain Hwy",
+    "city": "Lilburn",
+    "state": "GA",
+    "zip": "30047",
+    "lat": 33.8265953,
+    "lng": -84.0962906,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Marietta",
+    "street": "3330 Dallas Hwy Sw",
+    "city": "Marietta",
+    "state": "GA",
+    "zip": "30064-2462",
+    "lat": 33.9534988,
+    "lng": -84.6476974,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Monroe",
+    "street": "170 Martin Luther King Jr Blvd",
+    "city": "Monroe",
+    "state": "GA",
+    "zip": "30655-5620",
+    "lat": 33.7931519,
+    "lng": -83.7446518,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Altoona",
+    "street": "3590 Prairie Fire Nw",
+    "city": "Altoona",
+    "state": "IA",
+    "zip": "50009",
+    "lat": 41.6515198,
+    "lng": -93.5088272,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Ankeny",
+    "street": "109 S Ankeny Blvd",
+    "city": "Ankeny",
+    "state": "IA",
+    "zip": "50023",
+    "lat": 41.7311325,
+    "lng": -93.5997391,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Blairs Ferry",
+    "street": "5520 Edgewood Rd Ne",
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "zip": "52411",
+    "lat": 42.0341682,
+    "lng": -91.7004547,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Northland",
+    "street": "5055 Northland Avenue Ne",
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "zip": "52402",
+    "lat": 42.0287781,
+    "lng": -91.63134,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Williams Blvd",
+    "street": "3405 Williams Blvd Sw",
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "zip": "52404",
+    "lat": 41.9582253,
+    "lng": -91.7147293,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "University",
+    "street": "8727 University Avenue",
+    "city": "Clive",
+    "state": "IA",
+    "zip": "50325",
+    "lat": 41.6009865,
+    "lng": -93.7369614,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Kimberly Rd",
+    "street": "707 E Kimberly Rd",
+    "city": "Davenport",
+    "state": "IA",
+    "zip": "52807",
+    "lat": 41.5589485,
+    "lng": -90.5647888,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Lakeview",
+    "street": "4511 E 53rd Street",
+    "city": "Davenport",
+    "state": "IA",
+    "zip": "52807",
+    "lat": 41.5745316,
+    "lng": -90.5066986,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "14th Street",
+    "street": "3400 Se 14th St",
+    "city": "Des Moines",
+    "state": "IA",
+    "zip": "50320",
+    "lat": 41.553215,
+    "lng": -93.5978394,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Army Post",
+    "street": "850 Army Post Rd",
+    "city": "Des Moines",
+    "state": "IA",
+    "zip": "50315",
+    "lat": 41.5259399,
+    "lng": -93.6251602,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Ingersoll",
+    "street": "2525 Ingersoll Avenue",
+    "city": "Des Moines",
+    "state": "IA",
+    "zip": "50312",
+    "lat": 41.5860596,
+    "lng": -93.6517105,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Merle Hay",
+    "street": "3333 Merle Hay Road",
+    "city": "Des Moines",
+    "state": "IA",
+    "zip": "50310",
+    "lat": 41.6245728,
+    "lng": -93.6972733,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Grimes",
+    "street": "1901 Se 11th St",
+    "city": "Grimes",
+    "state": "IA",
+    "zip": "50111",
+    "lat": 41.6805305,
+    "lng": -93.7739029,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Marion",
+    "street": "3957 Katz Drive",
+    "city": "Marion",
+    "state": "IA",
+    "zip": "52302",
+    "lat": 42.035038,
+    "lng": -91.5688553,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "12th Ave",
+    "street": "5440 E University Ave",
+    "city": "Pleasant Hill",
+    "state": "IA",
+    "zip": "50327",
+    "lat": 41.5997581,
+    "lng": -93.5080109,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "North Merle Hay",
+    "street": "4850 Merle Hay Rd",
+    "city": "Urbandale",
+    "state": "IA",
+    "zip": "50322",
+    "lat": 41.6492195,
+    "lng": -93.6988068,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Urbandale",
+    "street": "12035 Hickman Rd",
+    "city": "Urbandale",
+    "state": "IA",
+    "zip": "50323-1819",
+    "lat": 41.6153831,
+    "lng": -93.7836914,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Hickman",
+    "street": "555 E Hickman Rd",
+    "city": "Waukee",
+    "state": "IA",
+    "zip": "50263",
+    "lat": 41.615551,
+    "lng": -93.860611,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Jordan Creek",
+    "street": "102 S Jordan Creek Pkwy",
+    "city": "West Des Moines",
+    "state": "IA",
+    "zip": "50266",
+    "lat": 41.5680275,
+    "lng": -93.8087082,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Broadway",
+    "street": "1790 Broadway Ave",
+    "city": "Boise",
+    "state": "ID",
+    "zip": "83706",
+    "lat": 43.5907173,
+    "lng": -116.1929779,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Fairview",
+    "street": "5950 Fairview Avenue",
+    "city": "Boise",
+    "state": "ID",
+    "zip": "83704",
+    "lat": 43.6195602,
+    "lng": -116.2555237,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Front Street",
+    "street": "1300 W Front Street",
+    "city": "Boise",
+    "state": "ID",
+    "zip": "83702",
+    "lat": 43.6175117,
+    "lng": -116.2112045,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Meridian",
+    "street": "3296 E Pine Ave",
+    "city": "Meridian",
+    "state": "ID",
+    "zip": "83642",
+    "lat": 43.61269,
+    "lng": -116.3535385,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Milano",
+    "street": "4891 N Cortona Way",
+    "city": "Meridian",
+    "state": "ID",
+    "zip": "83646",
+    "lat": 43.6495705,
+    "lng": -116.4332962,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Progress Ave",
+    "street": "675 S Progress Ave",
+    "city": "Meridian",
+    "state": "ID",
+    "zip": "83642",
+    "lat": 43.5988693,
+    "lng": -116.3916702,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Garrity",
+    "street": "4324 Garrity Blvd",
+    "city": "Nampa",
+    "state": "ID",
+    "zip": "83687-3140",
+    "lat": 43.595005,
+    "lng": -116.5178528,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Nampa",
+    "street": "1701 Caldwell Blvd",
+    "city": "Nampa",
+    "state": "ID",
+    "zip": "83651",
+    "lat": 43.6045609,
+    "lng": -116.603096,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Loves Park",
+    "street": "7422 E Riverside Blvd",
+    "city": "Loves Park",
+    "state": "IL",
+    "zip": "61111",
+    "lat": 42.3194885,
+    "lng": -88.9720612,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Kimber",
+    "street": "9733 N Alpine Rd",
+    "city": "Machesney Park",
+    "state": "IL",
+    "zip": "61115",
+    "lat": 42.3640556,
+    "lng": -89.0276871,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "State St",
+    "street": "3708 E State St",
+    "city": "Rockford",
+    "state": "IL",
+    "zip": "61108",
+    "lat": 42.2663002,
+    "lng": -89.0394287,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Annapolis",
+    "street": "2473 Solomons Island Rd",
+    "city": "Edgewater",
+    "state": "MD",
+    "zip": "21037",
+    "lat": 38.9739037,
+    "lng": -76.541008,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Severna",
+    "street": "8562 Veterans Highway",
+    "city": "Millersville",
+    "state": "MD",
+    "zip": "21108",
+    "lat": 39.0956383,
+    "lng": -76.6249771,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "N. Union",
+    "street": "901 N Euclid Ave",
+    "city": "Bay City",
+    "state": "MI",
+    "zip": "48706",
+    "lat": 43.6117668,
+    "lng": -83.9153519,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Wilder",
+    "street": "3631 Wilder Rd",
+    "city": "Bay City",
+    "state": "MI",
+    "zip": "48706",
+    "lat": 43.6243629,
+    "lng": -83.9090958,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Byron Center",
+    "street": "294 84th Street",
+    "city": "Byron Center",
+    "state": "MI",
+    "zip": "49315",
+    "lat": 42.81147,
+    "lng": -85.6710587,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Ford Rd",
+    "street": "2104 Haggerty Road N",
+    "city": "Canton",
+    "state": "MI",
+    "zip": "48187",
+    "lat": 42.3216896,
+    "lng": -83.4481583,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Clarkston",
+    "street": "6440 Dixie Hwy",
+    "city": "Clarkston",
+    "state": "MI",
+    "zip": "48346",
+    "lat": 42.7133598,
+    "lng": -83.4096222,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Alpine",
+    "street": "3755 Alpine Ave Nw",
+    "city": "Comstock Park",
+    "state": "MI",
+    "zip": "49321",
+    "lat": 43.0316315,
+    "lng": -85.6908112,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Center Ave",
+    "street": "2921 Center Ave",
+    "city": "Essexville",
+    "state": "MI",
+    "zip": "48732",
+    "lat": 43.5953026,
+    "lng": -83.8462677,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Grand Ledge",
+    "street": "940 Saginaw Hwy",
+    "city": "Grand Ledge",
+    "state": "MI",
+    "zip": "48837",
+    "lat": 42.7404518,
+    "lng": -84.7343826,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "28th Street",
+    "street": "3797 28th St Se",
+    "city": "Grand Rapids",
+    "state": "MI",
+    "zip": "49512",
+    "lat": 42.9132233,
+    "lng": -85.5737915,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "44th Street",
+    "street": "604 44th St Se",
+    "city": "Grand Rapids",
+    "state": "MI",
+    "zip": "49548",
+    "lat": 42.8826561,
+    "lng": -85.6503525,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Beltline",
+    "street": "2205 E Beltline Ave Ne",
+    "city": "Grand Rapids",
+    "state": "MI",
+    "zip": "49525-9779",
+    "lat": 43.002739,
+    "lng": -85.5923309,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Cascade",
+    "street": "6771 Old 28th St Se",
+    "city": "Grand Rapids",
+    "state": "MI",
+    "zip": "49546-6923",
+    "lat": 42.9139595,
+    "lng": -85.5005493,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Fuller Street",
+    "street": "340 Fuller Ave Ne",
+    "city": "Grand Rapids",
+    "state": "MI",
+    "zip": "49503",
+    "lat": 42.969532,
+    "lng": -85.6388779,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Junior",
+    "street": "1000 28th St Se",
+    "city": "Grand Rapids",
+    "state": "MI",
+    "zip": "49508",
+    "lat": 42.9121017,
+    "lng": -85.6419373,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Kalamazoo",
+    "street": "6700 Kalamazoo Ave Se",
+    "city": "Grand Rapids",
+    "state": "MI",
+    "zip": "49508",
+    "lat": 42.8429031,
+    "lng": -85.6242371,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Leonard",
+    "street": "1325 Leonard St Nw",
+    "city": "Grand Rapids",
+    "state": "MI",
+    "zip": "49504",
+    "lat": 42.9861069,
+    "lng": -85.7013016,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Plainfield",
+    "street": "3752 Plainfield Ave Ne",
+    "city": "Grand Rapids",
+    "state": "MI",
+    "zip": "49525",
+    "lat": 43.0305023,
+    "lng": -85.6280289,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Walker",
+    "street": "4260 Lake Michigan Dr Nw",
+    "city": "Grand Rapids",
+    "state": "MI",
+    "zip": "49534-4529",
+    "lat": 42.9718285,
+    "lng": -85.7730484,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Woodland",
+    "street": "2730 28th St Se",
+    "city": "Grand Rapids",
+    "state": "MI",
+    "zip": "49512",
+    "lat": 42.9117737,
+    "lng": -85.59935,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Greenville",
+    "street": "725 N Lafayette St",
+    "city": "Greenville",
+    "state": "MI",
+    "zip": "48838-1125",
+    "lat": 43.1885033,
+    "lng": -85.2536316,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Holland",
+    "street": "594 E 16th St",
+    "city": "Holland",
+    "state": "MI",
+    "zip": "49423",
+    "lat": 42.7821083,
+    "lng": -86.0814819,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Latson",
+    "street": "1015 S Latson Rd",
+    "city": "Howell",
+    "state": "MI",
+    "zip": "48843",
+    "lat": 42.5848198,
+    "lng": -83.8737488,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Argyle",
+    "street": "971 N West Ave",
+    "city": "Jackson",
+    "state": "MI",
+    "zip": "49202",
+    "lat": 42.2613106,
+    "lng": -84.4224396,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Jenison",
+    "street": "325 Baldwin St",
+    "city": "Jenison",
+    "state": "MI",
+    "zip": "49428-7988",
+    "lat": 42.9076958,
+    "lng": -85.7898636,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Lansing",
+    "street": "6008 W Saginaw Hwy",
+    "city": "Lansing",
+    "state": "MI",
+    "zip": "48917",
+    "lat": 42.7415619,
+    "lng": -84.6351471,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Cinema",
+    "street": "525 Joe Mann Blvd",
+    "city": "Midland",
+    "state": "MI",
+    "zip": "48640",
+    "lat": 43.6578598,
+    "lng": -84.2320175,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Saginaw &#8211; Temporarily Closed",
+    "street": "1214 S Saginaw Rd",
+    "city": "Midland",
+    "state": "MI",
+    "zip": "48640",
+    "lat": 43.6178703,
+    "lng": -84.2182236,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Frenchtown",
+    "street": "1910 N Telegraph",
+    "city": "Monroe",
+    "state": "MI",
+    "zip": "48162",
+    "lat": 41.948391,
+    "lng": -83.400589,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Mount Clemens",
+    "street": "54 N Groesbeck Hwy",
+    "city": "Mount Clemens",
+    "state": "MI",
+    "zip": "48043",
+    "lat": 42.5997086,
+    "lng": -82.8991776,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Craig Hill",
+    "street": "430 S Mission St",
+    "city": "Mount Pleasant",
+    "state": "MI",
+    "zip": "48858",
+    "lat": 43.6011505,
+    "lng": -84.7681274,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Pickard",
+    "street": "5190 E Pickard Street",
+    "city": "Mount Pleasant",
+    "state": "MI",
+    "zip": "48858",
+    "lat": 43.611187,
+    "lng": -84.7445374,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "New Baltimore",
+    "street": "29300 23 Mile Rd",
+    "city": "New Baltimore",
+    "state": "MI",
+    "zip": "48047",
+    "lat": 42.6739006,
+    "lng": -82.8146515,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "10 Mile",
+    "street": "2775 10 Mile Rd Ne",
+    "city": "Rockford",
+    "state": "MI",
+    "zip": "49341",
+    "lat": 43.1175995,
+    "lng": -85.6017761,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Bay Road",
+    "street": "3475 Bay Road",
+    "city": "Saginaw",
+    "state": "MI",
+    "zip": "48603",
+    "lat": 43.4580116,
+    "lng": -83.9762878,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Lawndale",
+    "street": "6075 State Street",
+    "city": "Saginaw",
+    "state": "MI",
+    "zip": "48603",
+    "lat": 43.4365425,
+    "lng": -84.0364456,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Wyoming",
+    "street": "1259 28th St Sw",
+    "city": "Wyoming",
+    "state": "MI",
+    "zip": "49509",
+    "lat": 42.9138603,
+    "lng": -85.6973343,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Anoka",
+    "street": "700 East River Road",
+    "city": "Anoka",
+    "state": "MN",
+    "zip": "55303",
+    "lat": 45.187397,
+    "lng": -93.3783951,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Round Lake Blvd",
+    "street": "3201 Round Lake Boulevard",
+    "city": "Anoka",
+    "state": "MN",
+    "zip": "55303",
+    "lat": 45.2125397,
+    "lng": -93.358078,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Apple Valley",
+    "street": "15620 English Ave",
+    "city": "Apple Valley",
+    "state": "MN",
+    "zip": "55124",
+    "lat": 44.722599,
+    "lng": -93.1792068,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Arden Hills",
+    "street": "3751 Lexington Ave N",
+    "city": "Arden Hills",
+    "state": "MN",
+    "zip": "55126",
+    "lat": 45.0548096,
+    "lng": -93.1481628,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Ulysses",
+    "street": "12311 Ulysses St Ne",
+    "city": "Blaine",
+    "state": "MN",
+    "zip": "55434",
+    "lat": 45.1932983,
+    "lng": -93.2355804,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "71st Street",
+    "street": "7100 W Broadway Ave",
+    "city": "Brooklyn Park",
+    "state": "MN",
+    "zip": "55428",
+    "lat": 45.0845108,
+    "lng": -93.3764114,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Brooklyn Park",
+    "street": "8508 Xylon Avenue North",
+    "city": "Brooklyn Park",
+    "state": "MN",
+    "zip": "55445",
+    "lat": 45.1099167,
+    "lng": -93.3862762,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Zane",
+    "street": "5909 96th Lane North",
+    "city": "Brooklyn Park",
+    "state": "MN",
+    "zip": "55445",
+    "lat": 45.1299706,
+    "lng": -93.3569565,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Jefferson Hwy",
+    "street": "12218 Business Park Blvd N",
+    "city": "Champlin",
+    "state": "MN",
+    "zip": "55316",
+    "lat": 45.1767082,
+    "lng": -93.3909683,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Columbia Heights",
+    "street": "4423 Central Ave Ne",
+    "city": "Columbia Heights",
+    "state": "MN",
+    "zip": "55421",
+    "lat": 45.0489502,
+    "lng": -93.2467346,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Springbrook",
+    "street": "8501 Springbrook Dr",
+    "city": "Coon Rapids",
+    "state": "MN",
+    "zip": "55433",
+    "lat": 45.1250992,
+    "lng": -93.2664108,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Cottage Grove",
+    "street": "8420 East Point Douglas Road",
+    "city": "Cottage Grove",
+    "state": "MN",
+    "zip": "55016",
+    "lat": 44.81847,
+    "lng": -92.9350662,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Duluth Heights",
+    "street": "604 W Central Entrance",
+    "city": "Duluth",
+    "state": "MN",
+    "zip": "55811",
+    "lat": 46.8009415,
+    "lng": -92.1454926,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Flying Cloud",
+    "street": "8340 Crystal View Rd",
+    "city": "Eden Prairie",
+    "state": "MN",
+    "zip": "55344",
+    "lat": 44.8530502,
+    "lng": -93.431839,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Edina",
+    "street": "7711 Normandale Rd",
+    "city": "Edina",
+    "state": "MN",
+    "zip": "55435",
+    "lat": 44.8622627,
+    "lng": -93.3490295,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Forest Lake",
+    "street": "1106 Broadway Ave W",
+    "city": "Forest Lake",
+    "state": "MN",
+    "zip": "55025",
+    "lat": 45.2790604,
+    "lng": -92.9972763,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Fridley",
+    "street": "7699 Hwy 65 Ne",
+    "city": "Fridley",
+    "state": "MN",
+    "zip": "55432",
+    "lat": 45.1072807,
+    "lng": -93.2428436,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Mankato",
+    "street": "1541 Madison Ave",
+    "city": "Mankato",
+    "state": "MN",
+    "zip": "56001",
+    "lat": 44.1665382,
+    "lng": -93.9661865,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Maplewood",
+    "street": "3050 White Bear Ave",
+    "city": "Maplewood",
+    "state": "MN",
+    "zip": "55109",
+    "lat": 45.0337181,
+    "lng": -93.016922,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Minnetonka",
+    "street": "17600 Mn-7 Minnetonka",
+    "city": "Minnetonka",
+    "state": "MN",
+    "zip": "55345",
+    "lat": 44.9141388,
+    "lng": -93.5039825,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Plymouth",
+    "street": "11318 Highway 55",
+    "city": "Plymouth",
+    "state": "MN",
+    "zip": "55441",
+    "lat": 44.9894218,
+    "lng": -93.4224548,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "41st Street",
+    "street": "3223 41st Street Nw",
+    "city": "Rochester",
+    "state": "MN",
+    "zip": "55901",
+    "lat": 44.0660667,
+    "lng": -92.5113602,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Crossroads",
+    "street": "333 Crossroads Dr Sw",
+    "city": "Rochester",
+    "state": "MN",
+    "zip": "55902",
+    "lat": 44.0065384,
+    "lng": -92.4675827,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "River Road",
+    "street": "3939 West River Pkwy Nw",
+    "city": "Rochester",
+    "state": "MN",
+    "zip": "55901",
+    "lat": 44.062706,
+    "lng": -92.474556,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Rogers",
+    "street": "21421 S Diamond Lake Rd",
+    "city": "Rogers",
+    "state": "MN",
+    "zip": "55374",
+    "lat": 45.1987114,
+    "lng": -93.5507278,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Roseville",
+    "street": "1555 West County Road B",
+    "city": "Roseville",
+    "state": "MN",
+    "zip": "55113",
+    "lat": 45.0065956,
+    "lng": -93.1652756,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Riverside",
+    "street": "1604 Crossings Loop",
+    "city": "Saint Cloud",
+    "state": "MN",
+    "zip": "56303",
+    "lat": 45.5977592,
+    "lng": -94.1926804,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Saint Cloud",
+    "street": "3104 West Division Street",
+    "city": "Saint Cloud",
+    "state": "MN",
+    "zip": "56301",
+    "lat": 45.5528603,
+    "lng": -94.1964264,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Voyageur",
+    "street": "222 Lincoln Ave Se",
+    "city": "Saint Cloud",
+    "state": "MN",
+    "zip": "56304",
+    "lat": 45.5655212,
+    "lng": -94.1433182,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "St. Louis Park",
+    "street": "8650 Highway 7",
+    "city": "Saint Louis Park",
+    "state": "MN",
+    "zip": "55426",
+    "lat": 44.935791,
+    "lng": -93.389122,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Downtowner",
+    "street": "520 7th St E",
+    "city": "Saint Paul",
+    "state": "MN",
+    "zip": "55101-2400",
+    "lat": 44.9546547,
+    "lng": -93.0800018,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Shoreview",
+    "street": "4595 Hodgson Road",
+    "city": "Shoreview",
+    "state": "MN",
+    "zip": "55126",
+    "lat": 45.0803223,
+    "lng": -93.1186142,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Stillwater",
+    "street": "14100 60th Street N",
+    "city": "Stillwater",
+    "state": "MN",
+    "zip": "55082",
+    "lat": 45.0366783,
+    "lng": -92.8202286,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "West St. Paul",
+    "street": "110 Thompson Avenue East",
+    "city": "West Saint Paul",
+    "state": "MN",
+    "zip": "55118",
+    "lat": 44.9010353,
+    "lng": -93.0800476,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Republic",
+    "street": "1358 Us Hwy 60",
+    "city": "Republic",
+    "state": "MO",
+    "zip": "65738",
+    "lat": 37.1315155,
+    "lng": -93.4572372,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Battlefield",
+    "street": "1240 E Battlefield St",
+    "city": "Springfield",
+    "state": "MO",
+    "zip": "65804",
+    "lat": 37.1590538,
+    "lng": -93.2761612,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Campbell",
+    "street": "4115 S Campbell Ave",
+    "city": "Springfield",
+    "state": "MO",
+    "zip": "65807",
+    "lat": 37.1394882,
+    "lng": -93.2972336,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Glenstone",
+    "street": "1146 S Glenstone Ave",
+    "city": "Springfield",
+    "state": "MO",
+    "zip": "65804-0314",
+    "lat": 37.1932335,
+    "lng": -93.2617035,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Kansas Expressway",
+    "street": "1737 South Kansas Expressway",
+    "city": "Springfield",
+    "state": "MO",
+    "zip": "65807",
+    "lat": 37.1828842,
+    "lng": -93.3184738,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Mill St",
+    "street": "350 N Eastgate Ave",
+    "city": "Springfield",
+    "state": "MO",
+    "zip": "65802",
+    "lat": 37.2101288,
+    "lng": -93.2222595,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Route 66",
+    "street": "1521 West Turner Street",
+    "city": "Springfield",
+    "state": "MO",
+    "zip": "65804",
+    "lat": 37.2395287,
+    "lng": -93.3105011,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "S. Cox",
+    "street": "1820 W Battlefield Rd",
+    "city": "Springfield",
+    "state": "MO",
+    "zip": "65807-4112",
+    "lat": 37.1596909,
+    "lng": -93.3175964,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Sunshine",
+    "street": "2323 E Sunshine St",
+    "city": "Springfield",
+    "state": "MO",
+    "zip": "65804",
+    "lat": 37.1817741,
+    "lng": -93.2507324,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Stribling Lane",
+    "street": "111 Stribling Lane",
+    "city": "Brandon",
+    "state": "MS",
+    "zip": "39042",
+    "lat": 32.2832832,
+    "lng": -90.0380478,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Clinton",
+    "street": "1023 Hampstead Blvd",
+    "city": "Clinton",
+    "state": "MS",
+    "zip": "39056",
+    "lat": 32.3265152,
+    "lng": -90.3014908,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Lakeland",
+    "street": "3510 Lakeland Dr",
+    "city": "Flowood",
+    "state": "MS",
+    "zip": "39232",
+    "lat": 32.3339157,
+    "lng": -90.103157,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "I-55",
+    "street": "4782 I-55 N Frontage Rd",
+    "city": "Jackson",
+    "state": "MS",
+    "zip": "39211",
+    "lat": 32.3602638,
+    "lng": -90.1503296,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Meadowbrook",
+    "street": "240 Meadowbrook Rd",
+    "city": "Jackson",
+    "state": "MS",
+    "zip": "39206",
+    "lat": 32.3503838,
+    "lng": -90.1762466,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Hwy 39",
+    "street": "1716 Hwy 39",
+    "city": "Meridian",
+    "state": "MS",
+    "zip": "39301",
+    "lat": 32.3749924,
+    "lng": -88.6811676,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Richland",
+    "street": "109 E Harper St",
+    "city": "Richland",
+    "state": "MS",
+    "zip": "39218",
+    "lat": 32.2216492,
+    "lng": -90.1539993,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Ridgeland",
+    "street": "110 Lake Harbour Dr",
+    "city": "Ridgeland",
+    "state": "MS",
+    "zip": "39157",
+    "lat": 32.4143105,
+    "lng": -90.1378326,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "2nd Street",
+    "street": "2300 N 4th St Nw",
+    "city": "Albuquerque",
+    "state": "NM",
+    "zip": "87102",
+    "lat": 35.1084785,
+    "lng": -106.6464233,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Central Ave",
+    "street": "5308 Central Ave Se",
+    "city": "Albuquerque",
+    "state": "NM",
+    "zip": "87108",
+    "lat": 35.0772247,
+    "lng": -106.5858459,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Coors Blvd",
+    "street": "3101 Coors Blvd Nw",
+    "city": "Albuquerque",
+    "state": "NM",
+    "zip": "87120",
+    "lat": 35.1172714,
+    "lng": -106.7025909,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Fiesta Park",
+    "street": "4709 Alameda Blvd Ne",
+    "city": "Albuquerque",
+    "state": "NM",
+    "zip": "87113",
+    "lat": 35.1848183,
+    "lng": -106.5930862,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Gibson",
+    "street": "2020 Gibson Blvd Se",
+    "city": "Albuquerque",
+    "state": "NM",
+    "zip": "87106",
+    "lat": 35.0582695,
+    "lng": -106.6247101,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Highway 528",
+    "street": "3625 Hwy 528 N W",
+    "city": "Albuquerque",
+    "state": "NM",
+    "zip": "87114",
+    "lat": 35.2105713,
+    "lng": -106.6522064,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Homestead",
+    "street": "4200 San Mateo Blvd Ne",
+    "city": "Albuquerque",
+    "state": "NM",
+    "zip": "87102",
+    "lat": 35.1280403,
+    "lng": -106.5858231,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Rio Bravo",
+    "street": "3155 Avanzando Rd Sw",
+    "city": "Albuquerque",
+    "state": "NM",
+    "zip": "87105",
+    "lat": 35.0267792,
+    "lng": -106.7088013,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "San Mateo",
+    "street": "5215 San Mateo N E",
+    "city": "Albuquerque",
+    "state": "NM",
+    "zip": "87109",
+    "lat": 35.1409607,
+    "lng": -106.5870895,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "San Pedro",
+    "street": "8100 San Pedro N E",
+    "city": "Albuquerque",
+    "state": "NM",
+    "zip": "87113",
+    "lat": 35.174881,
+    "lng": -106.5764618,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Snow Heights",
+    "street": "9516 Snow Heights Circle N E",
+    "city": "Albuquerque",
+    "state": "NM",
+    "zip": "87112",
+    "lat": 35.108139,
+    "lng": -106.5355301,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Valencia",
+    "street": "6016 Central Ave Se",
+    "city": "Albuquerque",
+    "state": "NM",
+    "zip": "87108",
+    "lat": 35.0765762,
+    "lng": -106.5792847,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Volcano",
+    "street": "201 98th St Nw",
+    "city": "Albuquerque",
+    "state": "NM",
+    "zip": "87121",
+    "lat": 35.0762444,
+    "lng": -106.7435684,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Bernalillo",
+    "street": "324 W Highway 550",
+    "city": "Bernalillo",
+    "state": "NM",
+    "zip": "87004",
+    "lat": 35.3209648,
+    "lng": -106.5495911,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "E. 20th",
+    "street": "2609 E 20th Street",
+    "city": "Farmington",
+    "state": "NM",
+    "zip": "87401",
+    "lat": 36.7477493,
+    "lng": -108.1722336,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Pinon Hills",
+    "street": "5530 E Main St",
+    "city": "Farmington",
+    "state": "NM",
+    "zip": "87402-8653",
+    "lat": 36.7717323,
+    "lng": -108.139946,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "West Main",
+    "street": "1309 W Main St",
+    "city": "Farmington",
+    "state": "NM",
+    "zip": "87401",
+    "lat": 36.7307091,
+    "lng": -108.2276306,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Lujan",
+    "street": "543 S Lujan St",
+    "city": "Las Cruces",
+    "state": "NM",
+    "zip": "88001",
+    "lat": 32.3092232,
+    "lng": -106.7612915,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Main St.",
+    "street": "2935 N Main St",
+    "city": "Las Cruces",
+    "state": "NM",
+    "zip": "88001",
+    "lat": 32.341301,
+    "lng": -106.7763824,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Rinconada",
+    "street": "3501 Northrise Dr",
+    "city": "Las Cruces",
+    "state": "NM",
+    "zip": "88011",
+    "lat": 32.3644104,
+    "lng": -106.7474594,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Sonoma Ranch",
+    "street": "189 N Sonoma Ranch Blvd",
+    "city": "Las Cruces",
+    "state": "NM",
+    "zip": "88011",
+    "lat": 32.3277817,
+    "lng": -106.7235794,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Los Lunas",
+    "street": "1503 Main St Sw",
+    "city": "Los Lunas",
+    "state": "NM",
+    "zip": "87031",
+    "lat": 34.8141594,
+    "lng": -106.7515182,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Montoya",
+    "street": "7941 Montoya Rd",
+    "city": "Rio Rancho",
+    "state": "NM",
+    "zip": "87144",
+    "lat": 35.3223038,
+    "lng": -106.5725708,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Rio Rancho",
+    "street": "2421 New Mexico Hwy 528 Se",
+    "city": "Rio Rancho",
+    "state": "NM",
+    "zip": "87124",
+    "lat": 35.2181587,
+    "lng": -106.663147,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Southern",
+    "street": "2410 Southern Blvd Se",
+    "city": "Rio Rancho",
+    "state": "NM",
+    "zip": "87124",
+    "lat": 35.2410889,
+    "lng": -106.6881409,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Ephrata",
+    "street": "825 West Main Street",
+    "city": "Ephrata",
+    "state": "PA",
+    "zip": "17522",
+    "lat": 40.1867294,
+    "lng": -76.18853,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Jonestown",
+    "street": "5390 Jonestown Road",
+    "city": "Harrisburg",
+    "state": "PA",
+    "zip": "17112",
+    "lat": 40.3161087,
+    "lng": -76.7974319,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Lancaster",
+    "street": "1417 Manheim Pike",
+    "city": "Lancaster",
+    "state": "PA",
+    "zip": "17601",
+    "lat": 40.0704117,
+    "lng": -76.3312225,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Lincoln Hwy",
+    "street": "2175 Lincoln Hwy",
+    "city": "Lancaster",
+    "state": "PA",
+    "zip": "17602",
+    "lat": 40.029541,
+    "lng": -76.227211,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Reading",
+    "street": "600 Revere Blvd",
+    "city": "Reading",
+    "state": "PA",
+    "zip": "19608",
+    "lat": 40.3106117,
+    "lng": -75.9929199,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "York",
+    "street": "2720 East Market St",
+    "city": "York",
+    "state": "PA",
+    "zip": "17402",
+    "lat": 39.9749603,
+    "lng": -76.6727295,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "LaVergne",
+    "street": "4201 Hurricane Creek Blvd",
+    "city": "Antioch",
+    "state": "TN",
+    "zip": "37013",
+    "lat": 36.0295601,
+    "lng": -86.5922089,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Dover Crossing",
+    "street": "30 Dover Crossing Rd",
+    "city": "Clarksville",
+    "state": "TN",
+    "zip": "37042-4111",
+    "lat": 36.5542297,
+    "lng": -87.3964767,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Dunbar Cave",
+    "street": "1820 Wilma Rudolph Blvd",
+    "city": "Clarksville",
+    "state": "TN",
+    "zip": "37040-6089",
+    "lat": 36.5553284,
+    "lng": -87.3238831,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Needmore",
+    "street": "2640 Wilma Rudolph Blvd",
+    "city": "Clarksville",
+    "state": "TN",
+    "zip": "37040-5836",
+    "lat": 36.581089,
+    "lng": -87.2988586,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Columbia",
+    "street": "403 South James Campbell Blvd",
+    "city": "Columbia",
+    "state": "TN",
+    "zip": "38401",
+    "lat": 35.5909691,
+    "lng": -87.0496597,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Gallatin",
+    "street": "941 Memory Lane",
+    "city": "Gallatin",
+    "state": "TN",
+    "zip": "37066",
+    "lat": 36.3638687,
+    "lng": -86.4920578,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Hendersonville",
+    "street": "223 East Main St",
+    "city": "Hendersonville",
+    "state": "TN",
+    "zip": "37075",
+    "lat": 36.3086395,
+    "lng": -86.6030502,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Hermitage",
+    "street": "4841 Lebanon Pike",
+    "city": "Hermitage",
+    "state": "TN",
+    "zip": "37076",
+    "lat": 36.2166138,
+    "lng": -86.585495,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Carver Lane",
+    "street": "1555 West Main St",
+    "city": "Lebanon",
+    "state": "TN",
+    "zip": "37087",
+    "lat": 36.2197304,
+    "lng": -86.338707,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Northside",
+    "street": "2239 Gallatin Pike N",
+    "city": "Madison",
+    "state": "TN",
+    "zip": "37115-2018",
+    "lat": 36.3061485,
+    "lng": -86.685585,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Mount Juliet",
+    "street": "457 N Mount Juliet  Rd",
+    "city": "Mount Juliet",
+    "state": "TN",
+    "zip": "37122",
+    "lat": 36.1772842,
+    "lng": -86.512207,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Highway 96",
+    "street": "3320 Franklin Rd",
+    "city": "Murfreesboro",
+    "state": "TN",
+    "zip": "37128",
+    "lat": 35.8453064,
+    "lng": -86.4570923,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Hwy 96",
+    "street": "3320 Franklin Rd",
+    "city": "Murfreesboro",
+    "state": "TN",
+    "zip": "37128",
+    "lat": 35.8453064,
+    "lng": -86.4570923,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Murfreesboro",
+    "street": "3337 Memorial Blvd",
+    "city": "Murfreesboro",
+    "state": "TN",
+    "zip": "37129",
+    "lat": 35.9079971,
+    "lng": -86.3842545,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "East Nashville",
+    "street": "2831 Gallatin Pike",
+    "city": "Nashville",
+    "state": "TN",
+    "zip": "37216",
+    "lat": 36.2024307,
+    "lng": -86.7393875,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Nashboro",
+    "street": "2130 Murfreesboro Pike",
+    "city": "Nashville",
+    "state": "TN",
+    "zip": "37217",
+    "lat": 36.0931969,
+    "lng": -86.6517334,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Nolensville Pike",
+    "street": "4024 Nolensville Pike",
+    "city": "Nashville",
+    "state": "TN",
+    "zip": "37211",
+    "lat": 36.0839348,
+    "lng": -86.7271957,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Smyrna",
+    "street": "1200 Needham Dr",
+    "city": "Smyrna",
+    "state": "TN",
+    "zip": "37167",
+    "lat": 35.9876404,
+    "lng": -86.5450821,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Buffalo Gap",
+    "street": "4002 Buffalo Gap Rd",
+    "city": "Abilene",
+    "state": "TX",
+    "zip": "79605",
+    "lat": 32.4042511,
+    "lng": -99.7578888,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Hwy 314",
+    "street": "6118 Buffalo Gap Rd",
+    "city": "Abilene",
+    "state": "TX",
+    "zip": "79606",
+    "lat": 32.3748894,
+    "lng": -99.7745438,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Judge Ely",
+    "street": "501 S Judge Ely Blvd",
+    "city": "Abilene",
+    "state": "TX",
+    "zip": "79602",
+    "lat": 32.4438782,
+    "lng": -99.705368,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Pioneer",
+    "street": "130 S Pioneer Dr",
+    "city": "Abilene",
+    "state": "TX",
+    "zip": "79605",
+    "lat": 32.4506187,
+    "lng": -99.7807999,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Quail Valley",
+    "street": "2094 Hwy 351",
+    "city": "Abilene",
+    "state": "TX",
+    "zip": "79601",
+    "lat": 32.4831505,
+    "lng": -99.6877365,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "S 27th",
+    "street": "2350 South 27th St",
+    "city": "Abilene",
+    "state": "TX",
+    "zip": "79605-6132",
+    "lat": 32.4179916,
+    "lng": -99.751358,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Burnet",
+    "street": "5721 Burnet Road",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78756",
+    "lat": 30.3332996,
+    "lng": -97.7396622,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Research",
+    "street": "8500 Research Blvd Ste 100",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78758",
+    "lat": 30.3588791,
+    "lng": -97.7171021,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Whitestone",
+    "street": "1501 W Whitestone Blvd",
+    "city": "Cedar Park",
+    "state": "TX",
+    "zip": "78613",
+    "lat": 30.5159302,
+    "lng": -97.8502655,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Hwy 190",
+    "street": "101 E Hwy 190",
+    "city": "Copperas Cove",
+    "state": "TX",
+    "zip": "76522",
+    "lat": 31.1159592,
+    "lng": -97.9050522,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Fry",
+    "street": "9502 Fry Rd",
+    "city": "Cypress",
+    "state": "TX",
+    "zip": "77433",
+    "lat": 29.9210014,
+    "lng": -95.7281799,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Alameda",
+    "street": "8139 Alameda Ave",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79907",
+    "lat": 31.7204628,
+    "lng": -106.3528061,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Cielo Vista",
+    "street": "8857 Gateway West",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79925",
+    "lat": 31.7722168,
+    "lng": -106.3774261,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Coronado",
+    "street": "6237 N Mesa",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79912",
+    "lat": 31.8315964,
+    "lng": -106.5335922,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Desert Trail",
+    "street": "7373 N Mesa",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79928",
+    "lat": 31.83671,
+    "lng": -106.5587769,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Dyer",
+    "street": "9811 Dyer",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79924",
+    "lat": 31.8931046,
+    "lng": -106.413559,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Eastlake",
+    "street": "12596 Rojas Dr",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79928-5245",
+    "lat": 31.6921005,
+    "lng": -106.2628632,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "George Dieter",
+    "street": "1482 George Dieter",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79936",
+    "lat": 31.7431469,
+    "lng": -106.3011551,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Hondo Pass",
+    "street": "8950 Dyer St",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79904",
+    "lat": 31.866457,
+    "lng": -106.4301071,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Joe Battle",
+    "street": "2214 Joe Battle Blvd",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79938",
+    "lat": 31.7778206,
+    "lng": -106.267128,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Justice",
+    "street": "12253 Montana Ave",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79938",
+    "lat": 31.8083134,
+    "lng": -106.2622375,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Montana",
+    "street": "6365 Montana",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79925",
+    "lat": 31.7890491,
+    "lng": -106.4053955,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Montwood",
+    "street": "12120 Montwood",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79936",
+    "lat": 31.7597466,
+    "lng": -106.2723923,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "North Loop",
+    "street": "8835 North Loop",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79907",
+    "lat": 31.7060184,
+    "lng": -106.317749,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Nuevo Hueco",
+    "street": "9909 North Loop Dr",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79927",
+    "lat": 31.6767998,
+    "lng": -106.288063,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Osborne",
+    "street": "4800 Osborne Drive",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79922",
+    "lat": 31.8376923,
+    "lng": -106.5717316,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Paseo Del Norte",
+    "street": "7820 Paseo Del Norte Blvd",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79912",
+    "lat": 31.8835487,
+    "lng": -106.577446,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Pellicano",
+    "street": "12400 Pellicano Drive",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79928",
+    "lat": 31.7258797,
+    "lng": -106.2616882,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Peyton &#8211; Coming Soon!",
+    "street": "13020 Eastlake Blvd",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79928",
+    "lat": 31.6987171,
+    "lng": -106.2381668,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Sandstone Ranch",
+    "street": "5240 Marcus Uribe Dr",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79934",
+    "lat": 31.9358501,
+    "lng": -106.4258728,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Sun Bowl Dr",
+    "street": "2921 N Mesa St",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79902",
+    "lat": 31.7795906,
+    "lng": -106.5054932,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Sunland Park",
+    "street": "965 Sunland Park Dr",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79922",
+    "lat": 31.814621,
+    "lng": -106.5535126,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Talbot",
+    "street": "901 Talbot Ave",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79835",
+    "lat": 31.9089298,
+    "lng": -106.5889969,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Turner",
+    "street": "3689 George Dieter",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79936",
+    "lat": 31.8017159,
+    "lng": -106.3024673,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Vista Del Sol",
+    "street": "11184 Vista Del Sol",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79935",
+    "lat": 31.7537212,
+    "lng": -106.320282,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Zaragoza",
+    "street": "3516 N Zaragoza Rd",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79938",
+    "lat": 31.7917595,
+    "lng": -106.2345581,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Ft. Cavazos",
+    "street": "Bldg #50014 Clear Creek Rd",
+    "city": "Fort Cavazos",
+    "state": "TX",
+    "zip": "76544",
+    "lat": 31.1272507,
+    "lng": -97.8002319,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Horizon Blvd",
+    "street": "13620 Horizon Blvd",
+    "city": "Horizon City",
+    "state": "TX",
+    "zip": "79928",
+    "lat": 31.6821098,
+    "lng": -106.2069702,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "1960 East",
+    "street": "210 Fm 1960 Road East",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77073",
+    "lat": 30.0213909,
+    "lng": -95.4261703,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Addicks-Howell",
+    "street": "9045 Highway 6 South",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77083",
+    "lat": 29.6804333,
+    "lng": -95.6430054,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Barker Cypress",
+    "street": "1210 Barker Cypress Rd",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77084",
+    "lat": 29.7865906,
+    "lng": -95.6878204,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Bellaire",
+    "street": "7601 Bellaire Blvd",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77036",
+    "lat": 29.704567,
+    "lng": -95.5175247,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Bellfort",
+    "street": "4924 Bellfort Ave",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77035",
+    "lat": 29.6709595,
+    "lng": -95.4631882,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Brigade",
+    "street": "2466 Gessner Rd",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77080",
+    "lat": 29.8167896,
+    "lng": -95.5447998,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Champions",
+    "street": "6612 Fm 1960 Road West",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77069",
+    "lat": 29.9715271,
+    "lng": -95.5296021,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Copperfield",
+    "street": "7310 Hwy 6n",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77095",
+    "lat": 29.8845596,
+    "lng": -95.6439438,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Crosstimbers",
+    "street": "640 West Crosstimbers",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77018",
+    "lat": 29.8276749,
+    "lng": -95.4086609,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Galleria",
+    "street": "5735 Westheimer Rd",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77057",
+    "lat": 29.737257,
+    "lng": -95.4786377,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Gessner",
+    "street": "1038 Gessner Drive",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77055",
+    "lat": 29.7872009,
+    "lng": -95.5434341,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Highway 6 North",
+    "street": "5909 Highway 6 North",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77084",
+    "lat": 29.8579636,
+    "lng": -95.6458969,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Hillcroft",
+    "street": "6107 Hillcroft Street",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77081",
+    "lat": 29.7150669,
+    "lng": -95.4960098,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Holcombe",
+    "street": "2237 W Holcombe Blvd",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77030",
+    "lat": 29.7055721,
+    "lng": -95.4109344,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Kirby",
+    "street": "3150 Kirby Drive",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77098",
+    "lat": 29.736578,
+    "lng": -95.4194031,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Memorial Dr",
+    "street": "14732 Memorial Drive",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77079",
+    "lat": 29.7707901,
+    "lng": -95.6096573,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Perry Road",
+    "street": "9271 Fm 1960 Rd West",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77070",
+    "lat": 29.9468384,
+    "lng": -95.5624847,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Rankin Road",
+    "street": "12552 Richbourg St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77090",
+    "lat": 29.9663105,
+    "lng": -95.4213104,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "South Main",
+    "street": "8810 S Main St",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77025-2707",
+    "lat": 29.6895065,
+    "lng": -95.4187469,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Upper Kirby",
+    "street": "5102 Kirby Rd",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77098",
+    "lat": 29.7268944,
+    "lng": -95.4190292,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Uvalde",
+    "street": "380 Uvalde Road",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77015",
+    "lat": 29.793293,
+    "lng": -95.1877747,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Voss",
+    "street": "2251 South Voss Road",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77057",
+    "lat": 29.7434902,
+    "lng": -95.5001907,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Wallisville",
+    "street": "15232 Wallisville Rd",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77049",
+    "lat": 29.8067074,
+    "lng": -95.1693344,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Washington Ave",
+    "street": "3522 W Washington Ave",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77007",
+    "lat": 29.7698307,
+    "lng": -95.3954086,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Westheimer",
+    "street": "10760 Westheimer",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77042",
+    "lat": 29.7376099,
+    "lng": -95.5654602,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Atascocita",
+    "street": "5701 Fm 1960 Rd East",
+    "city": "Humble",
+    "state": "TX",
+    "zip": "77346",
+    "lat": 29.9992733,
+    "lng": -95.187233,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Humble",
+    "street": "9637 Fm 1960 By Pass West",
+    "city": "Humble",
+    "state": "TX",
+    "zip": "77338",
+    "lat": 30.0053902,
+    "lng": -95.2792969,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Kingwood",
+    "street": "2720 W Lake Houston Pkwy",
+    "city": "Humble",
+    "state": "TX",
+    "zip": "77339",
+    "lat": 30.0475254,
+    "lng": -95.1821442,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Mason Road",
+    "street": "1144 South Mason Rd",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77450",
+    "lat": 29.7632504,
+    "lng": -95.7522583,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "South Mason",
+    "street": "1144 South Mason Rd",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77450",
+    "lat": 29.7632504,
+    "lng": -95.7522583,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Spring Green",
+    "street": "1726 Spring Green Blvd-tract 5",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77494",
+    "lat": 29.7607193,
+    "lng": -95.8424606,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Kemah",
+    "street": "312 Fm 518 Rd",
+    "city": "Kemah",
+    "state": "TX",
+    "zip": "77565",
+    "lat": 29.536232,
+    "lng": -95.0215607,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "MLK",
+    "street": "4901 Martin Luther King Dr",
+    "city": "Killeen",
+    "state": "TX",
+    "zip": "76543",
+    "lat": 31.0809994,
+    "lng": -97.6966705,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Stan Schlueter Loop",
+    "street": "3402 W Stan Schlueter Loop",
+    "city": "Killeen",
+    "state": "TX",
+    "zip": "76549",
+    "lat": 31.0852337,
+    "lng": -97.7860489,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "4th Street",
+    "street": "5523 4th Street",
+    "city": "Lubbock",
+    "state": "TX",
+    "zip": "79416",
+    "lat": 33.5914688,
+    "lng": -101.9330902,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "74th St",
+    "street": "7401 University Ave",
+    "city": "Lubbock",
+    "state": "TX",
+    "zip": "79423",
+    "lat": 33.5268593,
+    "lng": -101.8695679,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "82nd Street",
+    "street": "6001 82nd Street",
+    "city": "Lubbock",
+    "state": "TX",
+    "zip": "79424",
+    "lat": 33.5192184,
+    "lng": -101.9449463,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Indiana Ave",
+    "street": "8301 Indiana Ave",
+    "city": "Lubbock",
+    "state": "TX",
+    "zip": "79423",
+    "lat": 33.51828,
+    "lng": -101.8871384,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Loop 289",
+    "street": "2010 W Loop 289",
+    "city": "Lubbock",
+    "state": "TX",
+    "zip": "79407",
+    "lat": 33.5758514,
+    "lng": -101.9450378,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Mac Davis",
+    "street": "1710 Mac Davis Ln",
+    "city": "Lubbock",
+    "state": "TX",
+    "zip": "79401",
+    "lat": 33.59058,
+    "lng": -101.8560486,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Milwaukee Ave &#8211; Temporarily Closed",
+    "street": "6707 Milwaukee Ave",
+    "city": "Lubbock",
+    "state": "TX",
+    "zip": "79424",
+    "lat": 33.5320282,
+    "lng": -101.9564896,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Quaker",
+    "street": "7027 Quaker Ave",
+    "city": "Lubbock",
+    "state": "TX",
+    "zip": "79424",
+    "lat": 33.5288696,
+    "lng": -101.9057922,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Slide Rd",
+    "street": "10102 Slide Rd",
+    "city": "Lubbock",
+    "state": "TX",
+    "zip": "79424",
+    "lat": 33.5010986,
+    "lng": -101.9235916,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Greenmoor Dr",
+    "street": "28985 Fm2978",
+    "city": "Magnolia",
+    "state": "TX",
+    "zip": "77354",
+    "lat": 30.1790905,
+    "lng": -95.6003571,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Magnolia",
+    "street": "13321 Fm 1488",
+    "city": "Magnolia",
+    "state": "TX",
+    "zip": "77354",
+    "lat": 30.2227306,
+    "lng": -95.6738815,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Mesquite",
+    "street": "3205 N Galloway",
+    "city": "Mesquite",
+    "state": "TX",
+    "zip": "75150",
+    "lat": 32.8086815,
+    "lng": -96.6117401,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Mesquite Wash",
+    "street": "3205 N Galloway",
+    "city": "Mesquite",
+    "state": "TX",
+    "zip": "75150",
+    "lat": 32.8086815,
+    "lng": -96.6117401,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Highway 6",
+    "street": "5415 Highway 6",
+    "city": "Missouri City",
+    "state": "TX",
+    "zip": "77459",
+    "lat": 29.5742378,
+    "lng": -95.5724335,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Valley Ranch",
+    "street": "21938 Market Place Dr",
+    "city": "New Caney",
+    "state": "TX",
+    "zip": "77357",
+    "lat": 30.1314392,
+    "lng": -95.2349014,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Bliss Meadows",
+    "street": "5800 Spencer Highway",
+    "city": "Pasadena",
+    "state": "TX",
+    "zip": "77505",
+    "lat": 29.6652908,
+    "lng": -95.1529465,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Fairmont",
+    "street": "5964 Fairmont Pkwy",
+    "city": "Pasadena",
+    "state": "TX",
+    "zip": "77505",
+    "lat": 29.6489944,
+    "lng": -95.149353,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Laurynnbrook",
+    "street": "7705 Spencer Hwy",
+    "city": "Pasadena",
+    "state": "TX",
+    "zip": "77505",
+    "lat": 29.6641197,
+    "lng": -95.1193237,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Pearland",
+    "street": "1828 Main St",
+    "city": "Pearland",
+    "state": "TX",
+    "zip": "77581",
+    "lat": 29.5746708,
+    "lng": -95.2863693,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Pflugerville",
+    "street": "15400 Fm-1825",
+    "city": "Pflugerville",
+    "state": "TX",
+    "zip": "78660",
+    "lat": 30.4473896,
+    "lng": -97.6631927,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Gattis",
+    "street": "1821 Gattis School Rd",
+    "city": "Round Rock",
+    "state": "TX",
+    "zip": "78664",
+    "lat": 30.4957771,
+    "lng": -97.6579514,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Oakwood Blvd",
+    "street": "2000 Round Rock Ave",
+    "city": "Round Rock",
+    "state": "TX",
+    "zip": "78681",
+    "lat": 30.5111179,
+    "lng": -97.7090225,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Round Rock",
+    "street": "2720 S Interstate 35",
+    "city": "Round Rock",
+    "state": "TX",
+    "zip": "78681",
+    "lat": 30.4822598,
+    "lng": -97.6757431,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Boudreaux Rd",
+    "street": "22302 Kuykendahl Road",
+    "city": "Spring",
+    "state": "TX",
+    "zip": "77389",
+    "lat": 30.0904408,
+    "lng": -95.5299911,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Holzwarth",
+    "street": "1631 Louetta Rd",
+    "city": "Spring",
+    "state": "TX",
+    "zip": "77388",
+    "lat": 30.0641594,
+    "lng": -95.4388504,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Louetta",
+    "street": "7715 Louetta Rd",
+    "city": "Spring",
+    "state": "TX",
+    "zip": "77379",
+    "lat": 30.0168533,
+    "lng": -95.5300674,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Dulles",
+    "street": "601 Dulles Ave",
+    "city": "Stafford",
+    "state": "TX",
+    "zip": "77477",
+    "lat": 29.6207619,
+    "lng": -95.582016,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Sugarland",
+    "street": "2530 Highway 6",
+    "city": "Sugar Land",
+    "state": "TX",
+    "zip": "77478",
+    "lat": 29.5950756,
+    "lng": -95.6155777,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Temple",
+    "street": "5284 W Adams Ave",
+    "city": "Temple",
+    "state": "TX",
+    "zip": "76502",
+    "lat": 31.1134396,
+    "lng": -97.3984299,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Genesis",
+    "street": "1380 Fm 528",
+    "city": "Webster",
+    "state": "TX",
+    "zip": "77598",
+    "lat": 29.5270691,
+    "lng": -95.1339035,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "American Fork",
+    "street": "83 North West State Road",
+    "city": "American Fork",
+    "state": "UT",
+    "zip": "84003",
+    "lat": 40.3784523,
+    "lng": -111.8136826,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Bountiful",
+    "street": "305 W 500 S",
+    "city": "Bountiful",
+    "state": "UT",
+    "zip": "84010",
+    "lat": 40.8837585,
+    "lng": -111.8878784,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Cottonwood",
+    "street": "2228 E Fort Union Blvd",
+    "city": "Cottonwood",
+    "state": "UT",
+    "zip": "84121",
+    "lat": 40.623436,
+    "lng": -111.8271637,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Draper",
+    "street": "387 E 12300 S",
+    "city": "Draper",
+    "state": "UT",
+    "zip": "84020",
+    "lat": 40.5272255,
+    "lng": -111.8801956,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Anthem",
+    "street": "5153 W Anthem Park Blvd",
+    "city": "Herriman",
+    "state": "UT",
+    "zip": "84096",
+    "lat": 40.53442,
+    "lng": -112.0148621,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Kaysville",
+    "street": "165 West 200 North",
+    "city": "Kaysville",
+    "state": "UT",
+    "zip": "84037",
+    "lat": 41.0378304,
+    "lng": -111.946022,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Layton",
+    "street": "1182 N Main St",
+    "city": "Layton",
+    "state": "UT",
+    "zip": "84041",
+    "lat": 41.0773964,
+    "lng": -111.9835052,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Washington-2",
+    "street": "1721 S Washington Blvd",
+    "city": "Ogden",
+    "state": "UT",
+    "zip": "84404",
+    "lat": 41.2362747,
+    "lng": -111.9710159,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Cherry Hill",
+    "street": "1408 State St",
+    "city": "Orem",
+    "state": "UT",
+    "zip": "84097",
+    "lat": 40.2712212,
+    "lng": -111.6840897,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Vineyard",
+    "street": "221 N Geneva Rd",
+    "city": "Orem",
+    "state": "UT",
+    "zip": "84059",
+    "lat": 40.3011894,
+    "lng": -111.7346115,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Park City",
+    "street": "6515 N Hwy 224",
+    "city": "Park City",
+    "state": "UT",
+    "zip": "84098",
+    "lat": 40.7260742,
+    "lng": -111.5451736,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Riverton",
+    "street": "4627 W 13400 South",
+    "city": "Riverton",
+    "state": "UT",
+    "zip": "84096",
+    "lat": 40.5078011,
+    "lng": -112.001236,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Foothills",
+    "street": "1635 Foothill Dr",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "zip": "84108",
+    "lat": 40.7338638,
+    "lng": -111.8200378,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Hwy 89",
+    "street": "4181 S State St",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "zip": "84107",
+    "lat": 40.681179,
+    "lng": -111.8878021,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Millcreek",
+    "street": "1990 E 3300 S",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "zip": "84106",
+    "lat": 40.6995201,
+    "lng": -111.835083,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "South Salt Lake",
+    "street": "1478 S 300 W",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "zip": "84115-5138",
+    "lat": 40.7375603,
+    "lng": -111.9000015,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Taylorsville",
+    "street": "3856 W 5400 S",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "zip": "84129",
+    "lat": 40.6534996,
+    "lng": -111.9833679,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Sandy",
+    "street": "9534 South Highland Drive",
+    "city": "Sandy",
+    "state": "UT",
+    "zip": "84092",
+    "lat": 40.578167,
+    "lng": -111.8355637,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "South Jordan",
+    "street": "3497 W South Jordan Pkwy",
+    "city": "South Jordan",
+    "state": "UT",
+    "zip": "84095",
+    "lat": 40.5612717,
+    "lng": -111.9748383,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Syracuse",
+    "street": "1632 South 3000 W",
+    "city": "Syracuse",
+    "state": "UT",
+    "zip": "84075",
+    "lat": 41.0903511,
+    "lng": -112.0843506,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Redwood",
+    "street": "4681 S Redwood Rd",
+    "city": "Taylorsville",
+    "state": "UT",
+    "zip": "84123",
+    "lat": 40.6680794,
+    "lng": -111.9384079,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Highlands",
+    "street": "5512 W 7800 South",
+    "city": "West Jordan",
+    "state": "UT",
+    "zip": "84081",
+    "lat": 40.6100311,
+    "lng": -112.0218811,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "West Jordan",
+    "street": "1377 W 7800 South",
+    "city": "West Jordan",
+    "state": "UT",
+    "zip": "84088",
+    "lat": 40.6091805,
+    "lng": -111.9310913,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "West Valley",
+    "street": "2055 W 3500 S",
+    "city": "West Valley City",
+    "state": "UT",
+    "zip": "84119",
+    "lat": 40.6960793,
+    "lng": -111.9457397,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Fruitland",
+    "street": "520 W Columbia Drive",
+    "city": "Kennewick",
+    "state": "WA",
+    "zip": "99336",
+    "lat": 46.2167778,
+    "lng": -119.1247864,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Kennewick",
+    "street": "404 North Columbia Center",
+    "city": "Kennewick",
+    "state": "WA",
+    "zip": "99336",
+    "lat": 46.2131081,
+    "lng": -119.2250748,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Okanogan Pl",
+    "street": "5231 W Okanogan Pl",
+    "city": "Kennewick",
+    "state": "WA",
+    "zip": "99336",
+    "lat": 46.22015,
+    "lng": -119.1913376,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Moses Lake",
+    "street": "1035 N Stratford Rd Suite K",
+    "city": "Moses Lake",
+    "state": "WA",
+    "zip": "98837",
+    "lat": 47.1424904,
+    "lng": -119.2760696,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Burden Blvd",
+    "street": "7200 Burden Blvd (road 68)",
+    "city": "Pasco",
+    "state": "WA",
+    "zip": "99301",
+    "lat": 46.2701378,
+    "lng": -119.1848145,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "West Court St",
+    "street": "3810 W Court St",
+    "city": "Pasco",
+    "state": "WA",
+    "zip": "99301",
+    "lat": 46.2409935,
+    "lng": -119.141922,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Aaron Dr",
+    "street": "1131 Aaron Drive",
+    "city": "Richland",
+    "state": "WA",
+    "zip": "99352",
+    "lat": 46.2601204,
+    "lng": -119.2823868,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Division &#8211; Temporarily Closed",
+    "street": "1022 North Division",
+    "city": "Spokane",
+    "state": "WA",
+    "zip": "99202",
+    "lat": 47.666832,
+    "lng": -117.4104385,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Five Mile",
+    "street": "1615 W Five Mile Road",
+    "city": "Spokane",
+    "state": "WA",
+    "zip": "99208",
+    "lat": 47.716671,
+    "lng": -117.4358368,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Greenstone",
+    "street": "1740 E Renshaw Drive",
+    "city": "Spokane",
+    "state": "WA",
+    "zip": "99218",
+    "lat": 47.7648888,
+    "lng": -117.3823395,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Hoerner St",
+    "street": "255 E Hoerner Ave",
+    "city": "Spokane",
+    "state": "WA",
+    "zip": "99218",
+    "lat": 47.7427597,
+    "lng": -117.4067993,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "McClellan",
+    "street": "202 W 3rd Ave",
+    "city": "Spokane",
+    "state": "WA",
+    "zip": "99201",
+    "lat": 47.65382,
+    "lng": -117.4151993,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "N. Division",
+    "street": "6420 N Division",
+    "city": "Spokane",
+    "state": "WA",
+    "zip": "99208",
+    "lat": 47.7166557,
+    "lng": -117.4104691,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "N. Pines",
+    "street": "423 North Pines Road",
+    "city": "Spokane",
+    "state": "WA",
+    "zip": "99206",
+    "lat": 47.6614342,
+    "lng": -117.2403946,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "N. Sullivan",
+    "street": "307 N Sullivan Rd",
+    "city": "Spokane",
+    "state": "WA",
+    "zip": "99037",
+    "lat": 47.6599731,
+    "lng": -117.1972046,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Regal",
+    "street": "4301 S Regal St",
+    "city": "Spokane",
+    "state": "WA",
+    "zip": "99223",
+    "lat": 47.6168747,
+    "lng": -117.3679657,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Sunset Hwy",
+    "street": "9009 W Us Hwy 2",
+    "city": "Spokane",
+    "state": "WA",
+    "zip": "99224",
+    "lat": 47.6425018,
+    "lng": -117.5354767,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "9th Ave",
+    "street": "1100 Dalles Military Rd",
+    "city": "Walla Walla",
+    "state": "WA",
+    "zip": "99362",
+    "lat": 46.0520172,
+    "lng": -118.3470688,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Kennedy Rd.",
+    "street": "3220 Kennedy Road",
+    "city": "West Richland",
+    "state": "WA",
+    "zip": "99353",
+    "lat": 46.2575569,
+    "lng": -119.3302917,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Brookfield",
+    "street": "19050 W Bluemound Rd",
+    "city": "Brookfield",
+    "state": "WI",
+    "zip": "53045",
+    "lat": 43.0368729,
+    "lng": -88.149765,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Cudahy",
+    "street": "5506 S Packard Ave",
+    "city": "Cudahy",
+    "state": "WI",
+    "zip": "53110-2611",
+    "lat": 42.9442215,
+    "lng": -87.8593979,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Rawson Wash",
+    "street": "7700 W Rawson Ave",
+    "city": "Franklin",
+    "state": "WI",
+    "zip": "53132-9201",
+    "lat": 42.9165382,
+    "lng": -88.0112152,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Castle Manor",
+    "street": "4763 S 27th St",
+    "city": "Greenfield",
+    "state": "WI",
+    "zip": "53221",
+    "lat": 42.9580307,
+    "lng": -87.9494171,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Badger",
+    "street": "2251 Badger Drive",
+    "city": "Hudson",
+    "state": "WI",
+    "zip": "54016",
+    "lat": 44.9626808,
+    "lng": -92.725708,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Kenosha",
+    "street": "5803 75th St",
+    "city": "Kenosha",
+    "state": "WI",
+    "zip": "53142",
+    "lat": 42.5661469,
+    "lng": -87.8785858,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Market Lane",
+    "street": "3677 Market Lane",
+    "city": "Kenosha",
+    "state": "WI",
+    "zip": "53144",
+    "lat": 42.6041908,
+    "lng": -87.8803329,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Onalaska",
+    "street": "3850 Wi-16",
+    "city": "La Crosse",
+    "state": "WI",
+    "zip": "54601",
+    "lat": 43.8699684,
+    "lng": -91.1969299,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Park St",
+    "street": "907 S Park St",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53715",
+    "lat": 43.0583267,
+    "lng": -89.3995285,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "University Ave",
+    "street": "2202 University Ave",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53726",
+    "lat": 43.0727844,
+    "lng": -89.4240799,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Washington",
+    "street": "1039 E Washington Ave",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53703",
+    "lat": 43.0842896,
+    "lng": -89.3697357,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Menomonee Falls Wash",
+    "street": "N95w18255 Appleton Ave",
+    "city": "Menomonee Falls",
+    "state": "WI",
+    "zip": "53051-1327",
+    "lat": 43.1914215,
+    "lng": -88.1362915,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Good Hope",
+    "street": "7338 W Good Hope Rd",
+    "city": "Milwaukee",
+    "state": "WI",
+    "zip": "53223",
+    "lat": 43.1492844,
+    "lng": -88.0027847,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Greenfield",
+    "street": "10685 W Layton Ave",
+    "city": "Milwaukee",
+    "state": "WI",
+    "zip": "53228-3248",
+    "lat": 42.9584007,
+    "lng": -88.0458221,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Howell",
+    "street": "160 W Layton Ave",
+    "city": "Milwaukee",
+    "state": "WI",
+    "zip": "53207",
+    "lat": 42.9596939,
+    "lng": -87.912529,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Miller Park Way",
+    "street": "2260 Miller Park Way",
+    "city": "Milwaukee",
+    "state": "WI",
+    "zip": "53219-1642",
+    "lat": 43.0035133,
+    "lng": -87.9670792,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Oklahoma Ave",
+    "street": "2006 W Oklahoma Ave",
+    "city": "Milwaukee",
+    "state": "WI",
+    "zip": "53215",
+    "lat": 42.9888191,
+    "lng": -87.9392853,
+    "chain": "Mister Car Wash"
+  },
+  {
+    "name": "Oshkosh",
+    "street": "1490 Capital Dr",
+    "city": "Oshkosh",
+    "state": "WI",
+    "zip": "54902-6194",
+    "lat": 43.9976997,
+    "lng": -88.5746155,
+    "chain": "Mister Car Wash"
+  }
+]
