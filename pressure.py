@@ -11,27 +11,19 @@ def distance_mi(lat1, lng1, lat2, lng2):
 
 
 def compute_pressure(crew_loc, mister_data, tommys_data):
-    """
-    Calculate competitive pressure for a Crew location.
-
-    Returns dict with:
-    - mister: {within1, within3, within5}
-    - tommys: {within1, within3, within5}
-    - nearest: list of 3 nearest competitors within 10 mi
-    - level: 'high', 'medium', 'low', or 'none'
-    """
+    """Returns pressure level and nearest competitor counts for a Crew location."""
     def chain_dists(locs, chain_name):
-        dists = []
-        for loc in locs:
-            d = distance_mi(crew_loc['lat'], crew_loc['lng'], loc['lat'], loc['lng'])
-            dists.append({'city': loc['city'], 'state': loc['state'], 'chain': chain_name, 'd': d})
-        return sorted(dists, key=lambda x: x['d'])
+        return sorted(
+            [{'city': l['city'], 'state': l['state'], 'chain': chain_name,
+              'd': distance_mi(crew_loc['lat'], crew_loc['lng'], l['lat'], l['lng'])} for l in locs],
+            key=lambda x: x['d']
+        )
 
     def counts(dists):
         return {
-            'within1': len([d for d in dists if d['d'] <= 1]),
-            'within3': len([d for d in dists if d['d'] <= 3]),
-            'within5': len([d for d in dists if d['d'] <= 5]),
+            'within1': sum(1 for d in dists if d['d'] <= 1),
+            'within3': sum(1 for d in dists if d['d'] <= 3),
+            'within5': sum(1 for d in dists if d['d'] <= 5),
         }
 
     m_dists = chain_dists(mister_data, 'Mister CW')

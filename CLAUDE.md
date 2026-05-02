@@ -14,6 +14,14 @@ python3 scripts/scrape_mister_carwash.py
 
 No dependencies to install — stdlib only. Requires `curl` on PATH.
 
+## Running tests
+
+```bash
+python3 -m unittest discover -s tests -v
+```
+
+Tests use stdlib `unittest` — pytest is not installed and not needed.
+
 ## Architecture
 
 - `data/` — JSON location datasets (source of truth, checked into repo)
