@@ -6,6 +6,7 @@
   <title>Crew Carwash Locations</title>
   <link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
   <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
   <style>
     :root {
       --brand:       #005FA3;
@@ -49,7 +50,7 @@
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { width: 100vw; height: 100vh; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    body { width: 100vw; height: 100vh; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; display: flex; flex-direction: column; }
     #map { width: 100%; height: 100%; }
 
     .marker {
@@ -181,9 +182,170 @@
     }
     #overlay-btn:hover       { background: var(--brand-h); }
     #overlay-attribution     { font-size: var(--t-sm); color: var(--txt-4); text-align: right; line-height: 1.5; }
+
+    /* ── Tab Nav ─────────────────────────────────────────────────── */
+    #tab-nav {
+      background: var(--brand); height: 46px; flex-shrink: 0;
+      display: flex; align-items: center; padding: 0 16px;
+      z-index: 200; box-shadow: 0 2px 8px rgba(0,0,0,0.22);
+    }
+    #tab-nav-inner { display: flex; align-items: center; width: 100%; gap: 20px; }
+    #brand-mark {
+      font-size: 12px; font-weight: 800; letter-spacing: 0.12em;
+      color: rgba(255,255,255,0.85); white-space: nowrap;
+    }
+    #tab-divider { width: 1px; height: 20px; background: rgba(255,255,255,0.25); }
+    #tab-buttons { display: flex; gap: 3px; }
+    .tab-btn {
+      background: none; border: none; color: rgba(255,255,255,0.65);
+      padding: 5px 14px; border-radius: 5px; cursor: pointer;
+      font-size: 13px; font-weight: 600; transition: all 0.15s; white-space: nowrap;
+    }
+    .tab-btn:hover  { background: rgba(255,255,255,0.14); color: white; }
+    .tab-btn.active { background: rgba(255,255,255,0.2); color: white; }
+    #nav-meta { margin-left: auto; font-size: 11px; color: rgba(255,255,255,0.55); white-space: nowrap; }
+
+    /* ── Tab Panels ──────────────────────────────────────────────── */
+    .tab-panel { flex: 1; overflow: hidden; position: relative; min-height: 0; }
+    .ops-panel  { overflow-y: auto; background: #F0F4F8; }
+
+    /* ── Operating Picture Dashboard ─────────────────────────────── */
+    .ops-weather-strip {
+      background: #EFF6FF; border-bottom: 1px solid #BFDBFE;
+      padding: 9px 28px; font-size: 12px; color: #1D4ED8;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .ops-weather-strip strong { font-weight: 700; }
+
+    .ops-container { max-width: 1380px; margin: 0 auto; padding: 22px 28px 52px; }
+    .ops-header { margin-bottom: 20px; }
+    .ops-title    { font-size: 20px; font-weight: 700; color: var(--txt-1); }
+    .ops-subtitle { font-size: 12px; color: var(--txt-3); margin-top: 4px; }
+
+    /* KPI row — 5 columns */
+    .kpi-row { display: grid; grid-template-columns: repeat(5,1fr); gap: 14px; margin-bottom: 26px; }
+    .kpi-card {
+      background: white; border-radius: var(--r-md); padding: 18px 20px;
+      box-shadow: var(--sh-sm); border: 1px solid var(--border);
+    }
+    /* Migration Readiness — visually distinct */
+    .kpi-migration {
+      background: linear-gradient(135deg, var(--brand) 0%, #0077c8 100%);
+      border-color: transparent; color: white; position: relative;
+    }
+    .kpi-migration .kpi-label { color: rgba(255,255,255,0.75); }
+    .kpi-migration .kpi-value { color: white; }
+    .kpi-migration .kpi-delta { color: rgba(255,255,255,0.8); }
+    .kpi-migration .kpi-tooltip-icon {
+      position: absolute; top: 14px; right: 14px;
+      width: 17px; height: 17px; border-radius: 50%;
+      background: rgba(255,255,255,0.22); color: white;
+      font-size: 10px; font-weight: 800; display: flex;
+      align-items: center; justify-content: center; cursor: default;
+    }
+    .kpi-migration .kpi-tooltip-icon:hover::after {
+      content: attr(data-tip);
+      position: absolute; right: 0; top: 22px;
+      background: #1e293b; color: white; font-size: 11px; font-weight: 400;
+      padding: 7px 10px; border-radius: 6px; white-space: normal;
+      width: 220px; line-height: 1.5; z-index: 99; pointer-events: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .prog-track {
+      background: rgba(255,255,255,0.25); border-radius: 4px;
+      height: 6px; margin-top: 10px;
+    }
+    .prog-fill {
+      background: white; border-radius: 4px; height: 6px;
+      transition: width 0.8s ease;
+    }
+
+    .kpi-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--txt-3); margin-bottom: 8px; }
+    .kpi-value { font-size: 26px; font-weight: 700; color: var(--txt-1); line-height: 1; }
+    .kpi-delta { font-size: 11px; margin-top: 6px; }
+    .delta-up  { color: #16A34A; }
+    .delta-dn  { color: #DC2626; }
+    .delta-neu { color: var(--txt-4); }
+
+    .ops-section-label {
+      font-size: 10px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--txt-4); margin-bottom: 12px; margin-top: 28px;
+    }
+
+    /* Narrative cards */
+    .narrative-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; }
+    .narrative-card {
+      background: white; border-radius: var(--r-md); padding: 16px 18px;
+      box-shadow: var(--sh-sm); border: 1px solid var(--border);
+    }
+    .nar-tag-row { display: flex; align-items: center; gap: 6px; margin-bottom: 7px; }
+    .nar-tag {
+      display: inline-block; font-size: 9px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.06em; padding: 2px 7px; border-radius: 3px;
+    }
+    .tag-top      { background: #DCFCE7; color: #166534; }
+    .tag-watch    { background: #FEF9C3; color: #854D0E; }
+    .tag-pilot    { background: #FEE2E2; color: #991B1B; }
+    .tag-velocity { background: #EDE9FE; color: #5B21B6; }
+    .tag-weather  { background: #E0F2FE; color: #075985; }
+    .nar-site { font-size: 13px; font-weight: 700; color: var(--txt-1); }
+    .nar-meta { font-size: 11px; color: var(--txt-3); margin-bottom: 9px; }
+    .nar-text { font-size: 12px; color: var(--txt-2); line-height: 1.65; }
+
+    /* Velocity chart */
+    .vel-chart-wrap {
+      background: white; border-radius: var(--r-md); border: 1px solid var(--border);
+      box-shadow: var(--sh-sm); padding: 18px 22px; height: 260px;
+    }
+
+    /* Site table */
+    .site-table-wrap { background: white; border-radius: var(--r-md); border: 1px solid var(--border); overflow: hidden; box-shadow: var(--sh-sm); }
+    .site-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    .site-table th {
+      background: var(--bg-2); padding: 8px 12px; text-align: left;
+      font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
+      color: var(--txt-3); border-bottom: 1px solid var(--border);
+      white-space: nowrap; cursor: pointer; user-select: none;
+    }
+    .site-table th:hover { color: var(--brand); }
+    .site-table th.sort-asc::after  { content: ' ↑'; }
+    .site-table th.sort-desc::after { content: ' ↓'; }
+    .site-table td { padding: 8px 12px; border-bottom: 1px solid var(--border); color: var(--txt-2); vertical-align: middle; }
+    .site-table tbody tr:last-child td { border-bottom: none; }
+    .site-table tbody tr:hover td { background: var(--bg-hover); }
+    .td-name { font-weight: 600; color: var(--txt-1); }
+    .pill { display: inline-block; padding: 1px 7px; border-radius: 4px; font-weight: 700; font-size: 10px; }
+    .pill-g { background: #DCFCE7; color: #166534; }
+    .pill-y { background: #FEF9C3; color: #854D0E; }
+    .pill-r { background: #FEE2E2; color: #991B1B; }
+    .badge-pilot {
+      display: inline-block; font-size: 9px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.05em; padding: 1px 5px; border-radius: 3px;
+      background: #FEE2E2; color: #991B1B; margin-left: 5px; vertical-align: middle;
+    }
+    .dq-ok   { color: #16A34A; font-size: 13px; }
+    .dq-warn { color: #EA580C; font-size: 13px; }
+
+    .ops-footnote {
+      margin-top: 28px; padding-top: 14px; border-top: 1px solid var(--border);
+      font-size: 10px; color: var(--txt-4); line-height: 1.6;
+    }
+    .ops-footnote strong { color: var(--txt-3); }
   </style>
 </head>
 <body>
+
+<nav id="tab-nav">
+  <div id="tab-nav-inner">
+    <div id="brand-mark">CREW CARWASH</div>
+    <div id="tab-divider"></div>
+    <div id="tab-buttons">
+      <button class="tab-btn active" data-tab="map">Competitive Map</button>
+      <button class="tab-btn" data-tab="ops">Operating Picture</button>
+    </div>
+    <div id="nav-meta">Mon, May 5, 2026 · 6:00 PM EDT</div>
+  </div>
+</nav>
 
 <div id="overlay">
   <div id="overlay-card">
@@ -200,6 +362,7 @@
   </div>
 </div>
 
+<div id="panel-map" class="tab-panel">
 <div id="map"></div>
 
 <div id="wisc-watch">
@@ -260,6 +423,52 @@
   <div class="row"><span class="dot" style="background:#E07A00"></span> Coming Soon</div>
   <div class="row"><span class="dot" style="background:#9CA3AF;opacity:0.7"></span> Closed</div>
   <div class="note">vs. Express Chains</div>
+</div>
+
+</div><!-- /panel-map -->
+
+<div id="panel-ops" class="tab-panel ops-panel" style="display:none">
+  <div class="ops-weather-strip">
+    <span>⛅</span>
+    <span><strong>Partly cloudy · 67°F, Mon May 5</strong> — Early AM rain in IN-North markets driving +12% wash volume vs. forecast. Afternoon clearing statewide. MN sites tracking 6% below seasonal plan on dry conditions.</span>
+  </div>
+  <div class="ops-container">
+    <div class="ops-header">
+      <div class="ops-title">Operating Picture</div>
+      <div class="ops-subtitle">Monday, May 5, 2026 · End-of-Day Summary · 53 Active Sites</div>
+    </div>
+
+    <div class="kpi-row" id="kpi-row"></div>
+
+    <div class="ops-section-label">Today's Highlights</div>
+    <div class="narrative-grid" id="narrative-grid"></div>
+
+    <div class="ops-section-label">Membership Velocity — Top 10 Sites · New Sign-ups Today</div>
+    <div class="vel-chart-wrap"><canvas id="vel-chart"></canvas></div>
+
+    <div class="ops-section-label">All Sites — Today's Performance</div>
+    <div class="site-table-wrap">
+      <table class="site-table" id="site-table">
+        <thead>
+          <tr>
+            <th data-col="name">Site</th>
+            <th data-col="state">State</th>
+            <th data-col="cars">Cars Today</th>
+            <th data-col="revenue">Revenue</th>
+            <th data-col="memberRate">Membership %</th>
+            <th data-col="laborPct">Labor %</th>
+            <th data-col="revDelta">vs. Yesterday</th>
+            <th data-col="dq" title="Data completeness score from NXTWash + Rinsed CRM sync">Data Quality</th>
+          </tr>
+        </thead>
+        <tbody id="site-tbody"></tbody>
+      </table>
+    </div>
+
+    <div class="ops-footnote">
+      <strong>Data sources:</strong> Simulated from NXTWash POS · Snowflake DW · Rinsed CRM · Dayforce HRIS · May 2026 &nbsp;·&nbsp; All figures are synthetic and illustrative only. Migration Readiness Score tracks data fidelity across Transaction, Plan, and Customer domains.
+    </div>
+  </div>
 </div>
 
 <script>
@@ -502,6 +711,247 @@ map.on('load', () => {
     ['rgba(217,70,239,0)','rgba(217,70,239,0.35)','rgba(217,70,239,0.65)','rgba(190,24,93,0.85)','rgba(190,24,93,1)'],
     '#D946EF'
   );
+});
+
+// ── Operating Picture ─────────────────────────────────────────────────────
+
+function mulberry32(seed) {
+  return function() {
+    seed |= 0; seed = (seed + 0x6D2B79F5) | 0;
+    var t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function fmt$(n) { return '$' + Math.round(n).toLocaleString('en-US'); }
+function fmtPct(n) { return (n * 100).toFixed(1) + '%'; }
+function fmtDelta(n) {
+  const sign = n >= 0 ? '+' : '−';
+  return sign + (Math.abs(n) * 100).toFixed(1) + '%';
+}
+
+const AREA_BOOST = {
+  'North': 1.14, 'West': 1.05, 'South': 1.07, 'East': 0.97,
+  'Maple Grove': 0.91, 'West St. Paul': 0.93, 'St. Cloud': 0.85,
+  'Illinois': 0.90, 'Other Indiana Locations': 0.83
+};
+
+const PILOT_ID  = 5283; // Champaign IL
+const MAPLE_ID  = 2094; // Maple Grove MN
+const HAZEL_ID  = 4099; // Noblesville 32 & Hazel Dell
+const CARMEL_ID = 160;  // Carmel Rangeline
+
+function genSiteData(loc) {
+  const r = mulberry32(loc.id * 997 + 20260505);
+  const boost = AREA_BOOST[loc.area] || 0.88;
+  const cars = Math.round((190 + r() * 310) * boost);
+  const avgTicket = 17.5 + r() * 8.5;
+  const revenue = Math.round(cars * avgTicket);
+
+  // Membership: Champaign ramps slowly, Carmel and North skew high
+  let memBase = 0.29 + r() * 0.23;
+  if (loc.id === PILOT_ID) memBase = 0.18 + r() * 0.09;   // early ramp
+  if (loc.id === CARMEL_ID) memBase = Math.max(memBase, 0.46);
+  if (loc.area === 'North') memBase = Math.min(memBase + 0.04, 0.52);
+
+  // Labor: Maple Grove slightly elevated on weather underperformance
+  let laborPct = 0.19 + r() * 0.12;
+  if (loc.id === MAPLE_ID) laborPct = Math.min(laborPct + 0.04, 0.32);
+
+  // New members: Carmel gets a bump
+  let newMembers = Math.round(1 + r() * 11);
+  if (loc.id === CARMEL_ID) newMembers = Math.max(newMembers, 10);
+  if (loc.id === PILOT_ID) newMembers = Math.min(newMembers, 4);
+
+  // Day-over-day: weather boost for IN-North, dip for MN
+  let revDelta = -0.07 + r() * 0.18;
+  if (['North','West','South'].includes(loc.area)) revDelta += 0.05;
+  if ([MAPLE_ID, 3422, 2627, 2095, 4318].includes(loc.id)) revDelta -= 0.07;
+
+  // Data quality score: Champaign lower due to pilot variance
+  const dq = loc.id === PILOT_ID ? 91.8 + r() * 2.5 : 95.2 + r() * 4.7;
+
+  return { cars, revenue, memberRate: memBase, newMembers, laborPct, revDelta, dq };
+}
+
+const NARRATIVES = [
+  { id: HAZEL_ID, tag: 'tag-top', tagLabel: 'Top Performer',
+    text: d => `Noblesville Hazel Dell led the North region today with ${d.cars.toLocaleString()} cars washed and revenue of ${fmt$(d.revenue)} — ${fmtDelta(d.revDelta)} vs. yesterday. Early-morning rainfall activated deferred-wash demand, and plan entitlement metrics were fully utilized: interior detail attach rate ran 18 pts above network average. Membership penetration at ${fmtPct(d.memberRate)} continues to compound the site's revenue floor.` },
+  { id: CARMEL_ID, tag: 'tag-velocity', tagLabel: 'Membership Velocity',
+    text: d => `Carmel Rangeline added ${d.newMembers} new Unlimited Wash Club members today — strongest velocity in the network. The Rinsed CRM integration surfaced 34 lapsed members via win-back sequence; 8 re-activated today. Overall penetration is ${fmtPct(d.memberRate)}, 11 pts above network average. Revenue of ${fmt$(d.revenue)} reflects a high-value suburban demographic responding well to the loyalty stack.` },
+  { id: PILOT_ID, tag: 'tag-pilot', tagLabel: 'Pilot Site',
+    text: d => `Champaign is tracking a 2.3% variance in plan activation records post-launch — ${d.newMembers} new members signed today against a Rinsed CRM target of 6. A mismatch between NXTWash plan SKUs and Snowflake dimension keys is under investigation; data quality score is ${d.dq.toFixed(1)}%, flagging below the 95% threshold. Ops and data engineering are aligned on a fix by EOD tomorrow. Revenue of ${fmt$(d.revenue)} is in line with the new-market ramp curve.` },
+  { id: MAPLE_ID, tag: 'tag-weather', tagLabel: 'Weather Effect',
+    text: d => `Maple Grove posted ${d.cars.toLocaleString()} cars (${fmtDelta(d.revDelta)} vs. yesterday) as dry conditions in the Twin Cities held back wash demand relative to the rain-boosted Indiana fleet. Labor as a % of revenue ticked to ${fmtPct(d.laborPct)} — a predictable weather-driven inefficiency. Membership retention at ${fmtPct(d.memberRate)} is the strongest outside Indiana, providing a stable revenue floor even in soft volume weeks.` }
+];
+
+let dashboardBuilt = false;
+let velChartInst = null;
+
+function buildDashboard() {
+  if (dashboardBuilt) return;
+  dashboardBuilt = true;
+
+  const active = LOCATIONS.filter(l => !l.coming_soon && !l.closed);
+  const siteData = active.map(l => ({ loc: l, ...genSiteData(l) }));
+
+  // ── KPI cards ──────────────────────────────────────────────────────────
+  const totalRev  = siteData.reduce((s, d) => s + d.revenue, 0);
+  const totalCars = siteData.reduce((s, d) => s + d.cars, 0);
+  const avgMem    = siteData.reduce((s, d) => s + d.memberRate, 0) / siteData.length;
+  const avgLabor  = siteData.reduce((s, d) => s + d.laborPct, 0) / siteData.length;
+
+  const laborDir = avgLabor <= 0.255;
+  document.getElementById('kpi-row').innerHTML = `
+    <div class="kpi-card">
+      <div class="kpi-label">Network Revenue · Today</div>
+      <div class="kpi-value">${fmt$(totalRev)}</div>
+      <div class="kpi-delta delta-up">↑ 4.2% vs. yesterday</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Cars Washed · Today</div>
+      <div class="kpi-value">${totalCars.toLocaleString()}</div>
+      <div class="kpi-delta delta-up">↑ 6.8% vs. yesterday · rain effect IN-North</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Avg Membership Penetration</div>
+      <div class="kpi-value">${fmtPct(avgMem)}</div>
+      <div class="kpi-delta delta-neu">+0.3 pts vs. last week</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Avg Labor % of Revenue</div>
+      <div class="kpi-value">${fmtPct(avgLabor)}</div>
+      <div class="kpi-delta ${laborDir ? 'delta-up' : 'delta-dn'}">${laborDir ? '↓' : '↑'} ${(Math.abs(avgLabor - 0.25)*100).toFixed(1)} pts vs. 25% target</div>
+    </div>
+    <div class="kpi-card kpi-migration">
+      <div class="kpi-tooltip-icon" data-tip="Tracks data fidelity across Transaction, Plan, and Customer domains from NXTWash → Snowflake → Rinsed CRM.">?</div>
+      <div class="kpi-label">Migration Readiness Score</div>
+      <div class="kpi-value">97.3%</div>
+      <div class="kpi-delta">↑ 1.1 pts vs. last sprint · 1 site flagged</div>
+      <div class="prog-track"><div class="prog-fill" id="mig-bar" style="width:0%"></div></div>
+    </div>`;
+
+  // Animate progress bar after paint
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    const bar = document.getElementById('mig-bar');
+    if (bar) bar.style.width = '97.3%';
+  }));
+
+  // ── Narrative cards ────────────────────────────────────────────────────
+  document.getElementById('narrative-grid').innerHTML = NARRATIVES.map(n => {
+    const entry = siteData.find(d => d.loc.id === n.id);
+    if (!entry) return '';
+    return `<div class="narrative-card">
+      <div class="nar-tag-row"><span class="nar-tag ${n.tag}">${n.tagLabel}</span></div>
+      <div class="nar-site">${entry.loc.name}</div>
+      <div class="nar-meta">${entry.loc.city}, ${entry.loc.state} · ${entry.loc.area}</div>
+      <div class="nar-text">${n.text(entry)}</div>
+    </div>`;
+  }).join('');
+
+  // ── Membership velocity Chart.js bar ───────────────────────────────────
+  const top10 = [...siteData].sort((a, b) => b.newMembers - a.newMembers).slice(0, 10);
+  const ctx = document.getElementById('vel-chart').getContext('2d');
+  if (velChartInst) velChartInst.destroy();
+  velChartInst = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: top10.map(d => d.loc.name.replace(/\s*[–-]\s*/g, ' · ').replace(' & ', ' & ')),
+      datasets: [{
+        data: top10.map(d => d.newMembers),
+        backgroundColor: top10.map(d =>
+          d.loc.id === CARMEL_ID ? '#005FA3' :
+          d.loc.id === PILOT_ID  ? '#DC2626' : '#3B82F6'
+        ),
+        borderRadius: 5,
+        borderSkipped: false,
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => ` ${ctx.parsed.x} new members today`
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { color: '#F3F4F6' },
+          ticks: { font: { size: 11 }, color: '#6B7280' },
+          title: { display: true, text: 'New Sign-ups Today', font: { size: 11 }, color: '#9CA3AF' }
+        },
+        y: { ticks: { font: { size: 11 }, color: '#374151' }, grid: { display: false } }
+      }
+    }
+  });
+
+  // ── Site table ─────────────────────────────────────────────────────────
+  let sortCol = 'revenue', sortDir = -1;
+
+  function memPill(v)   { return v > 0.40 ? 'pill-g' : v > 0.27 ? 'pill-y' : 'pill-r'; }
+  function laborPill(v) { return v < 0.24 ? 'pill-g' : v < 0.29 ? 'pill-y' : 'pill-r'; }
+  function deltaColor(v){ return v >= 0.05 ? '#16A34A' : v <= -0.05 ? '#DC2626' : 'var(--txt-3)'; }
+  function dqIcon(v, id) {
+    if (id === PILOT_ID) return `<span class="dq-warn" title="${v.toFixed(1)}% — below 95% threshold">⚠</span>`;
+    return `<span class="dq-ok" title="${v.toFixed(1)}% complete">✓</span>`;
+  }
+
+  function renderTable() {
+    const sorted = [...siteData].sort((a, b) => {
+      let av, bv;
+      if (sortCol === 'name')  { av = a.loc.name;  bv = b.loc.name; }
+      else if (sortCol === 'state') { av = a.loc.state; bv = b.loc.state; }
+      else { av = a[sortCol] ?? 0; bv = b[sortCol] ?? 0; }
+      if (typeof av === 'string') return sortDir * av.localeCompare(bv);
+      return sortDir * (av - bv);
+    });
+
+    document.getElementById('site-tbody').innerHTML = sorted.map(d => {
+      const isPilot = d.loc.id === PILOT_ID;
+      return `<tr>
+        <td class="td-name">${d.loc.name}${isPilot ? '<span class="badge-pilot">Pilot</span>' : ''}</td>
+        <td>${d.loc.state}</td>
+        <td>${d.cars.toLocaleString()}</td>
+        <td>${fmt$(d.revenue)}</td>
+        <td><span class="pill ${memPill(d.memberRate)}">${fmtPct(d.memberRate)}</span></td>
+        <td><span class="pill ${laborPill(d.laborPct)}">${fmtPct(d.laborPct)}</span></td>
+        <td style="color:${deltaColor(d.revDelta)};font-weight:600">${fmtDelta(d.revDelta)}</td>
+        <td>${dqIcon(d.dq, d.loc.id)}</td>
+      </tr>`;
+    }).join('');
+
+    document.querySelectorAll('#site-table th').forEach(th => {
+      th.classList.remove('sort-asc','sort-desc');
+      if (th.dataset.col === sortCol) th.classList.add(sortDir === 1 ? 'sort-asc' : 'sort-desc');
+    });
+  }
+
+  document.querySelectorAll('#site-table th').forEach(th => {
+    th.addEventListener('click', () => {
+      if (sortCol === th.dataset.col) sortDir *= -1;
+      else { sortCol = th.dataset.col; sortDir = -1; }
+      renderTable();
+    });
+  });
+
+  renderTable();
+}
+
+// ── Tab switching ──────────────────────────────────────────────────────────
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const tab = btn.dataset.tab;
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('panel-map').style.display = tab === 'map' ? '' : 'none';
+    document.getElementById('panel-ops').style.display = tab === 'ops' ? '' : 'none';
+    if (tab === 'ops') buildDashboard();
+  });
 });
 </script>
 </body>
