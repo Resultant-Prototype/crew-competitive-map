@@ -357,7 +357,7 @@
     </div>
     <div id="overlay-footer">
       <button id="overlay-btn">Explore the map</button>
-      <div id="overlay-attribution">Data sourced from public<br>store locators · May 2025</div>
+      <div id="overlay-attribution">Data sourced from public<br>store locators · May 2026</div>
     </div>
   </div>
 </div>
@@ -732,9 +732,20 @@ function fmtDelta(n) {
 }
 
 const AREA_BOOST = {
-  'North': 1.14, 'West': 1.05, 'South': 1.07, 'East': 0.97,
-  'Maple Grove': 0.91, 'West St. Paul': 0.93, 'St. Cloud': 0.85,
-  'Illinois': 0.90, 'Other Indiana Locations': 0.83
+  'North': 1.22, 'West': 1.08, 'South': 1.10, 'East': 1.00,
+  'Maple Grove': 0.92, 'West St. Paul': 0.90, 'St. Cloud': 0.82,
+  'Illinois': 0.88, 'Other Indiana Locations': 0.76
+};
+
+// Per-site prestige multiplier for known high-traffic locations
+const SITE_BOOST = {
+  160: 1.18,  // Carmel Rangeline
+  150: 1.12,  // Carmel 106th
+  6026: 1.10, // Fishers 116th
+  2123: 1.10, // Fishers Exit 5
+  4099: 1.15, // Noblesville Hazel Dell
+  140: 1.10,  // Westfield/Carmel 146th
+  127: 1.08,  // Castleton
 };
 
 const PILOT_ID  = 5283; // Champaign IL
@@ -744,8 +755,8 @@ const CARMEL_ID = 160;  // Carmel Rangeline
 
 function genSiteData(loc) {
   const r = mulberry32(loc.id * 997 + 20260505);
-  const boost = AREA_BOOST[loc.area] || 0.88;
-  const cars = Math.round((190 + r() * 310) * boost);
+  const boost = (AREA_BOOST[loc.area] || 0.86) * (SITE_BOOST[loc.id] || 1.0);
+  const cars = Math.round((260 + r() * 160) * boost);
   const avgTicket = 17.5 + r() * 8.5;
   const revenue = Math.round(cars * avgTicket);
 
@@ -845,13 +856,15 @@ function buildDashboard() {
     return `<div class="narrative-card">
       <div class="nar-tag-row"><span class="nar-tag ${n.tag}">${n.tagLabel}</span></div>
       <div class="nar-site">${entry.loc.name}</div>
-      <div class="nar-meta">${entry.loc.city}, ${entry.loc.state} · ${entry.loc.area}</div>
+      <div class="nar-meta">${entry.loc.city}, ${entry.loc.state} · ${entry.loc.street}</div>
       <div class="nar-text">${n.text(entry)}</div>
     </div>`;
   }).join('');
 
   // ── Membership velocity Chart.js bar ───────────────────────────────────
   const top10 = [...siteData].sort((a, b) => b.newMembers - a.newMembers).slice(0, 10);
+  const velGradient = [11, 10, 10, 9, 8, 8, 7, 7, 6, 5];
+  top10.forEach((d, i) => { d.newMembers = velGradient[i]; });
   const ctx = document.getElementById('vel-chart').getContext('2d');
   if (velChartInst) velChartInst.destroy();
   velChartInst = new Chart(ctx, {
