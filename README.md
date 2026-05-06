@@ -46,8 +46,8 @@ This project combines automated data collection, competitive analysis, and inter
 ### Setup
 
 ```bash
-git clone https://github.com/Resultant-Prototype/crew-competitive-map.git
-cd crew-competitive-map
+git clone https://github.com/Resultant-Prototype/crowd-competitive-map.git
+cd crowd-competitive-map
 ```
 
 ### View the Dashboard
