@@ -1,13 +1,15 @@
 # Crew Carwash Competitive Intelligence Platform
 
-An integrated competitive mapping and operating intelligence dashboard for Crew Carwash. Visualizes competitive positioning across the Midwest, calculates competitive pressure scores, and provides real-time operating metrics through an interactive dashboard.
+> ⚠️ **Prototype Disclaimer**: This is a Resultant proof-of-concept (POC) and is not an official Crew Carwash product. It is not endorsed by, created for, or affiliated with Crew Carwash. This is a public repository for demonstration purposes only.
+
+An integrated competitive mapping and operating intelligence dashboard demonstrating competitive positioning analysis and operating metrics visualization. Visualizes competitor locations across the Midwest, calculates competitive pressure scores, and provides example operating metrics through an interactive dashboard.
 
 ## Overview
 
 This project combines automated data collection, competitive analysis, and interactive visualization:
 
 **Data Collection**:
-- Automated scraping of Crew Carwash and competitor locations (Mister Car Wash, Tommy's Express)
+- Automated scraping of location data from public sources (e.g., Mister Car Wash, Tommy's Express)
 - Concurrent fetching with curl-based requests (avoids HTTP 403 blocks)
 - Structured data extraction from JSON-LD and Yoast SEO `@graph` formats
 - Data normalized into consistent JSON schemas
@@ -312,10 +314,14 @@ For module details, scraping strategy, and data schemas, see [CLAUDE.md](CLAUDE.
 - **Concurrent fetching**: 15 workers balances speed with server respect (no DDoS)
 - **Yext → Nominatim fallback**: Yext is fast but optional; Nominatim is rate-limited but free and open
 
+## Disclaimer
+
+**This is a Resultant prototype and proof-of-concept (POC).** It is not an official Crew Carwash application and is not endorsed by or created for Crew Carwash. This repository is public and intended for demonstration and evaluation purposes only.
+
 ## License
 
-Proprietary — Crew Carwash
+MIT License — Resultant Prototype
 
 ## Contact
 
-For questions or contributions, contact the Crew Carwash Analytics team.
+For questions about this prototype, contact the Resultant team.
