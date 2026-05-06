@@ -28,22 +28,22 @@ class TestDistanceMi(unittest.TestCase):
 class TestComputePressure(unittest.TestCase):
 
     def test_no_competitors_nearby(self):
-        crew = {'lat': 50.0, 'lng': -100.0}
-        result = compute_pressure(crew, [], [])
+        crowd = {'lat': 50.0, 'lng': -100.0}
+        result = compute_pressure(crowd, [], [])
         self.assertEqual(result['level'], 'none')
         self.assertEqual(result['mister']['within1'], 0)
         self.assertEqual(result['tommys']['within1'], 0)
         self.assertEqual(result['nearest'], [])
 
     def test_high_pressure_within_1mi(self):
-        crew = {'lat': 40.0, 'lng': -86.0}
+        crowd = {'lat': 40.0, 'lng': -86.0}
         mister = [{'lat': 40.0, 'lng': -86.0, 'city': 'Indianapolis', 'state': 'IN'}]
-        result = compute_pressure(crew, mister, [])
+        result = compute_pressure(crowd, mister, [])
         self.assertEqual(result['level'], 'high')
         self.assertGreaterEqual(result['mister']['within1'], 1)
 
     def test_high_pressure_3_within_3mi(self):
-        crew = {'lat': 40.0, 'lng': -86.0}
+        crowd = {'lat': 40.0, 'lng': -86.0}
         competitors = [
             {'lat': 40.00, 'lng': -86.00, 'city': 'C1', 'state': 'IN'},
             {'lat': 40.01, 'lng': -86.00, 'city': 'C2', 'state': 'IN'},
@@ -54,7 +54,7 @@ class TestComputePressure(unittest.TestCase):
         self.assertGreaterEqual(result['mister']['within3'], 3)
 
     def test_medium_pressure_1_within_3mi(self):
-        crew = {'lat': 40.0, 'lng': -86.0}
+        crowd = {'lat': 40.0, 'lng': -86.0}
         mister = [{'lat': 40.03, 'lng': -86.00, 'city': 'Indianapolis', 'state': 'IN'}]
         result = compute_pressure(crew, mister, [])
         self.assertEqual(result['level'], 'medium')
@@ -62,7 +62,7 @@ class TestComputePressure(unittest.TestCase):
         self.assertEqual(result['mister']['within1'], 0)
 
     def test_low_pressure_1_within_5mi(self):
-        crew = {'lat': 40.0, 'lng': -86.0}
+        crowd = {'lat': 40.0, 'lng': -86.0}
         mister = [{'lat': 40.06, 'lng': -86.00, 'city': 'Indianapolis', 'state': 'IN'}]
         result = compute_pressure(crew, mister, [])
         self.assertEqual(result['level'], 'low')
@@ -70,7 +70,7 @@ class TestComputePressure(unittest.TestCase):
         self.assertEqual(result['mister']['within3'], 0)
 
     def test_multi_chain_scoring(self):
-        crew = {'lat': 40.0, 'lng': -86.0}
+        crowd = {'lat': 40.0, 'lng': -86.0}
         mister = [{'lat': 40.00, 'lng': -86.00, 'city': 'Mister1', 'state': 'IN'}]
         tommys = [{'lat': 40.005, 'lng': -86.00, 'city': 'Tommys1', 'state': 'IN'}]
         result = compute_pressure(crew, mister, tommys)
@@ -79,7 +79,7 @@ class TestComputePressure(unittest.TestCase):
         self.assertEqual(result['level'], 'high')
 
     def test_nearest_competitors(self):
-        crew = {'lat': 40.0, 'lng': -86.0}
+        crowd = {'lat': 40.0, 'lng': -86.0}
         mister = [
             {'lat': 40.00, 'lng': -86.00, 'city': 'M1', 'state': 'IN'},
             {'lat': 40.01, 'lng': -86.00, 'city': 'M2', 'state': 'IN'},
@@ -92,7 +92,7 @@ class TestComputePressure(unittest.TestCase):
             self.assertLessEqual(result['nearest'][i]['d'], result['nearest'][i + 1]['d'])
 
     def test_nearest_filtered_to_10mi(self):
-        crew = {'lat': 40.0, 'lng': -86.0}
+        crowd = {'lat': 40.0, 'lng': -86.0}
         mister = [
             {'lat': 40.00, 'lng': -86.00, 'city': 'Close', 'state': 'IN'},
             {'lat': 50.0, 'lng': -100.0, 'city': 'Far', 'state': 'IN'},
@@ -102,7 +102,7 @@ class TestComputePressure(unittest.TestCase):
         self.assertEqual(result['nearest'][0]['city'], 'Close')
 
     def test_empty_competitor_data(self):
-        crew = {'lat': 40.0, 'lng': -86.0}
+        crowd = {'lat': 40.0, 'lng': -86.0}
         result = compute_pressure(crew, [], [])
         self.assertEqual(result['mister'], {'within1': 0, 'within3': 0, 'within5': 0})
         self.assertEqual(result['tommys'], {'within1': 0, 'within3': 0, 'within5': 0})

@@ -1,4 +1,4 @@
-// ── Crew Location Data ────────────────────────────────────────────────
+// ── Crowd Location Data ────────────────────────────────────────────────
 const LOCATIONS = [
   {"id":6029,"name":"Indy – Thompson & Emerson","street":"5045 S. Emerson Avenue","city":"Indianapolis","state":"IN","zip":"46237","phone":"","hours":"","lat":39.69358823123011,"lng":-86.08256143523512,"coming_soon":true,"closed":false},
   {"id":6026,"name":"Fishers – 116th & Allisonville","street":"11578 Allisonville Road","city":"Fishers","state":"IN","zip":"46038","phone":"(317) 787-9820","hours":"Every Day 7am to 9pm","lat":39.9546,"lng":-86.0232,"coming_soon":false,"closed":false},

@@ -10,12 +10,12 @@ def distance_mi(lat1, lng1, lat2, lng2):
     return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
 
-def compute_pressure(crew_loc, mister_data, tommys_data):
-    """Returns pressure level and nearest competitor counts for a Crew location."""
+def compute_pressure(crowd_loc, mister_data, tommys_data):
+    """Returns pressure level and nearest competitor counts for a Crowd location."""
     def chain_dists(locs, chain_name):
         return sorted(
             [{'city': l['city'], 'state': l['state'], 'chain': chain_name,
-              'd': distance_mi(crew_loc['lat'], crew_loc['lng'], l['lat'], l['lng'])} for l in locs],
+              'd': distance_mi(crowd_loc['lat'], crowd_loc['lng'], l['lat'], l['lng'])} for l in locs],
             key=lambda x: x['d']
         )
 

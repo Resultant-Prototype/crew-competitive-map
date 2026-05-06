@@ -1,9 +1,9 @@
 """
-Scrape Tommy's Express car wash locations for states relevant to Crew Carwash.
+Scrape Tommy's Express car wash locations for target states.
 
 Strategy:
   1. Pull all store slugs from the WordPress locations sitemap
-  2. Filter to target states (IL, MN, WI — Crew's footprint + expansion targets)
+  2. Filter to target states (IL, MN, WI — regional focus)
   3. For each slug: fetch the store page for address, then try Yext for lat/lng
   4. Fall back to Nominatim geocoding if Yext has no data for that entity
 """
@@ -39,7 +39,7 @@ def geocode_nominatim(street: str, city: str, state: str, zip_code: str) -> tupl
     query = urllib.parse.quote(f'{street}, {city}, {state} {zip_code}, USA')
     url = f'https://nominatim.openstreetmap.org/search?q={query}&format=json&limit=1'
     result = subprocess.run(
-        ['curl', '-sL', '-A', 'crew-competitive-map/1.0 (research project)',
+        ['curl', '-sL', '-A', 'crowd-competitive-map/1.0 (research project)',
          '-H', 'Accept: application/json', url],
         capture_output=True, text=True, timeout=15
     )

@@ -1,6 +1,6 @@
-# Crew Carwash Competitive Intelligence Platform
+# Crowd Competitive Intelligence Platform
 
-> ⚠️ **Prototype Disclaimer**: This is a Resultant proof-of-concept (POC) and is not an official Crew Carwash product. It is not endorsed by, created for, or affiliated with Crew Carwash. This is a public repository for demonstration purposes only.
+> ⚠️ **Prototype Disclaimer**: This is a Resultant proof-of-concept (POC) demonstrating competitive positioning analysis. This is a public repository for demonstration and evaluation purposes only.
 
 An integrated competitive mapping and operating intelligence dashboard demonstrating competitive positioning analysis and operating metrics visualization. Visualizes competitor locations across the Midwest, calculates competitive pressure scores, and provides example operating metrics through an interactive dashboard.
 
@@ -59,7 +59,7 @@ python3 -m http.server 8000
 ```
 
 Two tabs:
-- **Competitive Map** — Crew locations color-coded by competitive pressure with Wisconsin Watch expansion panel
+- **Competitive Map** — Locations color-coded by competitive pressure with Wisconsin Watch expansion panel
 - **Operating Picture** — KPIs, site metrics, membership velocity, migration readiness
 
 ### Data Collection
@@ -94,7 +94,7 @@ crew-map/
 │   ├── map.js                     # MapLibre GL competitive map implementation
 │   └── dashboard.js               # Operating picture dashboard (KPIs, charts, narratives)
 ├── data/                          # JSON location datasets (source of truth)
-│   ├── crew_locations.json        # 60 Crew locations (57 active) with facility details
+│   ├── crowd_locations.json       # 60 locations (57 active) with facility details
 │   ├── mister_carwash.json        # Mister Car Wash filtered to IN/IL/MN/WI
 │   ├── mister_carwash_all.json    # Mister Car Wash all states
 │   ├── tommys_express.json        # Tommy's Express IL/MN/WI
@@ -116,10 +116,10 @@ crew-map/
 
 ### Competitive Pressure Scoring (`pressure.py`)
 
-Each Crew location gets a pressure level based on nearby competitors:
+Each location gets a pressure level based on nearby competitors:
 
 ```python
-compute_pressure(crew_location, mister_data, tommys_data)
+compute_pressure(crowd_location, mister_data, tommys_data)
 ```
 
 Returns:
@@ -129,7 +129,7 @@ Returns:
   "mister": {"within1": 0, "within3": 1, "within5": 2},
   "tommys": {"within1": 1, "within3": 1, "within5": 1},
   "nearest": [
-    {"city": "Carmel", "state": "IN", "chain": "Mister CW", "d": 0.8},
+    {"city": "Sample City", "state": "IN", "chain": "Mister CW", "d": 0.8},
     ...
   ]
 }
@@ -145,7 +145,7 @@ Distance: Haversine formula in miles.
 
 ### Synthetic Dashboard Data (`dashboard_seed.py`)
 
-Generates 57 active Crew locations with realistic operating metrics:
+Generates 57 active locations with realistic operating metrics:
 
 **Metrics** (location-ID seeded, reproducible):
 - `cars_today`: 200–500 (area boost North +22%, East baseline)
@@ -165,7 +165,7 @@ Generates 57 active Crew locations with realistic operating metrics:
 
 **Competitive Map** (`js/map.js`):
 - MapLibre GL vector tiles
-- Crew dots color-coded: red (high) → orange (medium) → gold (low) → green (none)
+- Location dots color-coded: red (high) → orange (medium) → gold (low) → green (none)
 - Coming Soon dots (orange), Closed (gray, 70% opacity)
 - Click to show nearest competitors within 10 miles
 - Wisconsin Watch: Milwaukee, Madison, Appleton, Green Bay expansion markets
@@ -173,25 +173,25 @@ Generates 57 active Crew locations with realistic operating metrics:
 
 **Operating Picture** (`js/dashboard.js`):
 - KPI cards: Network Revenue, Cars Washed, Avg Membership %, Avg Labor %, Migration Readiness
-- Narrative cards: Highlighted locations with context-aware copy
+- Narrative cards: Highlighted locations with metrics
 - Membership velocity: Bar chart of top 10 new member rates
-- Color coding: Carmel 106th (dark blue, flagship), Champaign (red, pilot), others (light blue)
+- Color coding: Flagship locations (dark blue), Pilot markets (red), others (light blue)
 
 ## Data Schemas
 
-### Crew Carwash Locations (`data/crew_locations.json`)
+### Location Data (`data/crowd_locations.json`)
 ```json
 {
   "id": 150,
-  "name": "Carmel – 106th and Michigan",
-  "slug": "carmel-106th-and-michigan",
-  "street": "10580 N. Michigan Rd.",
-  "city": "Carmel",
+  "name": "Sample Location – Example Address",
+  "slug": "sample-location",
+  "street": "Sample Street Address",
+  "city": "Sample City",
   "state": "IN",
   "zip": "46032",
-  "phone": "(317) 824-0035",
-  "hours": "Every Day 7am to 9pm",
-  "area": "North",
+  "phone": "Phone Number",
+  "hours": "Hours of Operation",
+  "area": "Region",
   "lat": 39.9396722,
   "lng": -86.2369832,
   "coming_soon": false,
@@ -203,7 +203,7 @@ Generates 57 active Crew locations with realistic operating metrics:
 
 Fields:
 - `id`: Unique location identifier (used for seeding synthetic data)
-- `area`: Regional grouping (North, West, South, East, Maple Grove, West St. Paul, St. Cloud, Illinois, Other Indiana Locations)
+- `area`: Regional grouping for analysis
 - `lat`/`lng`: Geographic coordinates (used for distance calculations)
 - `coming_soon`/`closed`: Status flags (affects dashboard inclusion, map color)
 - `has_interior`/`has_self_service`: Facility capabilities
@@ -277,10 +277,10 @@ Minimal schema: name, address, coordinates, chain identifier.
 
 ## Geographic Coverage
 
-**Crew Carwash**: 60 total locations
-- **Indiana** (54): Indianapolis metro, North (Carmel, Fishers, Noblesville), East, West, South, statewide
-- **Minnesota** (5): Twin Cities (Eden Prairie, Wayzata, Maple Grove, West St. Paul), St. Cloud
-- **Illinois** (1): Champaign (pilot market)
+**Location Data**: 60 total locations
+- **Indiana** (54): Various regions including urban and statewide coverage
+- **Minnesota** (5): Twin Cities and regional coverage
+- **Illinois** (1): Sample market location
 
 **Competitors**:
 - **Mister Car Wash**: 55 in target states, 558 all states (multistate chain, fully automated)
@@ -295,11 +295,11 @@ Minimal schema: name, address, coordinates, chain identifier.
 
 ## Use Cases
 
-- **Competitive intelligence** — Visualize Crew's position relative to express chains
-- **Expansion planning** — Wisconsin Watch identifies low-competition markets
-- **Market analysis** — Pressure scores show saturation by location
-- **Operating dashboards** — Real-time KPIs and metric tracking for leadership
-- **Demo/pitch material** — Polished visualization of competitive landscape
+- **Competitive intelligence** — Visualize location positioning relative to competitors
+- **Market analysis** — Pressure scores show competitive saturation
+- **Operating dashboards** — Dashboard displaying KPIs and metrics
+- **Expansion analysis** — Identify markets by competitive density
+- **Demo/technical prototype** — Demonstration of competitive mapping capabilities
 
 ## Development
 

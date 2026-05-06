@@ -4,11 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project overview
 
-Competitive location mapping and operating intelligence platform for Crew Carwash. Provides:
-- **Competitive mapping** — Visualizes Crew locations with color-coded competitive pressure
+Competitive location mapping and operating intelligence platform. Provides:
+- **Competitive mapping** — Visualizes locations with color-coded competitive pressure
 - **Operating picture dashboard** — Real-time KPIs and site-level metrics
 - **Expansion analysis** — Wisconsin Watch panel for market opportunity assessment
-- **Data collection** — Automated scraping and normalization of Crew and competitor location data
+- **Data collection** — Automated scraping and normalization of competitor location data
 
 Covers IN, IL, MN, WI with focus on expansion into Wisconsin.
 
@@ -30,14 +30,14 @@ Covers IN, IL, MN, WI with focus on expansion into Wisconsin.
   - Mulberry32 PRNG for reproducibility
   - Area/site boost multipliers (North +22%, East baseline, etc.)
   - Metrics: cars_today, revenue, membership_pct, labor_pct, vs_yesterday, dq_score, new_members
-  - Generates data for 57 active Crew locations
+  - Generates data for 57 active locations
 
 ### Frontend (HTML/JS/CSS)
 
 **Dashboard** (`index.html`, `js/`, `css/`):
 - Two-tab interface: "Competitive Map" (map.js) + "Operating Picture" (dashboard.js)
 - **Competitive Map** (MapLibre GL):
-  - Crew dots color-coded by pressure level (red/orange/gold/green)
+  - Location dots color-coded by pressure level (red/orange/gold/green)
   - Coming soon (orange) and closed (gray) locations
   - Wisconsin Watch expansion panel: Milwaukee, Madison, Appleton, Green Bay
   - Click location for popup with nearest competitors
@@ -65,24 +65,24 @@ python3 -m unittest discover -s tests -v
 
 **Test coverage**:
 - `test_pressure.py` — distance_mi (Haversine), compute_pressure classification
-- `test_dashboard_data.py` — site count (57 active), required fields, metric bounds (cars 200–500, revenue realistic, labor 15–35%)
+- `test_dashboard_data.py` — site count (57 active), required fields, metric bounds (cars 200–500, revenue realistic, labor 18–32%)
 
 ## Data schemas
 
-### Crew locations (`data/crew_locations.json`) — 60 total (57 active)
+### Location data (`data/crowd_locations.json`) — 60 total (57 active)
 
 ```json
 {
   "id": 150,
-  "name": "Carmel – 106th and Michigan",
-  "slug": "carmel-106th-and-michigan",
-  "street": "10580 N. Michigan Rd.",
-  "city": "Carmel",
+  "name": "Sample Location",
+  "slug": "sample-location",
+  "street": "Sample Street",
+  "city": "Sample City",
   "state": "IN",
   "zip": "46032",
-  "phone": "(317) 824-0035",
-  "hours": "Every Day 7am to 9pm",
-  "area": "North",
+  "phone": "Phone Number",
+  "hours": "Hours",
+  "area": "Region",
   "lat": 39.9396722,
   "lng": -86.2369832,
   "coming_soon": false,

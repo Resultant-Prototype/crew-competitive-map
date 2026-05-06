@@ -41,8 +41,8 @@ CARMEL_ID = 160   # Carmel Rangeline
 
 
 def load_locations():
-    """Load Crew locations from data/crew_locations.json."""
-    data_file = Path(__file__).parent / 'data' / 'crew_locations.json'
+    """Load Crowd locations from data/crowd_locations.json."""
+    data_file = Path(__file__).parent / 'data' / 'crowd_locations.json'
     with open(data_file) as f:
         return json.load(f)
 
