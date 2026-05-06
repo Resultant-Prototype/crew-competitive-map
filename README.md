@@ -44,8 +44,8 @@ This project combines automated data collection, competitive analysis, and inter
 ### Setup
 
 ```bash
-git clone https://github.com/crew-carwash/crew-map.git
-cd crew-map
+git clone https://github.com/Resultant-Prototype/crew-competitive-map.git
+cd crew-competitive-map
 ```
 
 ### View the Dashboard
@@ -147,9 +147,9 @@ Generates 57 active Crew locations with realistic operating metrics:
 
 **Metrics** (location-ID seeded, reproducible):
 - `cars_today`: 200–500 (area boost North +22%, East baseline)
-- `revenue`: cars × avg_ticket ($17.50–$26.00)
-- `membership_pct`: 29–52% (area-dependent, North +4%)
-- `labor_pct`: 19–32% (Minnesota locations +4%)
+- `revenue`: cars × avg_ticket ($17–$26)
+- `membership_pct`: 18–52% (Champaign pilot market 18–27%, other sites 27–52%, area-dependent North +4%)
+- `labor_pct`: 18–32% (Minnesota locations +4%)
 - `vs_yesterday`: −7% to +18% (regional adjustments)
 - `new_members`: 1–12 (trending)
 - `dq_score`: Data quality, 92–100%
@@ -233,8 +233,8 @@ Minimal schema: name, address, coordinates, chain identifier.
 4. Extract structured data from `application/ld+json` blocks
 5. Handle both plain `LocalBusiness` objects and Yoast SEO `@graph` arrays
 6. Outputs:
-   - `data/mister_carwash.json` — Filtered to target states (~150 locations)
-   - `data/mister_carwash_all.json` — All states (~400+ locations)
+   - `data/mister_carwash.json` — Filtered to target states (55 locations)
+   - `data/mister_carwash_all.json` — All states (558 locations)
 
 **HTTP resilience**: Uses `curl` with browser User-Agent and headers via subprocess (avoids 403 blocks from Python libraries)
 
@@ -247,7 +247,7 @@ Minimal schema: name, address, coordinates, chain identifier.
    - Scrape store page, extract address from `<title>` tag
    - Try Yext API for lat/lng (fast, direct)
    - Fallback: Nominatim OpenStreetMap geocoding (1.1s rate limit per call)
-4. Output: `data/tommys_express.json` (IL/MN/WI only, ~40 locations)
+4. Output: `data/tommys_express.json` (IL/MN/WI only, 28 locations)
 
 **Geocoding**:
 - Yext: Proprietary POI database (fast, accurate)
@@ -269,20 +269,20 @@ Minimal schema: name, address, coordinates, chain identifier.
 - Metric ranges:
   - Cars: 200–500 per location
   - Revenue: realistic (cars × $17–$26 ticket)
-  - Membership %: 0–60%
-  - Labor %: 15–35% of revenue
+  - Membership %: 18–52% (Champaign pilot 18–27%, others 27–52%)
+  - Labor %: 18–32%
   - Data quality: 91–100%
 
 ## Geographic Coverage
 
 **Crew Carwash**: 60 total locations
-- **Indiana** (52): Indianapolis metro, North (Carmel, Fishers, Noblesville), East, West, South, statewide
+- **Indiana** (54): Indianapolis metro, North (Carmel, Fishers, Noblesville), East, West, South, statewide
 - **Minnesota** (5): Twin Cities (Eden Prairie, Wayzata, Maple Grove, West St. Paul), St. Cloud
 - **Illinois** (1): Champaign (pilot market)
 
 **Competitors**:
-- **Mister Car Wash**: ~150 in target states (multistate chain, fully automated)
-- **Tommy's Express**: ~40 in target states (regional chains, express format)
+- **Mister Car Wash**: 55 in target states, 558 all states (multistate chain, fully automated)
+- **Tommy's Express**: 28 in target states (regional chains, express format)
 - **OSM Overpass**: Quick Quack, Zips, Take 5, GooGoo Express (exploratory, `competitors_raw_overpass.json`)
 
 **Wisconsin Watch** (expansion opportunity):
