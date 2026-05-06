@@ -49,14 +49,14 @@ class TestComputePressure(unittest.TestCase):
             {'lat': 40.01, 'lng': -86.00, 'city': 'C2', 'state': 'IN'},
             {'lat': 40.02, 'lng': -86.00, 'city': 'C3', 'state': 'IN'},
         ]
-        result = compute_pressure(crew, competitors, [])
+        result = compute_pressure(crowd, competitors, [])
         self.assertEqual(result['level'], 'high')
         self.assertGreaterEqual(result['mister']['within3'], 3)
 
     def test_medium_pressure_1_within_3mi(self):
         crowd = {'lat': 40.0, 'lng': -86.0}
         mister = [{'lat': 40.03, 'lng': -86.00, 'city': 'Indianapolis', 'state': 'IN'}]
-        result = compute_pressure(crew, mister, [])
+        result = compute_pressure(crowd, mister, [])
         self.assertEqual(result['level'], 'medium')
         self.assertGreaterEqual(result['mister']['within3'], 1)
         self.assertEqual(result['mister']['within1'], 0)
@@ -64,7 +64,7 @@ class TestComputePressure(unittest.TestCase):
     def test_low_pressure_1_within_5mi(self):
         crowd = {'lat': 40.0, 'lng': -86.0}
         mister = [{'lat': 40.06, 'lng': -86.00, 'city': 'Indianapolis', 'state': 'IN'}]
-        result = compute_pressure(crew, mister, [])
+        result = compute_pressure(crowd, mister, [])
         self.assertEqual(result['level'], 'low')
         self.assertGreaterEqual(result['mister']['within5'], 1)
         self.assertEqual(result['mister']['within3'], 0)
@@ -73,7 +73,7 @@ class TestComputePressure(unittest.TestCase):
         crowd = {'lat': 40.0, 'lng': -86.0}
         mister = [{'lat': 40.00, 'lng': -86.00, 'city': 'Mister1', 'state': 'IN'}]
         tommys = [{'lat': 40.005, 'lng': -86.00, 'city': 'Tommys1', 'state': 'IN'}]
-        result = compute_pressure(crew, mister, tommys)
+        result = compute_pressure(crowd, mister, tommys)
         self.assertEqual(result['mister']['within1'], 1)
         self.assertEqual(result['tommys']['within1'], 1)
         self.assertEqual(result['level'], 'high')
@@ -86,7 +86,7 @@ class TestComputePressure(unittest.TestCase):
             {'lat': 40.02, 'lng': -86.00, 'city': 'M3', 'state': 'IN'},
             {'lat': 40.03, 'lng': -86.00, 'city': 'M4', 'state': 'IN'},
         ]
-        result = compute_pressure(crew, mister, [])
+        result = compute_pressure(crowd, mister, [])
         self.assertLessEqual(len(result['nearest']), 3)
         for i in range(len(result['nearest']) - 1):
             self.assertLessEqual(result['nearest'][i]['d'], result['nearest'][i + 1]['d'])
@@ -97,13 +97,13 @@ class TestComputePressure(unittest.TestCase):
             {'lat': 40.00, 'lng': -86.00, 'city': 'Close', 'state': 'IN'},
             {'lat': 50.0, 'lng': -100.0, 'city': 'Far', 'state': 'IN'},
         ]
-        result = compute_pressure(crew, mister, [])
+        result = compute_pressure(crowd, mister, [])
         self.assertEqual(len(result['nearest']), 1)
         self.assertEqual(result['nearest'][0]['city'], 'Close')
 
     def test_empty_competitor_data(self):
         crowd = {'lat': 40.0, 'lng': -86.0}
-        result = compute_pressure(crew, [], [])
+        result = compute_pressure(crowd, [], [])
         self.assertEqual(result['mister'], {'within1': 0, 'within3': 0, 'within5': 0})
         self.assertEqual(result['tommys'], {'within1': 0, 'within3': 0, 'within5': 0})
 
